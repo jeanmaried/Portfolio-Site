@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header{
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer{
+	color: white;
+	width: 100%;
+	position:fixed;
+    bottom:0;
+}
+
+#landing{
+  background-image: url("assets/stars.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#about{
+  background-color: white;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  padding: 5%;
+  position: fixed;
+  top: 20%;
+  right: 10%;
+}
+
+#button{
+	background-color: grey;
+	padding: .5rem;
+	width: 40%;
+}
