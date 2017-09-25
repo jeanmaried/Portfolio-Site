@@ -8,8 +8,8 @@ class About extends Component {
     return (
       <div id="landing">
         <header className="flex direction-rowclass justify-between">
-          <div>Contact</div>
-          <div>About</div>
+          <Link to="/contact"><div>Contact</div></Link>
+          <Link to="/about"><div>About</div></Link>
         </header>
 
         <div id="about">
@@ -23,7 +23,7 @@ class About extends Component {
 
 
         <footer className="flex align-items-center direction-column">
-          <div>Projects</div>
+         <Link to="/projects"><div>Projects</div></Link>
           <p>me@jodalmasso.com</p>
         </footer>
 

@@ -18,8 +18,10 @@ footer{
     bottom:0;
 }
 
+/*landing page*/
+
 #landing{
-  background-image: url("assets/stars.jpg");
+  background-image: url("assets/milky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -43,3 +45,35 @@ footer{
 	padding: .5rem;
 	width: 40%;
 }
+
+/*Home page*/
+
+#home img{
+	position: absolute;
+	top: 80%;
+	height: 10%;
+}
+
+.icons{
+	padding-top: 10%;
+	color: white;
+}
+
+i{
+	font-size: 2rem;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
