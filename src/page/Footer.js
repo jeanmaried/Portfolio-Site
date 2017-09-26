@@ -8,10 +8,9 @@ class Footer extends Component {
     return (
     	<footer>
     		<div className="flex direction-row justify-between">
-	    		<Link to="/projects">PROJECTS</Link>
-	    		<Link to="/contact">CONTACT</Link>
+	    		<Link to="/projects"><div className="menu">PROJECTS</div></Link>
+	    		<Link to="/contact"><div className="menu">CONTACT</div></Link>
 	    	</div>
-    		<div className="flex justify-center">JoDalmasso All Rights Reserved</div>
     	</footer>
     );
   }

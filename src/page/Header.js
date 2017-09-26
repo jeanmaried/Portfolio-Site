@@ -7,8 +7,8 @@ class Header extends Component {
   render() {
     return (
         <header className="flex direction-row justify-between">
-        	<Link to="/home">HOME</Link>
-        	<Link to="/about">ABOUT</Link>
+        	<Link to="/home"><div className="menu">HOME</div></Link>
+        	<Link to="/about"><div className="menu">ABOUT</div></Link>
         </header>
     );
   }

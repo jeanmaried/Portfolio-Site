@@ -7,6 +7,8 @@ body {
 header{
 	color: white;
   width: 100%;
+  position:fixed;
+  top:0;
 }
 
 footer{
@@ -16,9 +18,15 @@ footer{
   bottom:0;
 }
 
+.menu{
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
 /*landing page*/
 
-#landing{
+body{
   background-image: url("assets/milky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,17 +34,24 @@ footer{
   position: relative;
 }
 
+#landing{
+  overflow: hidden;
+}
+
 #about{
-  background-color: white;
-  opacity: 0.4;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 70%;
-  padding: 5%;
   position: fixed;
   top: 20%;
-  right: 10%;
+  bottom: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#about div {
+  width: 70%;
+  padding: 2rem;
+  background-color: black;
+  color: white;
 }
 
 #button{
@@ -48,25 +63,93 @@ footer{
 /*Home page*/
 
 #spaceship img{
-	position: absolute;
+	position: fixed;
 	top: 80%;
 	height: 10%;
 }
 
+.random_button{
+  position: fixed;
+  bottom: 10%;
+  left: 90%;
+  width: 5rem;
+}
+
+#alien_station{
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  top: 30%;
+}
+
 .icons{
-	padding-top: 10%;
+  font-size: 2rem;
 	color: white;
 }
 
 i{
-	font-size: 2rem;
+	font-size: 4rem;
 	color:white;
 }
 
+.margin1{
+  margin-top: 2rem;
+  margin-right: 3rem;
+}
+.margin2{
+  margin-top: 6rem;
+  margin-right: 3rem;
+}
+.margin3{
+  margin-top: 8rem;
+  margin-right: 3rem;
+}
+.margin4{
+  margin-top: 10rem;
+  margin-right: 3rem;
+}
+.margin5{
+  margin-top: 0;
+  margin-right: 3rem;
+}
+.margin6{
+  margin-top: 5rem;
+  margin-right: 3rem;
+}
+.margin7{
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+.margin8{
+  margin-top: 7rem;
+  margin-right: 3rem;
+}
+.margin9{
+  margin-top: 1rem;
+  margin-right: 3rem;
+}
+/*projects=================================================*/
+
+.projects{
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
 
 
+@media screen and (min-width: 600px) {
+  .icons{
+    max-width: 60%;
+  }
 
+  .icons div{
+    align-items: center;
+  }
 
+  #about div {
+    max-width: 50%
+  }
+}
 
 
 
