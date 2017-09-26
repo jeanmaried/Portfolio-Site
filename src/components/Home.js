@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
-import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
-import './flex.css';
+import {Link} from 'react-router-dom';
+import '../flex.css';
+import Layout from '../page/Layout'
 
 class Home extends Component {
+
   render() {
     return (
       <div id="landing">
-        <header className="flex direction-rowclass justify-between">
-          <Link to="/contact"><div>Contact</div></Link>
-          <Link to="/about"><div>About</div></Link>
-        </header>
-
+      <Layout>
         <div className="icons flex justify-center direction-column">
           <div className="flex justify-around direction-row">
             <div><i className="devicon-html5-plain"></i></div>
@@ -31,16 +28,10 @@ class Home extends Component {
           </div>
         </div>
 
-        <div id="home" className="flex justify-center">
-          <img src={require('./assets/rocket.png')}/>
+        <div id="spaceship" className="flex justify-center">
+          <img src={require('../assets/rocket.png')} alt=""/>
         </div>
-
-
-        <footer className="flex align-items-center direction-column">
-          <Link to="/projects"><div>Projects</div></Link>
-          <p>me@jodalmasso.com</p>
-        </footer>
-
+        </Layout>
       </div>
     );
   }

@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
-import {BrowserRouter, Route, Link, Switch} from 'react-router-dom';
-import './flex.css';
+import {Link} from 'react-router-dom';
+import '../flex.css';
+import Layout from '../page/Layout'
 
 class Contact extends Component {
   render() {
     return (
       <div id="landing">
-        <header className="flex direction-rowclass justify-between">
-          <Link to="/contact"><div>Contact</div></Link>
-          <Link to="/about"><div>About</div></Link>
-        </header>
-
+      <Layout>
           <div className="flex justify-around direction-row">
               <form className="flex direction-column">
                 <input type="text" name="firstname" placeholder="First Name"/>
@@ -20,12 +16,7 @@ class Contact extends Component {
                 <input type="submit" name=""/>
               </form>
           </div>
-
-        <footer className="flex align-items-center direction-column">
-          <Link to="/projects"><div>Projects</div></Link>
-          <p>me@jodalmasso.com</p>
-        </footer>
-
+      </Layout>
       </div>
     );
   }
