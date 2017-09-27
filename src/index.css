@@ -19,12 +19,16 @@ footer{
 }
 
 .menu{
-  background-color: black;
-  color: white;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 100%;
   padding: 1rem;
+  margin: 1rem;
+  min-width: 2rem;
 }
 
-/*landing page*/
+.menu span{
+  color: yellow;
+}
 
 body{
   background-image: url("assets/milky.jpg");
@@ -38,26 +42,35 @@ body{
   overflow: hidden;
 }
 
+/*about====================================*/
+
 #about{
   position: fixed;
   top: 20%;
   bottom: 20%;
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
-#about div {
+.about_box{
   width: 70%;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   background-color: black;
-  color: white;
+  color: yellow;
+  background-color: rgba(0,0,0,0.6);
 }
 
 #button{
 	background-color: grey;
 	padding: .5rem;
 	width: 40%;
+}
+
+.skills{
+  width: 90%;
+}
+
+.skills div{
+  padding: .2rem;
 }
 
 /*Home page*/
@@ -68,11 +81,16 @@ body{
 	height: 10%;
 }
 
-.random_button{
+.launch_button{
+  background-color: rgba(0,0,0,0.6);
+  color: yellow;
+  font-size: 2rem;
+  border: 1px solid yellow;
   position: fixed;
-  bottom: 10%;
-  left: 90%;
-  width: 5rem;
+  top: 40%;
+  color: white;
+  padding: 3rem 6rem 3rem 6rem;
+
 }
 
 #alien_station{
@@ -88,7 +106,7 @@ body{
 }
 
 i{
-	font-size: 4rem;
+	font-size: 2rem;
 	color:white;
 }
 
@@ -129,14 +147,44 @@ i{
   margin-right: 3rem;
 }
 /*projects=================================================*/
-
 .projects{
-  background-color: black;
+  position: fixed;
+  top: 14%;
+  width: 100%;
+}
+
+.project{
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid yellow;
   color: white;
   padding: 2rem;
+  width: 10rem;
 }
 
 
+/*typography*/
+
+.white{
+  color:white;
+}
+
+/*contact page===============================*/
+
+.contact{
+  position: fixed;
+  border-radius: 100%;
+  top: 30%;
+  background-color: black;
+  color: yellow;
+  background-color: rgba(0,0,0,0.6);
+  padding: 3rem 6rem 4rem 6rem;
+}
+
+.contact div span{
+  margin: 0 .5rem 0 .5rem;
+}
+
+/*queries==============================*/
 @media screen and (min-width: 600px) {
   .icons{
     max-width: 60%;
@@ -146,16 +194,10 @@ i{
     align-items: center;
   }
 
-  #about div {
+  .about_box {
     max-width: 50%
   }
 }
-
-
-
-
-
-
 
 
 

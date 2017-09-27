@@ -31,7 +31,9 @@ class Home extends Component {
       <div id="landing">
       <Layout>
         <div id="alien_station" className="flex direction-row"></div>
-        <button className="random_button" onClick={this.handleClick}>LAUNCH</button>
+        <div className="flex justify-center">
+          <input className="launch_button flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/>
+        </div>
         <div id="spaceship" className="flex justify-center">
           <img src={require('../assets/rocket.png')} alt=""/>
         </div>

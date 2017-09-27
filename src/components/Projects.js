@@ -1,20 +1,61 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../flex.css';
-import Layout from '../page/Layout'
+import Layout from '../page/Layout';
+import FontAwesome from 'react-fontawesome';
 
 class Projects extends Component {
   render() {
     return (
       <div id="landing">
         <Layout>
-          <div className="flex direction-row flex-wrap justify-center">
-            <div className="projects">Aloha Landing Page</div>
-            <div className="projects">inhabitent_camping_site</div>
-            <div className="projects">ES6-shopping-cart</div>
-            <div className="projects">React-alien-encounter-reporting-app</div>
-            <div className="projects">New-York-Times-API-app</div>
-            <div className="projects">tooth_fairy_wordpress_site</div>
+          <div className="projects flex justify-center">
+            <div className="flex flex-wrap justify-center text-align white">
+  
+
+                <div>
+                  <div className="project">Aloha</div>
+                  <p>I did blablbaldh;a dhsoh and won</p>
+                  <FontAwesome name="mouse-pointer" size="2x"/>
+                  <FontAwesome name="github" size="2x"/>
+                </div>
+
+                <div>
+                  <div className="project">Inhabitent</div>
+                  <p>I did blablbaldh;a dhsoh and won</p>
+                  <FontAwesome name="mouse-pointer" size="2x"/>
+                  <FontAwesome name="github" size="2x"/>
+                </div>
+
+                <div>
+                  <div className="project">Shopping Cart</div>
+                  <p>I did blablbaldh;a dhsoh and won</p>
+                  <FontAwesome name="mouse-pointer" size="2x"/>
+                  <FontAwesome name="github" size="2x"/>
+                </div>
+
+                <div>
+                  <div className="project">Alien Encounter</div>
+                  <p>I did blablbaldh;a dhsoh and won</p>
+                  <FontAwesome name="mouse-pointer" size="2x"/>
+                  <FontAwesome name="github" size="2x"/>
+                </div>
+
+                <div>
+                  <div className="project">News App</div>
+                  <p>I did blablbaldh;a dhsoh and won</p>
+                  <FontAwesome name="mouse-pointer" size="2x"/>
+                  <FontAwesome name="github" size="2x"/>
+                </div>
+
+                <div>
+                  <div className="project">GTA Tooth Fairy</div>
+                  <p>I did blablbaldh;a dhsoh and won</p>
+                  <FontAwesome name="mouse-pointer" size="2x"/>
+                  <FontAwesome name="github" size="2x"/>
+                </div>
+
+            </div>
           </div>
         </Layout>
       </div>
