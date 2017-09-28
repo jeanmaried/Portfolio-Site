@@ -7,24 +7,20 @@ import FontAwesome from 'react-fontawesome';
 class Contact extends Component {
   render() {
     return (
-      <div id="landing">
       <Layout>
         <div className="flex justify-center">
-          <div className="contact">
+          <div className="contact flex align-items-center direction-column">
             <h1>CONTACT</h1>
-            <div className="flex white align-items-center direction-column">
-            <p>+1(647)467-3977</p>
-            <p>me@jodalmasso.com</p>
+            <p className="white">+1(647)467-3977</p>
+            <p className="white">me@jodalmasso.com</p>
             <div className="flex justify-around white">
               <FontAwesome name="linkedin" size="2x"/>
               <FontAwesome name="github" size="2x"/>
               <FontAwesome name="envelope" size="2x"/>
             </div>
-            </div>
           </div>
         </div>
       </Layout>
-      </div>
     );
   }
 }

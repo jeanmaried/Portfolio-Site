@@ -9,7 +9,7 @@ class Header extends Component {
     return (
         <header className="flex direction-row justify-between text-align">
         	<Link to="/home"><div className="menu"><FontAwesome name="home" size="2x"/></div></Link>
-        	<Link to="/about"><div className="menu"><FontAwesome name="question" size="2x"/></div></Link>
+        	<Link to="/rocket"><div className="menu"><FontAwesome name="rocket" size="2x"/></div></Link>
         </header>
     );
   }

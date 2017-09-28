@@ -4,69 +4,45 @@ import '../flex.css';
 import Layout from '../page/Layout'
 
 class Home extends Component {
-  handleClick(){
-    let station = document.getElementById("alien_station");
-    if (station == null){
-      //do nothing
-    }
-    else{
-      let counter = 0;
-      let i = setInterval(function(){
-        let node = document.createElement("div");
-        let random_alien = aliens[Math.floor(Math.random() * aliens.length)];
-        let random_position = position[Math.floor(Math.random() * position.length)];
-        node.classList.add(random_alien, random_position, "icons", "flex");
-        station.appendChild(node);
-
-        counter++;
-        if (counter === 50){
-          clearInterval(i);
-        }
-      }, 2000);
-    }
-  }
-
   render() {
     return (
-      <div id="landing">
-      <Layout>
-        <div id="alien_station" className="flex direction-row"></div>
-        <div className="flex justify-center">
-          <input className="launch_button flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/>
-        </div>
-        <div id="spaceship" className="flex justify-center">
-          <img src={require('../assets/rocket.png')} alt=""/>
-        </div>
+        <Layout>
+          <div id="menu" className="flex align-items-center justify-center direction-column">
+            <div className="menu_box">
+              <h1 className="flex justify-center">
+                Welcome!
+              </h1>
+              <p className="white">My name is Joseph, though everyone calls me by my middle name Jean. 
+              I am a Full-Stack Web Developer based in Toronto! I spent 3 years 
+              working as a sales professional before I decided to quit my job and 
+              start a whole new life. After moving to a new country and a lot of 
+              soul searching, I finally found my true calling in Web Development.</p>
+              <p className="white">Finally a career path that allows me to apply my creativity and logic! 
+              When I'm not coding, you will find me dancing like a fool, reading or 
+              meditating.</p>
+              <p className="white">Fun fact: I am a triple citizen of France, Canada, and the US and perfectly bilingual.</p>
+              <div className="flex align-items-center direction-column">
+              <h3>SKILL SET</h3>
+                <div className="skills flex direction-row justify-center flex-wrap">
+                  <div><i className="devicon-html5-plain"></i></div>
+                  <div><i className="devicon-css3-plain"></i></div>
+                  <div><i className="devicon-sass-plain"></i></div>
+                  <div><i className="devicon-javascript-plain"></i></div>
+                  <div><i className="devicon-jquery-plain"></i></div>
+                  <div><i className="devicon-wordpress-plain"></i></div>
+                  <div><i className="devicons devicons-responsive"></i></div>
+                  <div><i className="devicon-php-plain"></i></div>
+                  <div><i className="devicon-git-plain"></i></div>
+                  <div><i className="devicon-github-plain"></i></div>
+                  <div><i className="devicon-gulp-plain"></i></div>
+                  <div><i className="devicon-react-plain"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </Layout>
-      </div>
     );
   }
 }
 
 export default Home;
-
-let aliens = [
-  "devicon-html5-plain",
-  "devicon-css3-plain",
-  "devicon-sass-plain",
-  "devicon-javascript-plain",
-  "devicon-jquery-plain",
-  "devicon-wordpress-plain",
-  "devicon-php-plain",
-  "devicon-git-plain",
-  "devicon-github-plain",
-  "devicon-gulp-plain",
-  "devicon-react-plain"
-]
-
-let position = [
-  "margin1",
-  "margin2",
-  "margin3",
-  "margin4",
-  "margin5",
-  "margin6",
-  "margin7",
-  "margin8",
-  "margin9",
-]
