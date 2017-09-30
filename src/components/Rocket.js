@@ -15,12 +15,11 @@ class Rocket extends Component {
       let i = setInterval(function(){
         let node = document.createElement("div");
         let random_alien = aliens[Math.floor(Math.random() * aliens.length)];
-        // let random_position = position[Math.floor(Math.random() * position.length)];
         node.classList.add(random_alien, "position", "icons", "flex", "floating");
         station.appendChild(node);
 
         counter++;
-        if (counter === 50){
+        if (counter === 2){
           clearInterval(i);
         }
       }, 3000);
