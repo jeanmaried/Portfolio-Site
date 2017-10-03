@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import '../flex.css';
-import Layout from '../page/Layout'
+import '../styles/flex.css';
+import Layout from '../page/Layout';
+import '../styles/rocket.css'
 
 class Rocket extends Component {
+  constructor(){
+    super();
+    this.handleClick = this.handleClick.bind(this);
+  }
+
   handleClick(){
-    document.getElementById("launch_button").remove();
+    this.countDown();
     let station = document.getElementById("alien_station");
     if (station == null){
       //do nothing
@@ -19,24 +25,49 @@ class Rocket extends Component {
         station.appendChild(node);
 
         counter++;
-        if (counter === 2){
+        if (counter === 1000){
           clearInterval(i);
         }
-      }, 3000);
+      }, 1500);
     }
+  }
+
+  countDown(){
+    let launch = document.getElementById("launch_button");
+    let countdown = document.createElement("div")
+    countdown.classList.add("countdown");
+
+    var count = 5;
+    function anim() {
+        if (count > 0) {
+          countdown.innerHTML= count;
+          launch.replaceWith(countdown);
+          count--;
+          setTimeout(anim, 1000);
+        }
+        else if (count == 0){
+          countdown.innerHTML= "TAKE OFF";
+          count--;
+          setTimeout(anim, 900);
+        }
+        else{
+          countdown.parentNode.removeChild(countdown);
+        }
+    }
+    anim();
   }
 
   render() {
     return (
+      <div id="pane">
       <Layout>
-        <div id="alien_station" className="flex direction-row"></div>
-        <div className="flex justify-center">
-          <input id="launch_button" className="flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/>
-        </div>
-        <div id="spaceship" className="flex justify-center">
-          <img src={require('../assets/rocket.png')} alt=""/>
-        </div>
+          <div id="alien_station" className="flex direction-row"></div>
+          <div className="flex justify-center">
+            <input id="launch_button" className="flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/>
+          </div>
+          <div id="spaceship" className="flex justify-center"></div>
         </Layout>
+        </div>
     );
   }
 }

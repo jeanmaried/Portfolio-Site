@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import '../flex.css';
+import '../styles/flex.css';
 import Layout from '../page/Layout';
 import FontAwesome from 'react-fontawesome';
+import '../styles/contact.css'
 
 class Contact extends Component {
   render() {

@@ -1,0 +1,55 @@
+/*projects=================================================*/
+.projects{
+  position: fixed;
+  top: 12%;
+  width: 100%;
+  min-height: 5rem;
+  max-height: 34rem;
+  overflow: auto;
+}
+
+.projects div{
+  max-width: 70rem;
+}
+
+.project{
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid yellow;
+  border-radius: 3rem;
+  color: white;
+  padding: 2rem;
+  margin: 2rem;
+  width: 15rem;
+}
+
+.project_space{
+  height: 10rem;
+}
+
+#aloha{
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/aloha.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#nyt{
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/NYT.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#alien-encounter{
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/alien_encounter.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#shopping_cart{
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/shopping-cart.png");
+  background-size: cover;
+  background-position: center; 
+}

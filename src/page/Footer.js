@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import '../App.css';
 import {Link} from 'react-router-dom';
-import '../flex.css';
+import '../styles/flex.css';
 import FontAwesome from 'react-fontawesome';
 
 class Footer extends Component {

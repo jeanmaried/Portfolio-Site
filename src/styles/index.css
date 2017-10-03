@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header{
+	color: white;
+  width: 100%;
+  position:fixed;
+  top:0;
+}
+
+footer{
+	color: white;
+	width: 100%;
+	position:fixed;
+  bottom:0;
+}
+
+.menu{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 2rem;
+}
+
+.menu span{
+  color: yellow;
+}
+
+body{
+  background-image: url("../assets/milky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#pane{
+  position: relative;
+  height: 100vh;
+}
+
+/*typography*/
+
+.white{
+  color:white;
+}
+
+.yellow{
+  color: yellow;
+}
+
+/*queries==============================*/
+@media screen and (min-width: 600px) {
+  .icons{
+    max-width: 60%;
+  }
+
+  .icons div{
+    align-items: center;
+  }
+
+  .about_box {
+    max-width: 50%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
