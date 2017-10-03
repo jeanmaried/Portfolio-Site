@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Rocket from './components/Rocket';
+import Launch from './components/Launch';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
@@ -15,7 +15,7 @@ class Routes extends Component {
       <div>
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route exact path="/rocket" component={Rocket}/>  
+          <Route exact path="/game" component={Launch}/>  
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/projects" component={Projects}/>
         </Switch>

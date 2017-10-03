@@ -1,73 +1,27 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/flex.css';
 import Layout from '../page/Layout';
 import FontAwesome from 'react-fontawesome';
-import '../styles/projects.css'
+import ProjectList from './ProjectList';
+import '../styles/projects.css';
+import '../styles/flex.css';
 
 class Projects extends Component {
   render() {
+  let project_object = [
+    {id: "aloha", title: "Aloha", site_link: "#", git_link:"#", description:"Responsive shopping website landing page making use of Sass and Gulp"},
+    {id: "inhabitent", title: "Inhabitent", site_link: "#", git_link:"#", description:"Developed WordPress theme with PHP for blog/shop"},
+    {id: "shopping_cart", title: "Shopping Cart", site_link: "#", git_link:"#", description:"Shopping cart built from the ground up in ES6 with API call"},
+    {id: "alien-encounter", title: "Alien Encounter", site_link: "#", git_link:"#", description:"React.js app to update API using axios"},
+    {id: "nyt", title: "News App", site_link: "#", git_link:"#", description:"News app that makes API call to New York Times with Vanilla JavaScript"},
+    {id: "tooth_fairy", title: "GTA Tooth Fairy", site_link: "#", git_link:"#", description:'Developed WordPress theme as part of a team for "GTA Tooth Fairy"'},
+  ]
     return (
         <Layout>
           <div className="projects flex align-items-center direction-column">
-            <div className="flex flex-wrap justify-center text-align white">
-  
-
-                <div className="project" id="aloha">
-                  <div className="project_space">
-                    <h2 className="yellow">Aloha</h2>
-                    <p>Responsive shopping website landing page making use of Sass and Gulp</p>
-                  </div>
-                  <a href="#"><FontAwesome name="mouse-pointer" size="2x"/></a>
-                  <a href="#"><FontAwesome name="github" size="2x"/></a>
-                </div>
-
-                <div className="project">
-                <div className="project_space">
-                  <h2 className="yellow">Inhabitent</h2>
-                  <p>Developed WordPress theme with PHP for blog/shop</p>
-                </div>
-                  <a href="#"><FontAwesome name="mouse-pointer" size="2x"/></a>
-                  <a href="#"><FontAwesome name="github" size="2x"/></a>
-                </div>
-
-                <div className="project" id="shopping_cart">
-                <div className="project_space">
-                  <h2 className="yellow">Shopping Cart</h2>
-                  <p>Shopping cart built from the ground up in ES6 with API call</p>
-                </div>  
-                  <a href="#"><FontAwesome name="mouse-pointer" size="2x"/></a>
-                  <a href="#"><FontAwesome name="github" size="2x"/></a>
-                </div>
-
-                <div className="project" id="alien-encounter">
-                <div className="project_space">
-                  <h2 className="yellow">Alien Encounter</h2>
-                  <p>React.js app to update API using axios</p>
-                </div> 
-                  <a href="#"><FontAwesome name="mouse-pointer" size="2x"/></a>
-                  <a href="#"><FontAwesome name="github" size="2x"/></a>
-                </div>
-
-                <div className="project" id="nyt">
-                <div className="project_space">
-                  <h2 className="yellow">News App</h2>
-                  <p>News app that makes API call to New York Times with Vanilla JavaScript</p>
-                </div>  
-                  <a href="#"><FontAwesome name="mouse-pointer" size="2x"/></a>
-                  <a href="#"><FontAwesome name="github" size="2x"/></a>
-                </div>
-
-                <div className="project">
-                <div className="project_space">
-                  <h2 className="yellow">GTA Tooth Fairy</h2>
-                  <p>Developed WordPress theme as part of a team for "GTA Tooth Fairy"</p>
-                </div>  
-                  <a href="#"><FontAwesome name="mouse-pointer" size="2x"/></a>
-                  <a href="#"><FontAwesome name="github" size="2x"/></a>
-                </div>
-
-            </div>
+              <ul className="flex flex-wrap justify-center text-align white">
+                {project_object.map((project, i) => <ProjectList item={project} key={project.id} />)}
+              </ul>
           </div>
 
         </Layout>
@@ -76,3 +30,10 @@ class Projects extends Component {
 }
 
 export default Projects;
+
+
+
+
+
+
+

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/flex.css';
 import Layout from '../page/Layout';
-import '../styles/rocket.css'
+import Spaceship from './Spaceship';
+import '../styles/rocket.css';
+import '../styles/flex.css';
 
 class Rocket extends Component {
   constructor(){
@@ -65,7 +66,7 @@ class Rocket extends Component {
           <div className="flex justify-center">
             <input id="launch_button" className="flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/>
           </div>
-          <div id="spaceship" className="flex justify-center"></div>
+          <Spaceship />
         </Layout>
         </div>
     );

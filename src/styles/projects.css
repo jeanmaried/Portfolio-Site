@@ -18,17 +18,24 @@
   border-radius: 3rem;
   color: white;
   padding: 2rem;
-  margin: 2rem;
+  margin: 1.5rem;
   width: 15rem;
+  height: 15rem;
 }
 
-.project_space{
+.title_space{
+  height: 5rem;
+  margin-top: -1rem;
+}
+
+.description_space{
   height: 10rem;
+  padding-top: 7rem;
 }
 
 #aloha{
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url("../assets/aloha.png");
+  url(../assets/aloha.png);
   background-size: cover;
   background-position: center;
 }
@@ -50,6 +57,20 @@
 #shopping_cart{
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
   url("../assets/shopping-cart.png");
+  background-size: cover;
+  background-position: center; 
+}
+
+#tooth_fairy{
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/tooth-fairy.png");
+  background-size: cover;
+  background-position: center; 
+}
+
+#inhabitent{
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+  url("../assets/inhabitent.png");
   background-size: cover;
   background-position: center; 
 }

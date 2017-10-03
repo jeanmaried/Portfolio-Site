@@ -7,8 +7,8 @@
   background-size: contain;
   background-position: center;
   position: absolute;
-  top: 70%;
-  left: 46.5%;
+  top: 0%;
+  left: 0%;
   height: 4rem;
   width: 4rem;
 }
@@ -47,6 +47,11 @@ i{
   font-size: 3rem;
   position: fixed;
   top: 45%;
+}
+
+#pane{
+  position: relative;
+  height: 100vh;
 }
 
 /*animation========================*/
