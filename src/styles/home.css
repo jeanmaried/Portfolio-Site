@@ -35,8 +35,8 @@
 	width: 40%;
 }
 
-.skills{
-  width: 90%;
+.skills div{
+  margin: .2rem;
 }
 
 .skills div{

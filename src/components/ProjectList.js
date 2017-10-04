@@ -7,12 +7,16 @@ import '../styles/projects.css'
 
 const ProjectList = ({item}) => (
   <li className="project" id={item.id}>
-      <div className="title_space flex direction-row align-items-center justify-between">
-        <a href={item.site_link}><FontAwesome name="mouse-pointer" size="2x"/></a>
+      <div className="title_space flex justify-center">
         <h1 className="yellow">{item.title}</h1>
-        <a href={item.git_link}><FontAwesome name="github" size="2x"/></a>
       </div>
-      <p className="description_space">{item.description}</p>
+      <div className="overlay">
+        <div className="project_links">
+          <a target="_blank" href={item.site_link}><FontAwesome name="mouse-pointer" size="2x"/></a>
+          <a target="_blank" href={item.git_link}><FontAwesome name="github" size="2x"/></a>
+        </div>
+        <p className="text">{item.description}</p>
+      </div>
   </li>
 )
 
