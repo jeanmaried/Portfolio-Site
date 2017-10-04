@@ -1,15 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 li{
   list-style: none;
 }
 
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+
 a {
-  color:lightgrey;
+  color:white;
 }
 
 header{
@@ -26,6 +31,9 @@ footer{
   bottom:0;
 }
 
+.text-end{
+  text-align: end;
+}
 .menu{
   background-color: rgba(0,0,0,0.5);
   border-radius: 100%;
@@ -54,6 +62,10 @@ body{
 
 .yellow{
   color: yellow;
+}
+
+.line-height{
+  line-height: 200%;
 }
 
 /*queries==============================*/

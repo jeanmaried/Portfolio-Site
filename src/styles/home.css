@@ -1,5 +1,17 @@
 /*home====================================*/
 
+#myface{
+  background: url(../assets/myface.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 3rem;
+  border-radius: 5rem;
+  border: 1px solid yellow;
+  width: 3rem;
+  height: 3rem;
+}
+
 #menu{
   position: fixed;
   top: 20%;
@@ -9,11 +21,11 @@
 
 .menu_box{
   width: 70%;
-  padding: 0 2rem 2rem 2rem;
+  max-width: 30rem;
+  padding: 2rem;
   background-color: black;
   border: 1px solid yellow;
   border-radius: 5rem;
-  color: yellow;
   background-color: rgba(0,0,0,0.6);
 }
 
