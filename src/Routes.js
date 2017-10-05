@@ -7,6 +7,8 @@ import Projects from './components/Projects';
 import Header from './page/Header';
 import Footer from './page/Footer';
 
+const NotFound = () => <h1>Not Found</h1>
+
 class Routes extends Component {
 
   render(){
@@ -18,6 +20,7 @@ class Routes extends Component {
           <Route exact path="/game" component={Launch}/>  
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/projects" component={Projects}/>
+          <Route component={NotFound} />
         </Switch>
       </div>
     </BrowserRouter>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Layout from '../page/Layout';
 import Spaceship from './Spaceship';
-import '../styles/rocket.css';
+import '../styles/game.css';
 import '../styles/flex.css';
 
 class Rocket extends Component {

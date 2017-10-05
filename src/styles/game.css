@@ -23,7 +23,11 @@
   top: 40%;
   color: white;
   padding: 3rem 6rem 3rem 6rem;
+}
 
+#launch_button[value="LAUNCH"]{
+  color:yellow;
+  font-family: 'PT Sans', sans-serif;
 }
 
 #alien_station{

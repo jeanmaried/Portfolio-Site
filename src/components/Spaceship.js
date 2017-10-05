@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/flex.css';
 import Layout from '../page/Layout';
-import '../styles/rocket.css'
+import '../styles/game.css'
 
 class Spaceship extends Component {
 	handleKeyPress = (e) => {
