@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Layout from '../page/Layout';
-import Spaceship from './Spaceship';
 import '../styles/game.css';
 import '../styles/flex.css';
 
@@ -64,9 +63,9 @@ class Rocket extends Component {
       <Layout>
           <div id="alien_station" className="flex direction-row"></div>
           <div className="flex justify-center">
-            <input id="launch_button" className="flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/>
+            <div id="coming_soon" className="flex justify-center yellow">COMING SOON</div>
+          {/* <input id="launch_button" className="flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/> */}
           </div>
-          <Spaceship />
         </Layout>
         </div>
     );
