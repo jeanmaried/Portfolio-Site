@@ -7,10 +7,25 @@
   top: 30%;
   background-color: black;
   color: yellow;
+  background: url('../assets/moon.png');
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 3.5rem 2rem 3.5rem;
+  animation: floater 5s infinite ease-in-out;
+}
+
+.moon{
   background-color: rgba(0,0,0,0.6);
-  padding: 3rem 6rem 4rem 6rem;
+  border-radius: 3rem;
+  padding: 1rem;
 }
 
 .contact div span{
   margin: 0 .5rem 0 .5rem;
+}
+
+@keyframes floater{
+  0%{top: 22%;}
+  50%{top: 25%;}
+  100%{ top: 22%; }
 }

@@ -24,9 +24,10 @@
   max-width: 30rem;
   padding: 2rem;
   background-color: black;
-  border: 1px solid yellow;
+  border: 2px solid yellow;
   border-radius: 5rem;
   background-color: rgba(0,0,0,0.6);
+  overflow: auto;
 }
 
 #button{
