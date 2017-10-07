@@ -1,10 +1,10 @@
 /*projects=================================================*/
 .projects{
   position: fixed;
-  top: 12%;
+  top: 5.5rem;
+  bottom: 5.5rem;
   width: 100%;
-  min-height: 5rem;
-  max-height: 34rem;
+  max-height: 100vh;
   overflow: auto;
 }
 
@@ -19,7 +19,7 @@
   border-radius: 3rem;
   color: white;
   padding: 2rem;
-  margin: 1.5rem;
+  margin: 3%;
   width: 15rem;
   height: 15rem;
 }
