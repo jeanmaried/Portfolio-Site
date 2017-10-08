@@ -12,6 +12,16 @@
   width: 4rem;
 }
 
+.start{
+  position: fixed;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  top: 30%;
+}
+
 #coming_soon{
   background-color: rgba(0,0,0,0.6);
   color: yellow;
