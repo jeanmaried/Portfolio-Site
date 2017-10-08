@@ -11,7 +11,7 @@ class Contact extends Component {
       <Layout>
         <div className="flex justify-center">
           <div className="contact flex align-items-center direction-column">
-            <div className="moon">
+            <div className="moon text-align">
             <h1>CONTACT</h1>
               <p className="white">+1(647)467-3977</p>
               <p className="white">me@jodalmasso.com</p>
