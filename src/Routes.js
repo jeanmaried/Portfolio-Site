@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter, hashHistory, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
 import Launch from './components/Launch';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -13,7 +13,7 @@ class Routes extends Component {
 
   render(){
     return(
-    <BrowserRouter history={hashHistory}>
+    <HashRouter>
       <div>
         <Switch>
           <Route exact path="/" component={Home}/>
@@ -23,7 +23,7 @@ class Routes extends Component {
           <Route component={NotFound} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
       )
   }
 }
