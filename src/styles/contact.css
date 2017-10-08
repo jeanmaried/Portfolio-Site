@@ -11,7 +11,8 @@
   background-position: center;
   background-size: cover;
   padding: 2rem 3.5rem 2rem 3.5rem;
-  animation: floater 5s infinite ease-in-out;
+  -webkit-animation: floater 5s infinite ease-in-out;
+          animation: floater 5s infinite ease-in-out;
 }
 
 .moon{
@@ -22,6 +23,12 @@
 
 .contact div span{
   margin: 0 .5rem 0 .5rem;
+}
+
+@-webkit-keyframes floater{
+  0%{top: 20%;}
+  50%{top: 23%;}
+  100%{ top: 20%; }
 }
 
 @keyframes floater{

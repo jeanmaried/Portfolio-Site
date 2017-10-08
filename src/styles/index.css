@@ -19,7 +19,6 @@ a {
 
 header{
 	color: white;
-  width: 100%;
 }
 
 footer{
@@ -74,27 +73,15 @@ body{
   }
 
   .icons div{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .about_box {
-    max-width: 50%
+    max-width: 50%;
   }
 }
-
-/* @media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min--moz-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5){
-
-  html,
-  body{
-    width:100%;
-    overflow:hidden;
-  }
-
-} */
 
 /* * {
   background: #000 !important;

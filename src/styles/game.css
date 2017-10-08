@@ -63,12 +63,24 @@ i{
   font-size: 2rem;
   color: white;
   position: absolute;
-  animation: float 30s both ease-in-out, floater 5s infinite ease-in-out;
+  -webkit-animation: float 30s both ease-in-out, floater 5s infinite ease-in-out;
+          animation: float 30s both ease-in-out, floater 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes float{
+  from{-webkit-transform: translateX(-13rem);transform: translateX(-13rem);}
+  to{-webkit-transform: translateX(100rem);transform: translateX(100rem);}
 }
 
 @keyframes float{
-  from{transform: translateX(-13rem);}
-  to{transform: translateX(100rem);}
+  from{-webkit-transform: translateX(-13rem);transform: translateX(-13rem);}
+  to{-webkit-transform: translateX(100rem);transform: translateX(100rem);}
+}
+
+@-webkit-keyframes floater{
+  0%{top: -10px;}
+  50%{top: -200px;}
+  100%{ top: -10px; }
 }
 
 @keyframes floater{
