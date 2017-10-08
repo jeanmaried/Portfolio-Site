@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="flex justify-between text-align">
         	<Link to="/"><div className="menu"><FontAwesome name="home" size="2x"/></div></Link>
-        	<Link to="#/game"><div className="menu"><FontAwesome name="rocket" size="2x"/></div></Link>
+        	<Link to="/#/game"><div className="menu"><FontAwesome name="rocket" size="2x"/></div></Link>
         </header>
     );
 }
