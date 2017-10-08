@@ -24,12 +24,10 @@
 
 #coming_soon{
   background-color: rgba(0,0,0,0.6);
-  color: yellow;
   font-size: 2rem;
   border: 1px solid yellow;
   border-radius: 5rem;
   position: fixed;
-  top: 40%;
   padding: 3rem 3rem 3rem 3rem;
 }
 
