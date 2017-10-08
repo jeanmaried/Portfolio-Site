@@ -46,6 +46,9 @@ footer{
 body{
   background-image: url("../assets/milky.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 100vh;
   position: relative;

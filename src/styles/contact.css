@@ -5,6 +5,8 @@
   margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
   left: 0;
   right: 0;
+  top: 0;
+  bottom: 0;
   top: 30%;
   -webkit-animation: floater 5s infinite ease-in-out;
           animation: floater 5s infinite ease-in-out;
@@ -19,7 +21,7 @@
   background-position: center;
   background-size: cover;
   border-radius: 10rem;
-  padding: 4rem 5.5rem 4rem 5.5rem;
+  padding: 3.5rem 5rem 3.5rem 5rem;
 }
 
 .contact div span{
@@ -33,7 +35,7 @@
 }
 
 @keyframes floater{
-  0%{top: 20%;}
-  50%{top: 23%;}
-  100%{ top: 20%; }
+  0%{top: 19%;}
+  50%{top: 22%;}
+  100%{ top: 19%; }
 }
