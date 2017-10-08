@@ -61,11 +61,13 @@ class Rocket extends Component {
     return (
       <div id="pane">
       <Layout>
+        <div className="flex justify-center">
           {/* <div id="alien_station" className="flex direction-row"></div> */}
-          <div className="start flex justify-center">
-            <div id="coming_soon" className="flex justify-center yellow">COMING SOON</div>
+          <div className="start flex justify-center yellow">
+            <div id="coming_soon">COMING SOON</div>
           {/* <input id="launch_button" className="flex justify-center" type="submit" value="LAUNCH" onClick={this.handleClick}/> */}
           </div>
+        </div>
         </Layout>
         </div>
     );
