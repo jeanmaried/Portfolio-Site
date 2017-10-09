@@ -36,8 +36,22 @@
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: black;
-  border: 2px solid yellow;
   border-radius: 3rem;
+}
+
+@media screen and (max-width: 375px){
+  .project{
+    padding: 2rem;
+    margin: 3%;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .stretch{
+    display: flex;
+    margin: 0 .2rem 0rem .2rem;
+    justify-content: space-between;
+  }
 }
 
 .project_links{

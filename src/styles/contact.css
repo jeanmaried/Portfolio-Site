@@ -13,7 +13,6 @@
 
 .moon{
   background-color: black;
-  border: 2px solid yellow;
   color: yellow;
   background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url('../assets/moon.png');
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url('../assets/moon.png');
@@ -37,4 +36,10 @@
   0%{top: 19%;}
   50%{top: 22%;}
   100%{ top: 19%; }
+}
+
+@media screen and (max-width: 320px){
+  .moon{
+    padding: 2rem 3.5rem 2rem 3.5rem;
+  }
 }

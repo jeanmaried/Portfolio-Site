@@ -11,7 +11,7 @@ const ProjectList = ({item}) => (
         <h1 className="yellow">{item.title}</h1>
       </div>
       <div className="overlay">
-        <div className="project_links">
+        <div className="project_links stretch">
           <a target="_blank" href={item.site_link}><FontAwesome name="mouse-pointer" size="2x"/></a>
           <a target="_blank" href={item.git_link}><FontAwesome name="github" size="2x"/></a>
         </div>
