@@ -14,12 +14,9 @@
 
 .start{
   position: fixed;
-  margin: 5% auto;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
-  top: 30%;
+  bottom: 40%;
 }
 
 #coming_soon{
@@ -27,8 +24,7 @@
   font-size: 2rem;
   border: 1px solid yellow;
   border-radius: 5rem;
-  position: fixed;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 3rem;
 }
 
 #launch_button[value="LAUNCH"]{
