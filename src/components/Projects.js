@@ -14,7 +14,7 @@ class Projects extends Component {
     {id: "shopping_cart", title: "Shopping Cart", site_link: "#", git_link:"https://github.com/jeanmaried/ES6-shopping-cart", description:"Shopping cart built from the ground up in ES6 with API call"},
     {id: "alien-encounter", title: "Alien Encounter", site_link: "#", git_link:"https://github.com/jeanmaried/React-alien-encounter-reporting-app", description:"React.js app to update API using axios"},
     {id: "nyt", title: "News App", site_link: "#", git_link:"https://github.com/jeanmaried/News-app", description:"News app that makes API call to New York Times with Vanilla JavaScript"},
-    {id: "tooth_fairy", title: "GTA Tooth Fairy", site_link: "#", git_link:"https://github.com/jeanmaried/tooth_fairy_wordpress_site", description:'Developed WordPress theme as part of a team for "GTA Tooth Fairy"'},
+    {id: "tooth_fairy", title: "GTA Tooth Fairy", site_link: "http://www.gtatoothfairy.com/myblog/", git_link:"https://github.com/jeanmaried/tooth_fairy_wordpress_site", description:'Developed WordPress theme as part of a team for "GTA Tooth Fairy"'},
   ]
     return (
         <Layout>

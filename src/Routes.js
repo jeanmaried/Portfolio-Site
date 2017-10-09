@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-import {BrowserRouter, HashRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Launch from './components/Launch';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import Header from './page/Header';
-import Footer from './page/Footer';
 
 const NotFound = () => <h1>Not Found</h1>
 
