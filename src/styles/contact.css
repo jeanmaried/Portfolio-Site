@@ -13,7 +13,7 @@
 
 .moon{
   background-color: black;
-  border: 1px solid yellow;
+  border: 2px solid yellow;
   color: yellow;
   background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url('../assets/moon.png');
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url('../assets/moon.png');

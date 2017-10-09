@@ -22,7 +22,7 @@
 #coming_soon{
   background-color: rgba(0,0,0,0.6);
   font-size: 2rem;
-  border: 1px solid yellow;
+  border: 2px solid yellow;
   border-radius: 5rem;
   padding: 3rem;
 }
