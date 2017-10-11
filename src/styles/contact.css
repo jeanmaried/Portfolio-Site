@@ -38,8 +38,8 @@
   100%{ top: 19%; }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 400px){
   .moon{
-    padding: 2rem 3.5rem 2rem 3.5rem;
+    padding: 2.5rem 4rem 2.5rem 4rem;
   }
 }
