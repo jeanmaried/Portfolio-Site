@@ -10,7 +10,7 @@ class Home extends Component {
     return (
       <Layout>
         <div className="flex justify-center">
-          <div className="contact flex align-items-center direction-column">
+          <div className="gravity flex align-items-center direction-column">
             <div className="earth text-align">
             <h1>WELCOME</h1>
             <h3 className="white">Feel free to explore!</h3>

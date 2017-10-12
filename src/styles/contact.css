@@ -27,16 +27,45 @@
 }
 
 @-webkit-keyframes floater{
-  0%{top: 20%;}
-  50%{top: 23%;}
-  100%{ top: 20%; }
+  0%{top: 28%;}
+  50%{top: 25%;}
+  100%{ top: 28%; }
 }
 
 @keyframes floater{
-  0%{top: 19%;}
-  50%{top: 22%;}
-  100%{ top: 19%; }
+  0%{top: 28%;}
+  50%{top: 25%;}
+  100%{ top: 28%; }
 }
+@media screen and (min-height: 1200px){
+
+  @-webkit-keyframes floater{
+    0%{top: 28%;}
+    50%{top: 25%;}
+    100%{ top: 28%; }
+  }
+
+  @keyframes floater{
+    0%{top: 35%;}
+    50%{top: 32%;}
+    100%{ top: 35%; }
+  }
+}
+
+@media screen and (min-height: 1000px){
+  
+    @-webkit-keyframes floater{
+      0%{top: 28%;}
+      50%{top: 25%;}
+      100%{ top: 28%; }
+    }
+  
+    @keyframes floater{
+      0%{top: 35%;}
+      50%{top: 32%;}
+      100%{ top: 35%; }
+    }
+  }
 
 @media screen and (max-width: 400px){
   .moon{
