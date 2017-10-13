@@ -12,8 +12,7 @@ class Home extends Component {
         <div className="flex justify-center">
           <div className="gravity flex align-items-center direction-column">
             <div className="earth text-align">
-            <h1>WELCOME</h1>
-            <h3 className="white">Feel free to explore!</h3>
+            <h1 className="visibility">WELCOME</h1>
             </div>
           </div>
         </div>

@@ -46,10 +46,11 @@
 
 .skills div{
   margin: .2rem;
+  padding: .2rem;
 }
 
-.skills div{
-  padding: .2rem;
+i{
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 600px){
