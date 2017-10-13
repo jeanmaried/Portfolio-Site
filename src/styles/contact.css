@@ -43,6 +43,21 @@
   50%{top: 22%;}
   100%{ top: 25%; }
 }
+
+@media screen and (min-height: 525px){
+  @-webkit-keyframes floater{
+    0%{top: 30%;}
+    50%{top: 27%;}
+    100%{ top: 30%; }
+  }
+  
+  @keyframes floater{
+    0%{top: 30%;}
+    50%{top: 27%;}
+    100%{ top: 30%; }
+  }
+}
+
 @media screen and (min-height: 1200px){
 
   @-webkit-keyframes floater{
