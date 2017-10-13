@@ -24,8 +24,9 @@
 .visibility2{
   background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
-  padding: 0 .5rem .5rem .5rem;
+  padding: .1rem .5rem .5rem .5rem;
   border-radius: 1.5rem;
+  line-height: 100%;
 }
 
 .contact div span{
@@ -90,6 +91,6 @@
 
 @media screen and (max-width: 400px){
   .moon{
-    padding: .4rem 2rem 1.5rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 }
