@@ -33,15 +33,15 @@
 }
 
 @-webkit-keyframes floater{
-  0%{top: 28%;}
-  50%{top: 25%;}
-  100%{ top: 28%; }
+  0%{top: 25%;}
+  50%{top: 22%;}
+  100%{ top: 25%; }
 }
 
 @keyframes floater{
-  0%{top: 28%;}
-  50%{top: 25%;}
-  100%{ top: 28%; }
+  0%{top: 25%;}
+  50%{top: 22%;}
+  100%{ top: 25%; }
 }
 @media screen and (min-height: 1200px){
 
@@ -75,6 +75,6 @@
 
 @media screen and (max-width: 400px){
   .moon{
-    padding: 3rem 4rem 3rem 4rem;
+    padding: 2rem 3rem 2rem 3rem;
   }
 }
