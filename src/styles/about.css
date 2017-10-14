@@ -47,6 +47,10 @@
   margin: 0px;
 }
 
+.title_para_space{
+  padding-bottom: .5rem;
+}
+
 @media screen and (min-width: 375px){
   #myface{
     margin-top: .5rem;

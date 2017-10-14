@@ -13,7 +13,7 @@ class About extends Component {
               <div className="about_me">
                 <div className="yellow">
                   <div id="myface"></div>
-                  <div className="text-end">
+                  <div className="text-end title_para_space">
                     <h1>Joseph Dalmasso</h1>
                       <p><em>Full-Stack Developer</em></p>
                       <p><em>Toronto, ON</em></p>
