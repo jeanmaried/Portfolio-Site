@@ -1,12 +1,11 @@
 /*contact page===============================*/
 
 .gravity{
-  position: fixed;
+    position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  top: 30%;
   -webkit-animation: floating 5s infinite ease-in-out;
           animation: floating 5s infinite ease-in-out;
 }
@@ -22,7 +21,7 @@ h1{
   background-position: center;
   background-size: cover;
   border-radius: 10rem;
-  padding: 5.5rem 3.2rem 5.5rem 3.2rem;
+  padding: 5.5rem 3rem 5.5rem 3rem;
 }
 
 .visibility{
