@@ -12,7 +12,14 @@ class About extends Component {
             <div className="laptop white">
               <div className="about_me">
                 <div className="yellow">
-                  <div id="myface"></div>
+                  <div className="flex justify-between align-items-center">
+                    <div id="myface"></div>
+                    <div  className="text-align white">
+                      <div>&uarr;</div>
+                      <div>SCROLL</div>
+                      <div>&darr;</div>
+                    </div>
+                  </div>
                   <div className="text-end title_para_space">
                     <h1>Joseph Dalmasso</h1>
                       <p><em>Full-Stack Developer</em></p>

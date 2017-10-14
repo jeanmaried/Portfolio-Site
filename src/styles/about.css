@@ -1,4 +1,12 @@
 /*home====================================*/
+.skills div{
+  margin: .2rem;
+  padding: .2rem;
+}
+
+i{
+  font-size: 2rem;
+}
 
 #myface{
   background: url(../assets/myface.jpg);
@@ -102,13 +110,4 @@
   .laptop{
     top: 27%;
   }
-}
-
-.skills div{
-  margin: .2rem;
-  padding: .2rem;
-}
-
-i{
-  font-size: 2rem;
 }
