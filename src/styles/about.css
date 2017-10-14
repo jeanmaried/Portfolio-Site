@@ -4,20 +4,12 @@
   background: url(../assets/myface.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
-  padding: 3rem;
-  border-radius: 5rem;
+  background-position: 100%;
+  border-radius: 1rem;
+  margin-top: .5rem;
   border: 2px solid yellow;
-  width: 3rem;
-  height: 3rem;
-}
-
-@media screen and (max-width: 550px){
-  #myface{
-    border-radius: 5rem;
-    width: 1.6rem;
-    height: 1rem;
-  }
+  width: 6.5rem;
+  height: 5rem;
 }
 
 #menu{
@@ -27,21 +19,80 @@
   width: 100%;
 }
 
-.menu_box{
-  width: 70%;
-  max-width: 30rem;
-  padding: 2rem;
-  background-color: black;
-  border: 2px solid yellow;
-  border-radius: 3rem;
-  background-color: rgba(0,0,0,0.6);
-  
+.laptop{
+  background: url(../assets/mac.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: fixed;
+  top: 25%;
+  height: 30rem;
+  width: 24rem;
 }
 
-#button{
-	background-color: grey;
-	padding: .5rem;
-	width: 40%;
+.about_me{
+  position: absolute;
+  left: 3.1rem;
+  top: .5rem;
+  border-radius: .5rem;
+  background: rgb(22, 22, 22);
+  padding: 0rem 1rem 2rem 1rem;
+  line-height: 160%;
+  height: 8.5rem;
+  width: 15.8rem;
+  overflow: auto;
+}
+
+@media screen and (min-width: 375px){
+  #myface{
+    margin-top: .5rem;
+    width: 6.5rem;
+    height: 5rem;
+  }
+  
+  .laptop{
+    top: 26.5%;
+    height: 35rem;
+    width: 29rem;
+  }
+  
+  .about_me{
+    left: 4rem;
+    top: .7rem;
+    height: 10.5rem;
+    width: 19rem;
+  }
+}
+
+@media screen and (min-width: 600px){
+  #myface{
+    margin-top: .5rem;
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  
+  .laptop{
+    height: 45rem;
+    width: 39rem;
+  }
+  
+  .about_me{
+    left: 5rem;
+    top: .9rem;
+    height: 15rem;
+    width: 27rem;
+  }
+}
+
+@media screen and (min-height:650px){
+  .laptop{
+    top: 19%;
+  }
+}
+
+@media screen and (min-height: 900px){
+  .laptop{
+    top: 27%;
+  }
 }
 
 .skills div{
@@ -51,10 +102,4 @@
 
 i{
   font-size: 2rem;
-}
-
-@media screen and (max-width: 600px){
-  .menu_box{
-    overflow: auto;
-  }
 }
