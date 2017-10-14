@@ -6,8 +6,8 @@
   right: 0;
   top: 0;
   bottom: 0;
-  -webkit-animation: floating 5s infinite ease-in-out;
-          animation: floating 5s infinite ease-in-out;
+  -webkit-animation: floating 3s infinite ease-in-out;
+          animation: floating 3s infinite ease-in-out;
 }
 
 h1{

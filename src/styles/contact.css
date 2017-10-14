@@ -7,8 +7,8 @@
   top: 0;
   bottom: 0;
   top: 30%;
-  -webkit-animation: floater 5s infinite ease-in-out;
-          animation: floater 5s infinite ease-in-out;
+  -webkit-animation: floater 3s infinite ease-in-out;
+          animation: floater 3s infinite ease-in-out;
 }
 
 .moon{
