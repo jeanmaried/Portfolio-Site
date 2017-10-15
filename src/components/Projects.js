@@ -9,12 +9,12 @@ import '../styles/flex.css';
 class Projects extends Component {
   render() {
   let project_object = [
+    {id: "shopping_cart", title: "Shopping Cart", site_link: "https://jeanmaried.github.io/ES6-shopping-cart/", git_link:"https://github.com/jeanmaried/ES6-shopping-cart", description:"Shopping cart built ground up in ES6 with API call to Best Buy"},
+    {id: "tooth_fairy", title: "GTA Tooth Fairy", site_link: "http://www.gtatoothfairy.com/myblog/", git_link:"https://github.com/jeanmaried/tooth_fairy_wordpress_site", description:'Developed WordPress theme as part of a team for "GTA Tooth Fairy"'},
     {id: "aloha", title: "Aloha", site_link: "https://jeanmaried.github.io/Aloha_shopping_page/", git_link:"https://github.com/jeanmaried/Aloha_shopping_page", description:"Responsive shopping website landing page making use of Sass and Gulp"},
     // {id: "inhabitent", title: "Inhabitent", site_link: "#", git_link:"https://github.com/jeanmaried/inhabitent_camping_site", description:"Developed WordPress theme with PHP for blog/shop"},
-    {id: "shopping_cart", title: "Shopping Cart", site_link: "https://jeanmaried.github.io/ES6-shopping-cart/", git_link:"https://github.com/jeanmaried/ES6-shopping-cart", description:"Shopping cart built from the ground up in ES6 with API call"},
     // {id: "alien-encounter", title: "Alien Encounter", site_link: "#", git_link:"https://github.com/jeanmaried/React-alien-encounter-reporting-app", description:"React.js app to update API using axios"},
     // {id: "nyt", title: "News App", site_link: "#", git_link:"https://github.com/jeanmaried/News-app", description:"News app that makes API call to New York Times with Vanilla JavaScript"},
-    {id: "tooth_fairy", title: "GTA Tooth Fairy", site_link: "http://www.gtatoothfairy.com/myblog/", git_link:"https://github.com/jeanmaried/tooth_fairy_wordpress_site", description:'Developed WordPress theme as part of a team for "GTA Tooth Fairy"'},
   ]
     return (
         <Layout>
