@@ -12,7 +12,7 @@ const ProjectList = ({item}) => (
       </div>
       <div className="overlay">
         <div className="project_links stretch">
-          {/* <a target="_blank" href={item.site_link}><FontAwesome name="mouse-pointer" size="2x"/></a> */}
+          <a target="_blank" href={item.site_link}><FontAwesome name="mouse-pointer" size="2x"/></a>
           <a target="_blank" href={item.git_link}><FontAwesome name="github" size="2x"/></a>
         </div>
         <p className="text">{item.description}</p>
