@@ -30,8 +30,9 @@ class About extends Component {
                 <div>
                   <p>After 3 years in sales I quit my job, moved to a new country, and did a lot of 
                   soul searching before realizing my true calling was Web Development. Finally a career that allows me to apply my creativity and logic!</p>
-                  <p>When I'm not coding, you can find me dancing like a fool, reading or 
+                  <p>When I'm not coding, you can find me dancing like a fool, listening to music or 
                   meditating.</p>
+                  <p><em>What we think, we become!</em></p>
                 </div>
 
                   <div className="skills flex direction-row justify-center flex-wrap">
@@ -45,6 +46,11 @@ class About extends Component {
                     <div><i className="devicon-github-plain"></i></div>
                     <div><i className="devicon-gulp-plain"></i></div>
                     <div><i className="devicon-react-plain"></i></div>
+                    <div><i className="devicon-mongodb-plain"></i></div>
+                    <div><i className="devicon-nodejs-plain"></i></div>
+                    <div><i className="devicon-express-original"></i></div>
+                    <div><i className="devicon-postgresql-plain"></i></div>
+                    <div><i className="devicon-meteor-plain"></i></div>
                   </div>
               </div>
             </div>
