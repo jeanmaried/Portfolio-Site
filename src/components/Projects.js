@@ -14,7 +14,7 @@ class Projects extends Component {
     {id: "aloha", title: "Aloha", site_link: "https://jeanmaried.github.io/Aloha_shopping_page/", git_link:"https://github.com/jeanmaried/Aloha_shopping_page", description:"Responsive shopping website landing page making use of Sass and Gulp"},
     // {id: "inhabitent", title: "Inhabitent", site_link: "#", git_link:"https://github.com/jeanmaried/inhabitent_camping_site", description:"Developed WordPress theme with PHP for blog/shop"},
     // {id: "alien-encounter", title: "Alien Encounter", site_link: "#", git_link:"https://github.com/jeanmaried/React-alien-encounter-reporting-app", description:"React.js app to update API using axios"},
-    // {id: "nyt", title: "News App", site_link: "#", git_link:"https://github.com/jeanmaried/News-app", description:"News app that makes API call to New York Times with Vanilla JavaScript"},
+    {id: "nyt", title: "News App", site_link: "https://jeanmaried.github.io/News-app/", git_link:"https://github.com/jeanmaried/News-app", description:"News app that makes API call to New York Times with Vanilla JavaScript"},
   ]
     return (
         <Layout>
