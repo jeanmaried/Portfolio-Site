@@ -5,11 +5,13 @@
   bottom: 5.5rem;
   width: 100%;
   max-height: 100vh;
-  overflow: auto;
+
 }
 
-.projects div{
+.projects ul{
   max-width: 70rem;
+  width: 80%;
+  overflow: auto;
 }
 
 .project{

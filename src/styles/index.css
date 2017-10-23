@@ -36,7 +36,9 @@ footer{
   text-align: end;
 }
 .menu{
-  background-color: rgba(0,0,0,0.5);
+  /* background: url("../assets/mars.png"); */
+  background-size: contain; 
+  /* background-color: rgba(0,0,0,0.5); */
   border-radius: 100%;
   padding: 1rem;
   margin: 1rem;
@@ -48,15 +50,23 @@ footer{
 }
 
 body{
-  background-image: url("../assets/milky.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
+  background-image: url("../assets/dark_space.jpg");
+  background-repeat: repeat-x;
+  /* background-repeat: no-repeat; */
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
+  background-size: cover; */
+  background-position: 0px 0px;
+  width: 100%;
   position: relative;
   overflow: hidden;
+  animation: animatedBackground 100s linear infinite;
+}
+
+@-webkit-keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: -2336px 0; }
 }
 
 /*typography*/
