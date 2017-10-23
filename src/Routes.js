@@ -4,8 +4,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-
-const NotFound = () => <h1>Not Found</h1>
+import NotFound from './components/NotFound';
 
 class Routes extends Component {
 
