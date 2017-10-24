@@ -59,10 +59,16 @@ body{
   min-height: 100%;
   position: relative;
   overflow: hidden;
-  animation: animatedBackground 100s linear infinite;
+  -webkit-animation: animatedBackground 100s linear infinite;
+          animation: animatedBackground 100s linear infinite;
 }
 
 @-webkit-keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: -2336px 0; }
+}
+
+@keyframes animatedBackground {
   from { background-position: 0 0; }
   to { background-position: -2336px 0; }
 }
