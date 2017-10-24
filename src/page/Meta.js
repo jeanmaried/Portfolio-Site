@@ -6,7 +6,7 @@ class Meta extends Component {
     const meta = {
       title: 'JoDalmasso',
       description: 'Improving SEO',
-      canonical: 'http://example.com/path/to/page',
+      canonical: 'http://www.jodalmasso.com',
       meta: {
         charset: 'utf-8',
         name: {
