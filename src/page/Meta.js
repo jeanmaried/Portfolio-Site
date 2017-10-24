@@ -4,8 +4,8 @@ import DocumentMeta from 'react-document-meta';
 class Meta extends Component {
   render() {
     const meta = {
-      title: 'Some Meta Title',
-      description: 'I am a description, and I can create multiple tags',
+      title: 'JoDalmasso',
+      description: 'Improving SEO',
       canonical: 'http://example.com/path/to/page',
       meta: {
         charset: 'utf-8',
