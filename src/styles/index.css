@@ -55,9 +55,9 @@ footer{
 body{
   background-image: url("../assets/dark_space.jpg");
   background-repeat: repeat-x;
-  background-position: center;
-  /* width: 100vw;
-  height: 100vh; */
+  background-position: cover;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   animation: animatedBackground 100s linear infinite;
