@@ -2,10 +2,8 @@
 
 .gravity{
   position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  top: 50%;
+  left: 50%;
   -webkit-animation: floating 3s infinite ease-in-out;
           animation: floating 3s infinite ease-in-out;
 }
@@ -20,8 +18,11 @@ h1{
   background: url('../assets/earth.png');
   background-position: center;
   background-size: cover;
-  border-radius: 10rem;
-  padding: 5.6rem 3rem 5.6rem 3rem;
+  border-radius: 100%;
+  margin-top: -7.5rem;
+  margin-left: -7.5rem;
+  height: 15rem;
+  width: 15rem;
 }
 
 .visibility{
@@ -36,63 +37,13 @@ h1{
 }
 
 @-webkit-keyframes floating{
-  0%{top: 25%;}
-  50%{top: 22%;}
-  100%{ top: 25%; }
+  0%{top: 48.5%;}
+  50%{top: 51.5%;}
+  100%{ top: 48.5%; }
 }
 
 @keyframes floating{
-  0%{top: 25%;}
-  50%{top: 22%;}
-  100%{ top: 25%; }
-}
-
-@media screen and (min-height: 525px){
-  @-webkit-keyframes floating{
-    0%{top: 30%;}
-    50%{top: 27%;}
-    100%{ top: 30%; }
-  }
-  
-  @keyframes floating{
-    0%{top: 30%;}
-    50%{top: 27%;}
-    100%{ top: 30%; }
-  }
-}
-
-@media screen and (min-height: 1200px){
-
-  @-webkit-keyframes floating{
-    0%{top: 28%;}
-    50%{top: 25%;}
-    100%{ top: 28%; }
-  }
-
-  @keyframes floating{
-    0%{top: 35%;}
-    50%{top: 32%;}
-    100%{ top: 35%; }
-  }
-}
-
-@media screen and (min-height: 1000px){
-  
-    @-webkit-keyframes floating{
-      0%{top: 28%;}
-      50%{top: 25%;}
-      100%{ top: 28%; }
-    }
-  
-    @keyframes floating{
-      0%{top: 35%;}
-      50%{top: 32%;}
-      100%{ top: 35%; }
-    }
-  }
-
-@media screen and (max-width: 400px){
-  .earth{
-      padding: 4.2rem 1.3rem 4.2rem 1.3rem;
-  }
+  0%{top: 48.5%;}
+  50%{top: 51.5%;}
+  100%{ top: 48.5%; }
 }
