@@ -10,11 +10,13 @@ class Home extends Component {
     return (
       <Layout>
         <div className="flex justify-center">
-          <div className="gravity flex align-items-center direction-column">
-            <div className="earth text-align flex align-items-center justify-center">
-            <h1 className="visibility">WELCOME</h1>
+          <Link to="/about">
+            <div className="gravity flex align-items-center direction-column">
+              <div className="earth text-align flex align-items-center justify-center">
+              <h1 className="visibility">WELCOME</h1>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </Layout>
     );
