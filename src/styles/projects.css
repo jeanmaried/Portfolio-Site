@@ -22,12 +22,12 @@
   color: white;
   line-height: 200%;
   margin: 1rem;
-  padding: 2rem;
+  padding: 0 2rem 1rem 2rem;
   width: 70%;
 }
 
 .background{
-  padding: 40% 20% 40% 20%;
+  padding: 35% 10% 35% 10%;
   width: 80%;
   background-size: cover;
   background-position: center top;
