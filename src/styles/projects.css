@@ -9,120 +9,29 @@
 }
 
 .projects ul{
-  max-width: 70rem;
+  max-width: 60rem;
   width: 80%;
   overflow: auto;
 }
 
 .project{
-  background-color: rgba(0,0,0,0.9);
-  position: relative;
-  border: 2px solid yellow;
-  border-radius: 3rem;
-  color: white;
-  padding: 2rem;
-  margin: 3%;
-  width: 15rem;
-  height: 15rem;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
   background-color: black;
+  position: relative;
   border-radius: 3rem;
-}
-
-@media screen and (max-width: 375px){
-  .project{
-    padding: 2rem;
-    margin: 3%;
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .stretch{
-    display: flex;
-    margin: 0 .2rem 0rem .2rem;
-    justify-content: space-between;
-  }
-}
-
-.project_links{
-  margin-top: 4.5rem;
-}
-
-.project_links a{
-  margin: .8rem;
-}
-
-.text {
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  line-height: 200%;
+  margin: 1rem;
+  width: 20rem;
+  height: 30rem;
 }
 
-.project:hover .overlay {
-  opacity: .7;
-}
-
-
-.title_space{
-  margin-top: -10%;
-}
-
-#aloha{
-  background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url(../assets/aloha.png);
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url(../assets/aloha.png);
+.background{
+  padding: 6.5rem;
+  margin-bottom: 2rem;
   background-size: cover;
-  background-position: center;
 }
 
-#nyt{
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url("../assets/NYT.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#alien-encounter{
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url("../assets/alien_encounter.png");
-  background-size: cover;
-  background-position: center;
-}
-
-#shopping_cart{
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url("../assets/shopping-cart.png");
-  background-size: cover;
-  background-position: center; 
-}
-
-#tooth_fairy{
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url("../assets/tooth-fairy.png");
-  background-size: cover;
-  background-position: center; 
-}
-
-#inhabitent{
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-  url("../assets/inhabitent.png");
-  background-size: cover;
-  background-position: center; 
+.project img{
+  width: 10rem;
+  height: 10rem;
 }

@@ -32,7 +32,7 @@ class About extends Component {
                   soul searching before realizing my true calling was Web Development. Finally a career that allows me to apply my creativity and logic!</p>
                   <p>When I'm not coding, you can find me dancing like a fool, listening to music or 
                   meditating.</p>
-                  <p><em>What we think, we become!</em></p>
+                  <p>Feel free to click around and see some of my work!</p>
                 </div>
 
                   <div className="skills flex direction-row justify-center flex-wrap">
