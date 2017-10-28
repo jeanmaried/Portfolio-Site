@@ -32,7 +32,6 @@ export default class Slider extends Component {
     axios.get('project-config.json')
     .then((res) => {
       this.setImageArray(res.data);
-      console.log(res.data)
     });
   }
 
@@ -94,12 +93,12 @@ export default class Slider extends Component {
       /* Previous & Next Slide Functionality */
       previousSlide() {
         let current = this.state.current;
-        let imageArray = this.state.project_info.length - 1;
+        let infoArray = this.state.project_info.length - 1;
     
         if(current >= 1)
           this.setState({ current: current - 1 })
         if(current === 0)
-          this.setState({ current: imageArray })
+          this.setState({ current: infoArray })
       }
     
       nextSlide() {

@@ -3,7 +3,7 @@ import FontAwesome from 'react-fontawesome';
 
 const LeftArrow = (props) => {
   return (
-    <div onClick={props.nextSlide} className="backArrow">
+    <div onClick={props.previousSlide} className="backArrow">
       <FontAwesome name="arrow-left" size="2x"/>
     </div>
   );

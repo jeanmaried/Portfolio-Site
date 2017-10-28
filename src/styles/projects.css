@@ -8,20 +8,35 @@
 
 }
 
+.project_links{
+  background: rgba(223, 3, 3, 0.8);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
 .project_links a{
+  padding: 0 1rem 0 1rem;
   cursor: pointer;
-  transition: all ease-in .2s;
+  transition: all ease-in .1s;
   color: #fff;
 }
 
+.square_for_padding{
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  /* transform: rotate(90deg); */
+}
+
 .project_links a:hover {
-  opacity: 0.5;
   transform: scale(1.4);
-  transition: all ease-in .2s;
+  transition: all ease-in .1s;
 }
 
 .background{
-  padding: 30% 40% 30% 40%;
+  padding: 20% 30% 20% 30%;
+  border: 5px solid rgb(63, 62, 62);
+  border-radius: 1rem;
   background-size: cover;
   background-position: center top;
 }
@@ -32,11 +47,16 @@
 
 .project_box{
   width: 70%;
-  max-width: 40rem;
+  max-width: 30rem;
+  /* background-color: rgba(110, 113, 114, 0.5); */
+  background:  rgba(192, 192, 192,0.6);
+  /* border: 2px solid yellow; */
+  border-radius: 1.5rem;
+  padding-bottom: 4rem;
 }
 
 .title{
-  min-height: 5rem;
+  min-height: 4rem;
 }
 
 /* slider */
@@ -49,7 +69,7 @@
 }
 
 .slide {
-  height: 84%;
+  height: 74%;
   width: 100%;
 }
 
@@ -79,14 +99,14 @@
   top: 50%;
   right: 5%;
   cursor: pointer;
-  transition: all ease-in .2s;
+  transition: all ease-in .1s;
   color: #fff;
 }
 
 .nextArrow:hover {
   opacity: 0.5;
   transform: scale(1.4);
-  transition: all ease-in .2s;
+  transition: all ease-in .1s;
 }
 
 
@@ -96,12 +116,12 @@
   left: 5%;
   cursor: pointer;
   color: #fff;
-  transition: all ease-in .2s;
+  transition: all ease-in .1s;
 }
 .backArrow:hover {
   opacity: 0.5;
   transform: scale(1.4);
-  transition: all ease-in .2s;
+  transition: all ease-in .1s;
 }
 
 /* .project{
