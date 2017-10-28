@@ -1,15 +1,15 @@
 /*projects=================================================*/
 .projects{
-  position: fixed;
+  /* position: fixed;
   top: 4rem;
-  bottom: 4rem;
-  width: 100%;
-  max-height: 100vh;
+  bottom: 4rem; */
+  /* width: 100%; */
+  /* max-height: 100vh; */
 
 }
 
 .project_links{
-  background: rgba(223, 3, 3, 0.8);
+  background: rgba(63, 62, 62, 0.9);
   border-radius: 2rem;
   padding: 1rem;
 }
@@ -48,11 +48,14 @@
 .project_box{
   width: 70%;
   max-width: 30rem;
+
+  height: 100%;
   /* background-color: rgba(110, 113, 114, 0.5); */
   background:  rgba(192, 192, 192,0.6);
   /* border: 2px solid yellow; */
   border-radius: 1.5rem;
   padding-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .title{
@@ -62,23 +65,22 @@
 /* slider */
 
 .slider {
-  height: 100%;
+  height: 84%; 
   width: 100%;
   /* background: #ddd; */
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
 }
 
 .slide {
-  height: 74%;
-  width: 100%;
 }
 
 .dotsContainer {
-  position: absolute;
-  bottom: 7%;
+  /* position: absolute;
+  bottom: 13%; */
   width: 100%;
   text-align: center;
-  z-index: 99999;
+  /* z-index: 99999; */
 }
 
 .dot {
