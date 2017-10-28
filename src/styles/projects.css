@@ -52,11 +52,11 @@
   background:  rgba(192, 192, 192,0.6);
   /* border: 2px solid yellow; */
   border-radius: 1.5rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2.5rem;
 }
 
 .title{
-  min-height: 4rem;
+  min-height: 2rem;
 }
 
 /* slider */
