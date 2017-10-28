@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
 import NotFound from './components/NotFound';
+import Layout from './page/Layout';
 
 class Routes extends Component {
 
@@ -12,6 +13,7 @@ class Routes extends Component {
     return(
     <HashRouter>
       <div>
+        <Layout>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/about" component={About}/>  
@@ -19,6 +21,7 @@ class Routes extends Component {
           <Route exact path="/projects" component={Projects}/>
           <Route component={NotFound} />
         </Switch>
+        </Layout>
       </div>
     </HashRouter>
       )

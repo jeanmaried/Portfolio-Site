@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Shopping Cart",
+        "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
+        "git_link":"https://github.com/jeanmaried/ES6-shopping-cart",
+        "picture": "./assets/shopping-cart.png",
+        "description":"Shopping cart built ground up in ES6 with API call to Best Buy"
+    },
+
+    {
+        "id": 2,
+        "title": "News App",
+        "site_link": "https://jeanmaried.github.io/News-app/",
+        "git_link":"https://github.com/jeanmaried/News-app",
+        "picture":"./assets/NYT.png",
+        "description":"New York Times news app. Using jQuery and ajax call"
+    },
+
+    {
+        "id": 3,
+        "title": "GTA Tooth Fairy",
+        "site_link": "http://www.gtatoothfairy.com",
+        "git_link":"https://github.com/jeanmaried/tooth_fairy_wordpress_site",
+        "picture":"./assets/tooth-fairy.png",
+        "description":"Developed WordPress theme as part of a team for \"GTA Tooth Fairy\""
+    },
+
+    {
+        "id": 4,
+        "title": "Aloha",
+        "site_link": "https://jeanmaried.github.io/Aloha_shopping_page/",
+        "git_link":"https://github.com/jeanmaried/Aloha_shopping_page",
+        "picture": "./assets/aloha.png",
+        "description":"Responsive shopping website landing page making use of Sass and Gulp"
+    }
+]

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import Layout from '../page/Layout';
 import FontAwesome from 'react-fontawesome';
-import ProjectList from './ProjectList';
+import ProjectSlides from './ProjectSlides';
 import '../styles/projects.css';
 import '../styles/flex.css';
 
@@ -11,29 +10,115 @@ import ShoppingCart from '../assets/shopping-cart.png';
 import NYT from '../assets/NYT.png';
 import ToothFairy from '../assets/tooth-fairy.png';
 
-class Projects extends Component {
-  render() {
-  let project_object = [
-    {id: "shopping_cart", title: "Shopping Cart", site_link: "https://jeanmaried.github.io/ES6-shopping-cart/", git_link:"https://github.com/jeanmaried/ES6-shopping-cart", picture: ShoppingCart, description:"Shopping cart built ground up in ES6 with API call to Best Buy"},
-    {id: "nyt", title: "News App", site_link: "https://jeanmaried.github.io/News-app/", git_link:"https://github.com/jeanmaried/News-app", picture:NYT, description:"New York Times news app. Using jQuery and ajax call"},
-    {id: "tooth_fairy", title: "GTA Tooth Fairy", site_link: "http://www.gtatoothfairy.com", git_link:"https://github.com/jeanmaried/tooth_fairy_wordpress_site", picture:ToothFairy, description:'Developed WordPress theme as part of a team for "GTA Tooth Fairy"'},
-    // {id: "inhabitent", title: "Inhabitent", site_link: "#", git_link:"https://github.com/jeanmaried/inhabitent_camping_site", description:"Developed WordPress theme with PHP for blog/shop"},
-    {id: "aloha", title: "Aloha", site_link: "https://jeanmaried.github.io/Aloha_shopping_page/", git_link:"https://github.com/jeanmaried/Aloha_shopping_page", picture: Aloha, description:"Responsive shopping website landing page making use of Sass and Gulp"},
-  ]
-    return (
-        <Layout>
-          <div className="projects flex align-items-center direction-column">
-              <ul className="flex flex-wrap justify-center text-align white">
-                {project_object.map((project, i) => <ProjectList item={project} key={project.id} />)}
-              </ul>
-          </div>
+import axios from 'axios';
+import RightArrow from './RightArrow';
+import LeftArrow from './LeftArrow';
+import Dots from './Dots';
 
-        </Layout>
-    );
+
+
+export default class Slider extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      project_info: [],
+      current: undefined,
+      ready: false
+    }
+
+    this.previousSlide = this.previousSlide.bind(this);
+    this.nextSlide = this.nextSlide.bind(this);
+    this.dotClick = this.dotClick.bind(this);
+    this.preloadNextImage = this.preloadNextImage.bind(this);
   }
-}
 
-export default Projects;
+  componentWillMount() {
+    axios.get('project-config.json')
+    .then((res) => {
+      this.setImageArray(res.data);
+      console.log(res.data)
+    });
+  }
+
+  setImageArray(infoArray) {
+    let newArray = [];
+    for(let i = 0; i < infoArray.length; i++) {
+      newArray.push(infoArray[i]);
+    }
+    this.setState({ project_info: newArray, current: 0, ready: true });
+  }
+
+  preloadNextImage() {
+    let current = this.state.current;
+    let project_info = this.state.project_info;
+
+    if( (current != undefined) && (current < project_info.length - 1) )
+      return (
+        <div style={{display: 'none', height:'100%', backgroundImage: `url(${(this.state.project_info[this.state.current + 1])}.jpg)`}}></div>
+      )
+    else
+      return null
+  }
+
+  render() {
+    
+        return (
+          <div className="slider flex align-items-center">
+            {/* The Current Image*/}
+            {
+              this.state.ready ?
+              <ProjectSlides
+                project_info={this.state.project_info}
+                current={this.state.current}
+                ready={this.state.ready}
+              />
+              : null
+            }
+    
+            {/* Arrows */}
+            <LeftArrow previousSlide={this.previousSlide} />
+            <RightArrow nextSlide={this.nextSlide} />
+            {/* Dots */}
+            <Dots
+              numberOfDots={this.state.project_info.length}
+              isCurrent={this.state.current}
+              dotClick={this.dotClick}
+             />
+    
+             {this.preloadNextImage()}
+          </div>
+        );
+      }
+    
+      /* Handle cLicking of dots */
+      dotClick(dotIndex) {
+        this.setState({ current: dotIndex })
+      }
+    
+      /* Previous & Next Slide Functionality */
+      previousSlide() {
+        let current = this.state.current;
+        let imageArray = this.state.project_info.length - 1;
+    
+        if(current >= 1)
+          this.setState({ current: current - 1 })
+        if(current === 0)
+          this.setState({ current: imageArray })
+      }
+    
+      nextSlide() {
+        let current = this.state.current;
+        let imageArray = this.state.project_info.length - 1;
+    
+        if((current >= 0) && (current !== imageArray))
+          this.setState({ current: current + 1 })
+        if(current === imageArray) {
+          this.setState({ current: 0 })
+        }
+      }
+    
+    }
 
 
 

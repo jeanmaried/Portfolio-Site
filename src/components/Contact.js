@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/flex.css';
-import Layout from '../page/Layout';
 import FontAwesome from 'react-fontawesome';
 import '../styles/contact.css'
 
 class Contact extends Component {
   render() {
     return (
-      <Layout>
         <div className="flex justify-center">
           <div className="contact flex align-items-center direction-column">
             <div className="moon text-align">
@@ -25,7 +23,6 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-      </Layout>
     );
   }
 }
