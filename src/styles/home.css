@@ -15,7 +15,7 @@ h1{
 .earth{
   background-color: black;
   color: yellow;
-  background: url('../assets/earth.png');
+  background: url('./assets/earth.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;

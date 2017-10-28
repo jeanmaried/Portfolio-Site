@@ -52,7 +52,7 @@ footer{
 }
 
 body{
-  background-image: url("../assets/dark_space.jpg");
+  background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat-x;
   background-size: cover;
   min-height: 100%;

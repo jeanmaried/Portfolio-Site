@@ -5,11 +5,6 @@ import ProjectSlides from './ProjectSlides';
 import '../styles/projects.css';
 import '../styles/flex.css';
 
-import Aloha from '../assets/aloha.png';
-import ShoppingCart from '../assets/shopping-cart.png';
-import NYT from '../assets/NYT.png';
-import ToothFairy from '../assets/tooth-fairy.png';
-
 import axios from 'axios';
 import RightArrow from './RightArrow';
 import LeftArrow from './LeftArrow';

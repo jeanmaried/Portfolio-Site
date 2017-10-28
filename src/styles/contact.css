@@ -11,7 +11,7 @@
 .moon{
   background-color: black;
   color: yellow;
-  background: url('../assets/moon.png');
+  background: url('./assets/moon.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;
