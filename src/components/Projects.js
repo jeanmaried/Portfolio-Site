@@ -60,6 +60,8 @@ export default class Slider extends Component {
         return (
           <div className="slider flex direction-column align-items-center">
             {/* The Current Image*/}
+            <div className="flex align-items-center">
+            <LeftArrow previousSlide={this.previousSlide} />
             {
               this.state.ready ?
               <ProjectSlides
@@ -69,10 +71,10 @@ export default class Slider extends Component {
               />
               : null
             }
+            <RightArrow nextSlide={this.nextSlide} />
+            </div>
     
             {/* Arrows */}
-            <LeftArrow previousSlide={this.previousSlide} />
-            <RightArrow nextSlide={this.nextSlide} />
             {/* Dots */}
             <Dots
               numberOfDots={this.state.project_info.length}
