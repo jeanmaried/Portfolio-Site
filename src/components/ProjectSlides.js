@@ -23,7 +23,7 @@ const ProjectSlides= (props) => {
 
       <div className="slide text-align flex align-items-center direction-column" id={current.id}>
         <div className="project_box">
-          <h1 className="title yellow">{current.title}</h1>
+          <h3 className="title yellow">{current.title}</h3>
           <div className="flex align-items-center direction-column">
             <div className="background" style={styles.imageBackground}></div>
             <p className="white">{current.description}</p>
