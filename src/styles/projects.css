@@ -52,15 +52,17 @@ h3{
 /* slider */
 
 .slider {
-  height: 80vh; 
+  /* height: 80vh;  */
   width: 100%;
   /* background: #ddd; */
-  /* position: absolute; */
+  position: absolute;
   /* position: fixed; */
+  top: 40vh;
+  margin-top: -20vh;
 }
 
 .slide {
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
 }
 
 .dotsContainer {
