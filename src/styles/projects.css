@@ -33,19 +33,20 @@ h3{
 }
 
 .project_box{
-  padding: 1rem;
+  padding: 15% .5rem 15% .5rem;
 
   height: 100%;
+  width: 100%;
   /* background-color: rgba(110, 113, 114, 0.5); */
-  background:  rgba(192, 192, 192,0.6);
+  /* background:  rgba(192, 192, 192,0.6); */
   /* border: 2px solid yellow; */
   border-radius: 1.5rem;
   /* padding-bottom: 2.5rem; */
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .title{
-  min-height: 2rem;
+  min-height: 1.5rem;
 }
 
 /* slider */
@@ -66,11 +67,11 @@ h3{
 }
 
 .dotsContainer {
-  /* position: absolute;
-  bottom: 13%; */
+  position: absolute;
+  bottom: 10vh;
   width: 100%;
   text-align: center;
-  /* z-index: 99999; */
+  z-index: 99999;
 }
 
 .dot {
@@ -90,6 +91,7 @@ h3{
   /* position: absolute;
   top: 50%;
   right: 5%; */
+  margin-left: 5%;
   color: #fff;
 }
 
@@ -98,6 +100,7 @@ h3{
   /* position: absolute;
   top: 50%;
   left: 5%; */
+  margin-right: 5%;
   color: #fff;
 }
 
