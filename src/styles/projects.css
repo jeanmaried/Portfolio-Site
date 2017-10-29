@@ -8,29 +8,20 @@
 
 }
 
+h3{
+  font-family: 'Russo One', sans-serif;
+}
+
 .project_links{
   background: rgba(63, 62, 62, 0.9);
   border-radius: 2rem;
-  padding: 1rem;
+  padding: .5rem;
+  width: 5rem;
 }
 
 .project_links a{
-  padding: 0 1rem 0 1rem;
-  cursor: pointer;
-  transition: all ease-in .1s;
   color: #fff;
-}
-
-.square_for_padding{
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 100%;
-  /* transform: rotate(90deg); */
-}
-
-.project_links a:hover {
-  transform: scale(1.4);
-  transition: all ease-in .1s;
+  font-size: 1.5rem;
 }
 
 .background{
@@ -39,10 +30,6 @@
   border-radius: 1rem;
   background-size: cover;
   background-position: center top;
-}
-
-.project_links{
-  width: 10rem;
 }
 
 .project_box{
@@ -65,14 +52,15 @@
 /* slider */
 
 .slider {
-  height: 84%; 
+  height: 80vh; 
   width: 100%;
   /* background: #ddd; */
   /* position: absolute; */
-  position: fixed;
+  /* position: fixed; */
 }
 
 .slide {
+  margin-top: 10vh;
 }
 
 .dotsContainer {
@@ -100,15 +88,7 @@
   position: absolute;
   top: 50%;
   right: 5%;
-  cursor: pointer;
-  transition: all ease-in .1s;
   color: #fff;
-}
-
-.nextArrow:hover {
-  opacity: 0.5;
-  transform: scale(1.4);
-  transition: all ease-in .1s;
 }
 
 
@@ -116,14 +96,36 @@
   position: absolute;
   top: 50%;
   left: 5%;
-  cursor: pointer;
   color: #fff;
-  transition: all ease-in .1s;
 }
-.backArrow:hover {
-  opacity: 0.5;
-  transform: scale(1.4);
-  transition: all ease-in .1s;
+
+@media screen and (min-width: 600px){
+  .backArrow:hover {
+    opacity: 0.5;
+    transform: scale(1.4);
+    transition: all ease-in .1s;
+  }
+  
+  .nextArrow:hover {
+    opacity: 0.5;
+    transform: scale(1.4);
+    transition: all ease-in .1s;
+  }
+
+  .project_links a, .nextArrow, .backArrow{
+    cursor: pointer;
+    transition: all ease-in .1s;
+  }
+
+  .project_links a:hover {
+    transform: scale(1.4);
+    transition: all ease-in .1s;
+  }
+
+  h3{
+    font-size: 2rem;
+  }
+  
 }
 
 /* .project{

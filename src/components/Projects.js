@@ -58,7 +58,7 @@ export default class Slider extends Component {
   render() {
     
         return (
-          <div className="slider">
+          <div className="slider flex direction-column align-items-center">
             {/* The Current Image*/}
             {
               this.state.ready ?

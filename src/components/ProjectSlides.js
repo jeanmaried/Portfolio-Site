@@ -28,8 +28,8 @@ const ProjectSlides= (props) => {
             <div className="background" style={styles.imageBackground}></div>
             <p className="white">{current.description}</p>
             <div className="project_links flex justify-around">
-              <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer" size="2x"/></a>
-              <a target="_blank" href={current.git_link}><FontAwesome name="github" size="2x"/></a>
+              <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer"/></a>
+              <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
             </div>
           </div>
         </div>
