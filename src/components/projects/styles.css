@@ -17,7 +17,8 @@ h3{
 }
 
 .background{
-  padding: 40% 35% 0 0;
+  padding: 40% 0 0 0;
+  width: 15rem;
   border: 5px solid rgb(63, 62, 62);
   border-radius: 1rem;
 }

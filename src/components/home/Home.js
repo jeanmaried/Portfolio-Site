@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
-import './home.css'
+import './styles.css'
 
 class Home extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import ProjectSlides from './ProjectSlides';
-import './projects.css';
+import './styles.css';
 import '../../flex.css';
 
 import axios from 'axios';

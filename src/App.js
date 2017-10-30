@@ -7,7 +7,7 @@ import Projects from './components/projects/Projects';
 import NotFound from './components/notfound/NotFound';
 import Layout from './components/layout';
 
-class Routes extends Component {
+class App extends Component {
 
   render(){
     return(
@@ -30,4 +30,4 @@ class Routes extends Component {
   }
 }
 
-export default Routes;
+export default App;
