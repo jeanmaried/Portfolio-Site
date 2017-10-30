@@ -24,7 +24,7 @@ const ProjectSlides= (props) => {
           <h3 className="title yellow">{current.title}</h3>
           <div className="flex align-items-center direction-column">
             <div className="background" style={styles.imageBackground}>
-              <div className="project_links flex justify-around">
+              <div className="project_links flex justify-around align-items-end">
                 <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer"/></a>
                 <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
               </div>
