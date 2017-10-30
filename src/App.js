@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import {HashRouter, Route, Switch} from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import NotFound from './components/NotFound';
-import Layout from './page/Layout';
+import Home from './components/home/Home';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Projects from './components/projects/Projects';
+import NotFound from './components/notfound/NotFound';
+import Layout from './components/layout';
 
 class Routes extends Component {
 

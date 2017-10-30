@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/flex.css';
+import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
 import './style.css';
 

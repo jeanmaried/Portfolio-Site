@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import ProjectSlides from './ProjectSlides';
-import '../styles/projects.css';
-import '../styles/flex.css';
+import './projects.css';
+import '../../flex.css';
 
 import axios from 'axios';
 import RightArrow from './RightArrow';

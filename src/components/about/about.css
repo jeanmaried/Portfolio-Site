@@ -9,7 +9,7 @@ i{
 }
 
 #myface{
-  background: url('./assets/myface.jpg');
+  background: url('../../assets/myface.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
@@ -28,7 +28,7 @@ i{
 }
 
 .laptop{
-  background: url('./assets/mac.png');
+  background: url('../../assets/mac.png');
   background-repeat: no-repeat;
   background-size: contain;
   position: fixed;

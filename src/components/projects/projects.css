@@ -6,6 +6,7 @@ h3{
 
 .project_links{
   background: rgba(63, 62, 62, 0.9);
+  border-top-left-radius: 1rem;
   padding: .3rem;
   width: 5rem;
 }

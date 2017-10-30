@@ -1,17 +1,21 @@
 /*contact page===============================*/
 
-.contact{
+.gravity{
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-animation: floater 3s infinite ease-in-out;
-          animation: floater 3s infinite ease-in-out;
+  -webkit-animation: floating 3s infinite ease-in-out;
+          animation: floating 3s infinite ease-in-out;
 }
 
-.moon{
+h1{
+  font-family: 'Russo One', sans-serif;
+}
+
+.earth{
   background-color: black;
   color: yellow;
-  background: url('./assets/moon.png');
+  background: url('../../assets/earth.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;
@@ -21,26 +25,24 @@
   width: 15rem;
 }
 
-.visibility2{
+.visibility{
   background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
-  margin-top: 1.2rem;
-  padding: 0 .5rem 1rem .5rem;
-  border-radius: 1.5rem;
-  display: inline-block;
+  padding: .7rem;
+  border-radius: 10rem;
 }
 
 .contact div span{
   margin: 0 .5rem 0 .5rem;
 }
 
-@-webkit-keyframes floater{
+@-webkit-keyframes floating{
   0%{top: 48.5%;}
   50%{top: 51.5%;}
   100%{ top: 48.5%; }
 }
 
-@keyframes floater{
+@keyframes floating{
   0%{top: 48.5%;}
   50%{top: 51.5%;}
   100%{ top: 48.5%; }

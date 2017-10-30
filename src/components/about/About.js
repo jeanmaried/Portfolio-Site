@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import '../styles/flex.css';
-import '../styles/about.css'
+import '../../flex.css';
+import './about.css'
 
 class About extends Component {
   render() {
