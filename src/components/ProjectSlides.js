@@ -8,16 +8,14 @@ import '../styles/projects.css'
 const ProjectSlides= (props) => {
 
   const current = props.project_info[props.current];
-  console.log(current)
 
   const styles = {
     imageBackground: {
       backgroundImage: `url(${current.picture})`,
       backgroundSize: 'cover',
-      backgroundPosition: 'center top'
+      backgroundPosition: 'center'
     }
   };
-  console.log(styles.imageBackground.backgroundImage)
 
   return (
 
@@ -31,7 +29,7 @@ const ProjectSlides= (props) => {
                 <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
               </div>
             </div>
-            <p className="white">{current.description}</p>
+            <p className="white description">{current.description}</p>
           </div>
         </div>
       </div>
