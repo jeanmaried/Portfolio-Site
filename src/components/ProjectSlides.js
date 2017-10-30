@@ -25,12 +25,13 @@ const ProjectSlides= (props) => {
         <div className="project_box">
           <h3 className="title yellow">{current.title}</h3>
           <div className="flex align-items-center direction-column">
-            <div className="background" style={styles.imageBackground}></div>
-            <p className="white">{current.description}</p>
-            <div className="project_links flex justify-around">
-              <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer"/></a>
-              <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
+            <div className="background" style={styles.imageBackground}>
+              <div className="project_links flex justify-around">
+                <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer"/></a>
+                <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
+              </div>
             </div>
+            <p className="white">{current.description}</p>
           </div>
         </div>
       </div>
