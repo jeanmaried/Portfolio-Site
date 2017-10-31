@@ -9,13 +9,11 @@ i{
 }
 
 #myface{
-  background: url('../../assets/myface.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
   border-radius: 1rem;
   margin-top: .5rem;
-  border: 2px solid yellow;
   width: 6.5rem;
   height: 5rem;
 }
@@ -42,7 +40,10 @@ i{
   left: 3.1rem;
   top: .4rem;
   border-radius: .5rem;
-  background: rgb(22, 22, 22);
+  /* background: rgb(122, 183, 233); */
+  /* background: url('../../assets/wormhole.jpg') center left 100%; */
+  background: url('../../assets/chillin.png') right;
+  background-size: 115%;
   padding: 0rem 1rem 2rem 1rem;
   line-height: 160%;
   height: 8.1rem;
@@ -50,14 +51,30 @@ i{
   overflow: auto;
 }
 
+.about_title{
+  padding: 2% 0 2% 0;
+}
+
 .about_me h1{
   padding-top: 5px;
   margin: 0px;
+  font-size: 1.6rem;
 }
 
-.title_para_space{
-  padding-bottom: .5rem;
+
+
+.title_view_container{
+  background: rgba(89, 84, 84, 0.7);
+  width: 52%;
+  border-radius: 1rem;
+  padding: 0rem .5rem;
+  margin-top: 1rem;
+  margin-right: -.6rem;
 }
+
+/* .view{
+  max-width: 13rem;
+} */
 
 @media screen and (min-width: 375px){
   #myface{
@@ -94,7 +111,7 @@ i{
   
   .about_me{
     left: 5rem;
-    top: .9rem;
+    top: .8rem;
     height: 15rem;
     width: 27rem;
   }
