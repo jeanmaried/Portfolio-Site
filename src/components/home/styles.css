@@ -10,6 +10,7 @@
 
 h1{
   font-family: 'Russo One', sans-serif;
+  text-shadow: 2px 2px #ab0606;
 }
 
 .earth{
@@ -26,10 +27,12 @@ h1{
 }
 
 .visibility{
-  background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+  /* background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)); */
   padding: .7rem;
+  text-shadow: 2px 2px #ab0606;
   border-radius: 10rem;
+  white-space: nowrap;
 }
 
 .contact div span{
