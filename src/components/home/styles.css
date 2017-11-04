@@ -6,6 +6,7 @@
   left: 50%;
   -webkit-animation: floating 3s infinite ease-in-out;
           animation: floating 3s infinite ease-in-out;
+  z-index: 1;
 }
 
 h1{
@@ -31,7 +32,7 @@ h1{
 
 }
 
-@media screen and (min-width: 400px){
+@media screen and (min-width: 450px){
   .visibility{
     text-shadow: 2px 2px #ab0606;
     white-space: nowrap;
@@ -58,23 +59,50 @@ h1{
 
 .rocket img{
   width: 4rem;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .animate {
   position: absolute;
   top: 45%;
-  animation: myOrbit 5s linear infinite;
+  -webkit-animation: myOrbit 10s linear infinite;
+          animation: myOrbit 10s linear infinite;
 }
 
-@keyframes myOrbit{
+@-webkit-keyframes myOrbit{
 	from {
-		transform: rotate(0deg)
+		-webkit-transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+		        transform: rotate(0deg)
 		           translate(-300%)
 		           rotate(-360deg);
 	}
 	to {
-		transform: rotate(360deg)
+		-webkit-transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+		        transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+	}
+}
+
+@keyframes myOrbit{
+	from {
+		-webkit-transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+		        transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+		        transform: rotate(360deg)
 		           translate(-300%) 
 		           rotate(-360deg);
 	}
