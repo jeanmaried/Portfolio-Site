@@ -11,10 +11,13 @@ class Home extends Component {
           <Link to="/about">
             <div className="gravity flex align-items-center direction-column">
               <div className="earth text-align flex align-items-center justify-center">
-              <h1 className="visibility">JEAN DALMASSO</h1>
+              <h1 className="visibility">JOSEPH JEAN DALMASSO</h1>
               </div>
             </div>
           </Link>
+          <div className="animate">
+              <div className="rocket"><img src={require("../../assets/red-rocket.png")} alt=""/></div>
+          </div>
         </div>
     );
   }

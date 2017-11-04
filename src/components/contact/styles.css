@@ -45,3 +45,29 @@
   50%{top: 51.5%;}
   100%{ top: 48.5%; }
 }
+
+/* ===ROCKET ANIMATION=== */
+
+.rocket img{
+  width: 4rem;
+  transform: rotate(45deg);
+}
+
+.animate {
+  position: absolute;
+  top: 45%;
+  animation: myOrbit 5s linear infinite;
+}
+
+@keyframes myOrbit{
+	from {
+		transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+	}
+}

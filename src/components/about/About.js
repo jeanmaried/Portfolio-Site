@@ -11,7 +11,7 @@ class About extends Component {
               <div className="about_me flex direction-column align-items-end">
               <div className="title_view_container">
                 <div className="about_title text-end title_space yellow">
-                  <h1>Jean Dalmasso</h1>
+                  <h1>Joseph Jean Dalmasso</h1>
                   <p><em>Full-Stack Developer</em></p>
                   <p><em>Toronto, ON</em></p>
                 </div>
