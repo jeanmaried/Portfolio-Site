@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 /*
   Dot is the child of Dots, and acts as a presentational component, as well as doubles as an event emitter.

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';

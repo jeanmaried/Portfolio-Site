@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
-import './styles.css'
+import './styles.css';
+
+import PropTypes from 'prop-types';
 
 
 const ProjectSlides= (props) => {
-
+  console.log(props);
   const current = props.project_info[props.current];
 
   const styles = {
@@ -18,7 +19,6 @@ const ProjectSlides= (props) => {
   };
 
   return (
-
       <div className="slide text-align flex align-items-center direction-column" id={current.id}>
         <div className="project_box">
           <h3 className="title yellow">{current.title}</h3>
@@ -36,6 +36,18 @@ const ProjectSlides= (props) => {
 
      
   )
+}
+
+ProjectSlides.propTypes = {
+  current: PropTypes.number.isRequired,
+  project_info: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    site_link: PropTypes.string.isRequired,
+    git_link: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  })),
+  ready: PropTypes.bool.isRequired
 }
 
 export default ProjectSlides;

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
 import './styles.css'
@@ -15,8 +14,8 @@ class Contact extends Component {
                 <p className="white">+1(647)467-3977</p>
                 <p className="white">me@jodalmasso.com</p>
                 <div className="flex justify-around white">
-                  <a href="https://www.linkedin.com/in/joseph-jean-dalmasso-1b5473141/" target="_blank"><FontAwesome name="linkedin" size="2x"/></a>
-                  <a href="https://github.com/jeanmaried" target="_blank"><FontAwesome name="github" size="2x"/></a>
+                  <a href="https://www.linkedin.com/in/joseph-jean-dalmasso-1b5473141/" target="_blank" rel="noopener noreferrer"><FontAwesome name="linkedin" size="2x"/></a>
+                  <a href="https://github.com/jeanmaried" target="_blank" rel="noopener noreferrer"><FontAwesome name="github" size="2x"/></a>
                   <a href="mailto:me@jodalmasso.com"><FontAwesome name="envelope" size="2x"/></a>
                 </div>
               </div>
