@@ -9,15 +9,10 @@
   z-index: 1;
 }
 
-h1{
-  font-family: 'Russo One', sans-serif;
-  text-shadow: 2px 2px #ab0606;
-}
-
 .earth{
   background-color: black;
   color: yellow;
-  background: url('../../assets/earth.png');
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../../assets/earth.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;
@@ -25,18 +20,6 @@ h1{
   margin-left: -7.5rem;
   height: 15rem;
   width: 15rem;
-}
-
-.visibility{
-  text-shadow: 2px 2px #ab0606;
-
-}
-
-@media screen and (min-width: 450px){
-  .visibility{
-    text-shadow: 2px 2px #ab0606;
-    white-space: nowrap;
-  }
 }
 
 .contact div span{
@@ -59,8 +42,8 @@ h1{
 
 .rocket img{
   width: 4rem;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(55deg);
+          transform: rotate(55deg);
 }
 
 .animate {

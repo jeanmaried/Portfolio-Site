@@ -48,13 +48,13 @@
 
 /* ===ROCKET ANIMATION=== */
 
-.rocket img{
+.rocket2 img{
   width: 4rem;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
 }
 
-.animate {
+.animate2 {
   position: absolute;
   top: 45%;
   -webkit-animation: myOrbit 10s linear infinite;

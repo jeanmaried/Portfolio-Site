@@ -9,13 +9,11 @@ class About extends Component {
             <div className="laptop">
               <div className="about_me flex direction-column align-items-end">
               <div className="title_view_container">
-                <div className="about_title text-end title_space yellow">
-                  <h1>Joseph Jean Dalmasso</h1>
-                  <p><em>Full-Stack Developer</em></p>
-                  <p><em>Toronto, ON</em></p>
-                </div>
+                  <h1 className="text-align">ABOUT ME</h1>
                 <div className="view white">
-                  <div className="text-end">
+                  <div>
+                    <p>Hello,</p>
+                    <p>My name is Joseph but everyone calls me by my middle name Jean. I am a Web Developer based in Toronto, ON.</p>
                     <p>After 3 years in sales I quit my job, moved to a new country, and did a lot of 
                     soul searching before realizing my true calling was Web Development. Finally a career that allows me to apply my creativity and logic!</p>
                     <p>When I'm not coding, you can find me dancing like a fool, listening to music or 

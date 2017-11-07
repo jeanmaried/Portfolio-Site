@@ -21,8 +21,8 @@ class Contact extends Component {
               </div>
             </div>
           </div>
-          <div className="animate">
-              <div className="rocket"><img src={require("../../assets/green-rocket.png")} alt=""/></div>
+          <div className="animate2">
+              <div className="rocket2"><img src={require("../../assets/green-rocket.png")} alt=""/></div>
           </div>
         </div>
     );

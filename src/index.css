@@ -18,6 +18,12 @@ body {
   position: relative;
 }
 
+h1, h2{
+  color: #e67e22;
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 2px 2px black;
+}
+
 li{
   list-style: none;
 }
@@ -42,7 +48,7 @@ a {
   margin: 1rem;
   min-width: 2rem;
 }
-@media screen and (min-width: 600px){
+/* @media screen and (min-width: 600px){
   .menu{
     cursor: pointer;
     transition: all ease-in .1s;
@@ -52,7 +58,7 @@ a {
     transform: scale(1.4);
     transition: all ease-in .1s;
   }
-}
+} */
 
 .menu span{
   color: yellow;
@@ -83,10 +89,6 @@ body{
 
 .white{
   color:white;
-}
-
-.yellow{
-  color: yellow;
 }
 
 .black{

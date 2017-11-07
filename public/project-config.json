@@ -29,8 +29,8 @@
     {
         "id": 4,
         "title": "Aloha",
-        "site_link": "https://jeanmaried.github.io/Aloha_shopping_page/",
-        "git_link":"https://github.com/jeanmaried/Aloha_shopping_page",
+        "site_link": "https://jeanmaried.github.io/Aloha-landing-page/",
+        "git_link":"https://github.com/jeanmaried/Aloha-landing-page",
         "picture": "./assets/aloha.png",
         "description":"Responsive shopping website landing page making use of Sass and Gulp"
     },
