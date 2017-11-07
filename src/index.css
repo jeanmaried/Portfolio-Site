@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 
-h1, h2{
+h1, h2, h3{
   color: #e67e22;
   font-family: 'Russo One', sans-serif;
   text-shadow: 2px 2px black;
@@ -93,6 +93,10 @@ body{
 
 .black{
   color: black;
+}
+
+.yellow{
+  color: yellow;
 }
 
 .line-height{
