@@ -9,10 +9,9 @@
   z-index: 1;
 }
 
-.earth{
+.mars{
   background-color: black;
-  color: yellow;
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../../assets/earth.png');
+  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('../../assets/mars.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;

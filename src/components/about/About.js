@@ -9,7 +9,7 @@ class About extends Component {
             <div className="laptop">
               <div className="about_me flex direction-column align-items-end">
               <div className="title_view_container">
-                  <h1 className="text-align">ABOUT ME</h1>
+                  <h1 className="text-align yellow">ABOUT ME</h1>
                 <div className="view white">
                   <div>
                     <p>Hello,</p>

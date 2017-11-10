@@ -10,7 +10,7 @@ class Contact extends Component {
           <div className="contact flex align-items-center direction-column">
             <div className="moon text-align">
               <div className="visibility2 flex align-items-center justify-center direction-column">
-                <h1>CONTACT</h1>
+                <h1 className="yellow">CONTACT</h1>
                 <p className="white">+1(647)467-3977</p>
                 <p className="white">me@jodalmasso.com</p>
                 <div className="flex justify-around white">
