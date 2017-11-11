@@ -8,9 +8,9 @@ class Contact extends Component {
     return (
         <div className="flex justify-center">
           <div className="contact flex align-items-center direction-column">
-            <div className="moon text-align">
+            <div className="earth text-align">
               <div className="visibility2 flex align-items-center justify-center direction-column">
-                <h1 className="yellow">CONTACT</h1>
+                <h1 className="yellow contact_title">CONTACT</h1>
                 <p className="white">
                   +1(647)467-3977<br/>
                   me@jodalmasso.com
@@ -24,7 +24,7 @@ class Contact extends Component {
             </div>
           </div>
           <div className="animate2">
-              <div className="rocket2"><img src={require("../../assets/moon.png")} alt=""/></div>
+              <div className="moon"><img src={require("../../assets/moon.png")} alt=""/></div>
           </div>
         </div>
     );

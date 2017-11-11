@@ -10,7 +10,7 @@ class Home extends Component {
           <Link to="/about">
             <div className="gravity flex align-items-center direction-column">
               <div className="mars text-align flex align-items-center justify-center">
-              <h1 className="yellow">JOSEPH JEAN DALMASSO</h1>
+              <h1 className="yellow name">JOSEPH JEAN DALMASSO</h1>
               </div>
             </div>
           </Link>

@@ -15,19 +15,14 @@
   background-position: center;
   background-size: cover;
   border-radius: 100%;
-  margin-top: -7.5rem;
-  margin-left: -7.5rem;
-  height: 15rem;
-  width: 15rem;
+  margin-top: -5rem;
+  margin-left: -5rem;
+  height: 10rem;
+  width: 10rem;
 }
 
-@media screen and (max-width: 420px){
-	/* .earth{
-		margin-top: -6rem;
-		margin-left: -6rem;
-		height: 12rem;
-		width: 12rem;
-	} */
+.name{
+	font-size: 1.4rem;
 }
 
 .contact div span{
@@ -49,14 +44,15 @@
 /* ===ROCKET ANIMATION=== */
 
 .rocket img{
-  width: 4rem;
+	width: 3.5rem;
+	margin: -.2rem;
   -webkit-transform: rotate(55deg);
           transform: rotate(55deg);
 }
 
 .animate {
   position: absolute;
-  top: 45%;
+  top: 47%;
   -webkit-animation: myOrbit 10s linear infinite;
           animation: myOrbit 10s linear infinite;
 }
@@ -96,5 +92,22 @@
 		        transform: rotate(360deg)
 		           translate(-300%) 
 		           rotate(-360deg);
+	}
+}
+
+@media screen and (min-width: 420px){
+	.mars{
+		margin-top: -7.5rem;
+		margin-left: -7.5rem;
+		height: 15rem;
+		width: 15rem;
+	}
+
+	.rocket img{
+		width: 4rem;
+	}
+
+	.name{
+		font-size: 2rem;
 	}
 }
