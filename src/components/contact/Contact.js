@@ -11,8 +11,10 @@ class Contact extends Component {
             <div className="moon text-align">
               <div className="visibility2 flex align-items-center justify-center direction-column">
                 <h1 className="yellow">CONTACT</h1>
-                <p className="white">+1(647)467-3977</p>
-                <p className="white">me@jodalmasso.com</p>
+                <p className="white">
+                  +1(647)467-3977<br/>
+                  me@jodalmasso.com
+                </p>
                 <div className="flex justify-around white">
                   <a href="https://www.linkedin.com/in/joseph-jean-dalmasso-1b5473141/" target="_blank" rel="noopener noreferrer"><FontAwesome name="linkedin" size="2x"/></a>
                   <a href="https://github.com/jeanmaried" target="_blank" rel="noopener noreferrer"><FontAwesome name="github" size="2x"/></a>
@@ -22,7 +24,7 @@ class Contact extends Component {
             </div>
           </div>
           <div className="animate2">
-              <div className="rocket2"><img src={require("../../assets/green-rocket.png")} alt=""/></div>
+              <div className="rocket2"><img src={require("../../assets/moon.png")} alt=""/></div>
           </div>
         </div>
     );

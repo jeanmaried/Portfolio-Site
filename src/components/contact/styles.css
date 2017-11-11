@@ -11,14 +11,14 @@
 .moon{
   background-color: black;
   color: yellow;
-  background: url('../../assets/moon.png');
+  background: url('../../assets/earth.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;
   margin-top: -7.5rem;
   margin-left: -7.5rem;
-  height: 15rem;
-  width: 15rem;
+  height: 14rem;
+  width: 14rem;
 }
 
 .visibility2{
@@ -26,7 +26,7 @@
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
   margin-top: 1.2rem;
   padding: 0 .5rem 1rem .5rem;
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   display: inline-block;
 }
 
@@ -50,6 +50,7 @@
 
 .rocket2 img{
   width: 4rem;
+  padding: .2rem;
   -webkit-transform: rotate(55deg);
     transform: rotate(55deg);
 }
@@ -57,8 +58,8 @@
 .animate2 {
   position: absolute;
   top: 45%;
-  -webkit-animation: myOrbit 10s linear infinite;
-          animation: myOrbit 10s linear infinite;
+  -webkit-animation: myOrbit 17s linear infinite;
+          animation: myOrbit 17s linear infinite;
 }
 
 @-webkit-keyframes myOrbit{
