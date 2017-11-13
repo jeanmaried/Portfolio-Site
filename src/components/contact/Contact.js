@@ -24,7 +24,7 @@ class Contact extends Component {
             </div>
           </div>
           <div className="animate2">
-              <div className="moon"><img src={require("../../assets/moon.png")} alt=""/></div>
+              <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>
           </div>
         </div>
     );

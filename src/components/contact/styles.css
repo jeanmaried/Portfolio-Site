@@ -51,7 +51,14 @@
 
 /* ===ROCKET ANIMATION=== */
 
+.moon{
+  background: -webkit-linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10));
+  background: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10));
+}
+
 .moon img{
+  position:relative;
+  z-index: -1;
   width: 3rem;
   padding: -.2rem;
   -webkit-transform: rotate(55deg);
