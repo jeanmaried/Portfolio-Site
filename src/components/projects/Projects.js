@@ -57,7 +57,7 @@ export default class Slider extends Component {
           <div className="flex align-items-center">
             <LeftArrow previousSlide={this.previousSlide} />
             {this.state.ready ?
-              <div className="inner_slide">
+              <div>
                 <ProjectSlides
                   project_info={this.state.project_info}
                   current={this.state.current}

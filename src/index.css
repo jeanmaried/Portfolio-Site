@@ -18,6 +18,10 @@ body {
   position: relative;
 }
 
+main {
+  height: 90vh;
+}
+
 h1, h2, h3{
   font-family: 'Russo One', sans-serif;
   text-shadow: 4px 4px black;
