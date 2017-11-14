@@ -52,7 +52,8 @@ export default class Slider extends Component {
   render() {
     return (
       <div className="flex justify-center">
-        <div className="slider flex direction-column justify-center align-items-center">
+        <div className="slider_holder flex direction-column justify-center align-items-center">
+          <div className="slider flex direction-column justify-center align-items-center">
           <div className="flex align-items-center">
             <LeftArrow previousSlide={this.previousSlide} />
             {this.state.ready ?
@@ -74,6 +75,7 @@ export default class Slider extends Component {
           </div>
 
             {this.preloadNextImage()}
+            </div>
         </div>
       </div>
     );

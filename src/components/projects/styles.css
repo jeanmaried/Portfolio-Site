@@ -14,6 +14,7 @@
 .background{
   height: 30vh;
   width: 70vw;
+  max-width: 35rem;
   border: 5px solid rgb(12, 11, 11);
   border-radius: 1rem;
 }
@@ -28,9 +29,13 @@
 }
 /* slider */
 
+.slider_holder{
+  height: 80vh;
+}
+
 .slider {
   background: rgba(128, 128, 128, 0.4);
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
   border-radius: 3rem;
 }
@@ -65,14 +70,22 @@
   color: #fff;
   position: absolute;
   top: 50vh;
-  right: 1vh;
+  right: 0;
+  padding: 1rem .7rem 1rem .3rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  background: rgb(12, 11, 11);
 }
 
 .backArrow {
   color: #fff;
   position: absolute;
   top: 50vh;
-  left: 1vh;
+  left: 0;
+  padding: 1rem .3rem 1rem .7rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: rgb(12, 11, 11);
 }
 
 @media screen and (min-width: 500px){
@@ -96,6 +109,10 @@
   .project_links a:hover {
     transform: scale(1.4);
     transition: all ease-in .1s;
+  }
+
+  .background{
+    height: 50vh;
   }
   
 }
