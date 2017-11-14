@@ -3,7 +3,7 @@
   border-top-left-radius: 1rem;
   padding: .3rem;
   width: 5rem;
-  margin-top: 10rem;
+  height: 2rem;
 }
 
 .project_links a{
@@ -12,7 +12,8 @@
 }
 
 .background{
-  width: 15rem;
+  height: 30vh;
+  width: 70vw;
   border: 5px solid rgb(12, 11, 11);
   border-radius: 1rem;
 }

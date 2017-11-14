@@ -20,9 +20,9 @@ const ProjectSlides= (props) => {
 
   return (
       <div className="slide text-align flex align-items-center direction-column" id={current.id}>
-          <h1 className="title yellow">{current.title}</h1>
+          <h2 className="title yellow">{current.title}</h2>
           <div className="flex align-items-center direction-column">
-            <div className="background flex justify-end" style={styles.imageBackground}>
+            <div className="background flex justify-end align-items-end" style={styles.imageBackground}>
               <div className="project_links flex justify-around">
                 <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer"/></a>
                 <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
