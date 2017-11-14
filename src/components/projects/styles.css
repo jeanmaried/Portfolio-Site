@@ -30,12 +30,11 @@
 /* slider */
 
 .slider_holder{
-  height: 80vh;
+  height: 90vh;
 }
 
 .slider {
   background: rgba(128, 128, 128, 0.4);
-  height: 70vh;
   width: 100vw;
   border-radius: 3rem;
 }
