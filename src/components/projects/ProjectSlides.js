@@ -20,8 +20,7 @@ const ProjectSlides= (props) => {
 
   return (
       <div className="slide text-align flex align-items-center direction-column" id={current.id}>
-        <div className="project_box">
-          <h3 className="title">{current.title}</h3>
+          <h1 className="title yellow">{current.title}</h1>
           <div className="flex align-items-center direction-column">
             <div className="background flex justify-end" style={styles.imageBackground}>
               <div className="project_links flex justify-around">
@@ -31,7 +30,6 @@ const ProjectSlides= (props) => {
             </div>
             <p className="white description">{current.description}</p>
           </div>
-        </div>
       </div>
 
      

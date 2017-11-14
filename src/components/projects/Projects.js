@@ -51,27 +51,30 @@ export default class Slider extends Component {
 
   render() {
     return (
-      <div className="slider flex direction-column align-items-center">
-        <div className="flex align-items-center">
-          <LeftArrow previousSlide={this.previousSlide} />
-          {this.state.ready ?
-            <ProjectSlides
-              project_info={this.state.project_info}
-              current={this.state.current}
-              ready={this.state.ready}
-            />
-            : null
-          }
-          <RightArrow nextSlide={this.nextSlide} />
+      <div className="flex justify-center">
+        <div className="slider flex direction-column justify-center align-items-center">
+          <div className="flex align-items-center">
+            <LeftArrow previousSlide={this.previousSlide} />
+            {this.state.ready ?
+              <div className="inner_slide">
+                <ProjectSlides
+                  project_info={this.state.project_info}
+                  current={this.state.current}
+                  ready={this.state.ready}
+                />
+                <Dots
+                  numberOfDots={this.state.project_info.length}
+                  isCurrent={this.state.current}
+                  dotClick={this.dotClick}
+                />
+              </div>
+              : null
+            }
+            <RightArrow nextSlide={this.nextSlide} />
+          </div>
+
+            {this.preloadNextImage()}
         </div>
-
-        <Dots
-          numberOfDots={this.state.project_info.length}
-          isCurrent={this.state.current}
-          dotClick={this.dotClick}
-          />
-
-          {this.preloadNextImage()}
       </div>
     );
   }

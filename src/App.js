@@ -6,6 +6,7 @@ import Contact from './components/contact/Contact';
 import Projects from './components/projects/Projects';
 import NotFound from './components/notfound/NotFound';
 import Layout from './components/layout';
+import Float from './components/floating';
 
 class App extends Component {
 
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact path="/about" component={About}/>  
               <Route exact path="/contact" component={Contact}/>
               <Route exact path="/projects" component={Projects}/>
+              <Route exact path="/float" component={Float}/>
               <Route component={NotFound} />
             </Switch>
           </main>
