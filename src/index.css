@@ -22,7 +22,7 @@ main {
   height: 90vh;
 }
 
-h1, h2, h3{
+h1, h2{
   font-family: 'Russo One', sans-serif;
   text-shadow: 4px 4px black;
 }
@@ -38,6 +38,7 @@ ul{
 
 a {
   color:white;
+  text-decoration: none;
 }
 
 .text-end{
@@ -46,13 +47,9 @@ a {
 
 .menu{
   background-size: contain; 
-  /* background-color: rgba(0,0,0,0.5); */
   border-radius: 100%;
   margin: 1rem;
   min-width: 2rem;
-}
-
-.menu span{
   color: yellow;
 }
 

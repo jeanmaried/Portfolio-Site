@@ -109,5 +109,10 @@
 
 	.name{
 		font-size: 2rem;
+		margin-bottom: 0px;
+	}
+
+	.profession{
+		margin-top: 0px;
 	}
 }

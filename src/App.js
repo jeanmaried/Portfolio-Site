@@ -7,12 +7,14 @@ import Projects from './components/projects/Projects';
 import NotFound from './components/notfound/NotFound';
 import Layout from './components/layout';
 import Float from './components/floating';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component {
 
   render(){
     return(
     <HashRouter>
+      <MuiThemeProvider>
         <Layout>
           <main>
             <Switch>
@@ -25,6 +27,7 @@ class App extends Component {
             </Switch>
           </main>
         </Layout>
+        </MuiThemeProvider>
     </HashRouter>
       )
   }

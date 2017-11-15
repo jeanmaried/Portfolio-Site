@@ -9,8 +9,9 @@ class Home extends Component {
         <div className="flex justify-center">
           <Link to="/about">
             <div className="gravity flex align-items-center direction-column">
-              <div className="mars text-align flex align-items-center justify-center">
+              <div className="mars text-align flex direction-column align-items-center justify-center">
               <h1 className="yellow name">JOSEPH JEAN DALMASSO</h1>
+              <h3 className="profession">Web Developer</h3>
               </div>
             </div>
           </Link>

@@ -70,9 +70,13 @@ i{
   margin-right: -.6rem;
 }
 
-/* .view{
-  max-width: 13rem;
-} */
+.green_button{
+  background: rgb(19, 196, 19);
+  padding: .5rem;
+  border-radius: .5rem;
+  width: 8rem;
+  margin-bottom: 1rem; 
+}
 
 @media screen and (min-width: 375px){
   #myface{
