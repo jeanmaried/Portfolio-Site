@@ -8,13 +8,15 @@ import NotFound from './components/notfound/NotFound';
 import Layout from './components/layout';
 import Float from './components/floating';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
 class App extends Component {
 
   render(){
     return(
     <HashRouter>
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <Layout>
           <main>
             <Switch>
