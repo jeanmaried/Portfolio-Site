@@ -15,6 +15,7 @@ const theme = {
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
   maxHeight: "80%",
+  maxWidth: "100%",
   textAlign: "left",
 };
 
