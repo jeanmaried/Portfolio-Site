@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
+import ChatBot from '../chatbot';
 import './styles.css';
 
 const Footer = () => {
@@ -11,8 +12,7 @@ const Footer = () => {
 
     return (
     	<footer className="flex direction-row justify-between text-align">
-			{/* <Link to="/contact"><div className="menu"><FontAwesome name="phone" size="2x"/></div></Link>
-            <Link to="/about"><div className="menu"><FontAwesome name="question" size="2x"/></div></Link> */}
+			<ChatBot />
 			<div className="copyright yellow">© {d} jodalmasso.com</div>
     	</footer>
     );
