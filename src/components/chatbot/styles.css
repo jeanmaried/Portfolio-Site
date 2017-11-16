@@ -17,4 +17,6 @@
 
 .biAEAb {
     background: grey !important;
+    position: absolute !important;
+    bottom: 0;
 }
