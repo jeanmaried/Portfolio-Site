@@ -14,7 +14,8 @@ const theme = {
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
   maxHeight: "90%",
-  maxWidth: "90%"
+  maxWidth: "90%",
+  textAlign: "left"
 };
 
 const steps = [
@@ -31,7 +32,7 @@ const mrChatBot = () => (
             steps={[
             {
                 id: '1',
-                message: 'What is your name?',
+                message: 'Hi my name is Jack The Bot. My brain is being built so I am not very smart yet. What is your name?',
                 trigger: '2',
             },
             {
@@ -41,7 +42,7 @@ const mrChatBot = () => (
             },
             {
                 id: '3',
-                message: 'Hi {previousValue}, nice to meet you!',
+                message: 'Nice to meet you, {previousValue}! Have a nice day!',
                 end: true,
             },
             ]}
