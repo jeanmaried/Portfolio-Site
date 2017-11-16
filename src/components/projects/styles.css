@@ -1,5 +1,5 @@
 .project_links{
-  background: rgb(12, 11, 11);
+  background: rgb(128, 128, 128);
   border-top-left-radius: 1rem;
   padding: .3rem;
   width: 5rem;
@@ -15,7 +15,7 @@
   height: 30vh;
   width: 70vw;
   max-width: 35rem;
-  border: 5px solid rgb(12, 11, 11);
+  border: 5px solid rgb(128, 128, 128);
   border-radius: 1rem;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .slider {
-  background: rgba(128, 128, 128, 0.4);
+  /* background: rgba(128, 128, 128, 0.4); */
   width: 100vw;
   border-radius: 3rem;
   position: relative;
@@ -52,7 +52,7 @@
 }
 
 .dot {
-  background: rgb(12, 11, 11);
+  background: rgb(128, 128, 128);
   padding: 0px 8px;
   margin-right: 5px;
   cursor: pointer;
@@ -71,7 +71,7 @@
   padding: 1rem .3rem 1rem .3rem;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  background: rgb(12, 11, 11);
+  background: rgba(128, 128, 128, 0.4);
 }
 
 .backArrow {
@@ -82,7 +82,7 @@
   padding: 1rem .3rem 1rem .3rem;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background: rgb(12, 11, 11);
+  background: rgba(128, 128, 128, 0.4);
 }
 
 @media screen and (min-width: 500px){

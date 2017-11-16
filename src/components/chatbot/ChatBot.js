@@ -14,7 +14,7 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
-  maxHeight: "80%",
+  maxHeight: "85%",
   maxWidth: "100%",
   textAlign: "left",
 };
@@ -30,57 +30,76 @@ const steps = [
 class mrChatBot extends Component{
     handleProjects= ()=>{
         this.props.history.push('/projects');
-        return "5"
+        return "7"
     }
 
     handleAbout = ()=>{
         this.props.history.push('/about');
-        return "5"
+        return "7"
     }
 
     handleContact = ()=>{
         this.props.history.push('/contact');
-        return "5"
+        return "7"
+    }
+
+    myToggleFloating = () => {
+        if (true){
+            return false
+        } else {
+            return
+        }
     }
 
     render(){
         return(
             <div className="bot">
-            <ChatBot style={theme} floating={true}
+            <ChatBot style={theme} floating={true} placeholder="Type your message..."
                 steps={[
                 {
                     id: '1',
-                    message: 'Hi my name is Jack The Bot. My brain is being built so I am not very smart yet. What is your name?',
+                    message: 'Hi my name is Jack The Bot.',
                     trigger: '2',
                 },
                 {
                     id: '2',
-                    user: true,
+                    message: 'My brain is being built so I am not very smart yet.',
                     trigger: '3',
                 },
                 {
                     id: '3',
-                    message: 'Nice to meet you, {previousValue}!',
+                    message: 'What is your name?',
                     trigger: '4',
                 },
                 {
                     id: '4',
-                    message: 'What can I help you find?',
+                    user: true,
                     trigger: '5',
+                },
+                {
+                    id: '5',
+                    message: 'Nice to meet you, {previousValue}!',
+                    trigger: '6',
+                },
+                {
+                    id: '6',
+                    message: 'What can I help you with?',
+                    trigger: '7',
                   },
                   {
-                    id: '5',
+                    id: '7',
                     options: [
                       { value: 1, label: "Projects", trigger: this.handleProjects},
                       { value: 2, label: "About", trigger: this.handleAbout, },
                       { value: 3, label: "Contact", trigger: this.handleContact, },
-                      { value: 4, label: 'Why should I hire Jean?', trigger: '6' },
+                      { value: 4, label: 'Why should I hire Jean?', trigger: '8' },
                     ],
                   },
                   {
-                    id: '6',
+                    id: '8',
                     message: 'Because he has a passion for development and a love for learning new fun technologies!',
-                    trigger: '5',
+                    trigger: '7',
+                    opened: false
                   },
                 ]}
             />
