@@ -73,8 +73,8 @@ class mrChatBot extends Component{
                     options: [
                       { value: 1, label: "Projects", trigger: this.handleProjects},
                       { value: 2, label: "About", trigger: this.handleAbout, },
-                      { value: 2, label: "Contact", trigger: this.handleContact, },
-                      { value: 3, label: 'Why should I hire Jean?', trigger: '6' },
+                      { value: 3, label: "Contact", trigger: this.handleContact, },
+                      { value: 4, label: 'Why should I hire Jean?', trigger: '6' },
                     ],
                   },
                   {
