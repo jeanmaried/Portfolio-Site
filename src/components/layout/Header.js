@@ -29,7 +29,7 @@ export default class DrawerSimpleExample extends React.Component {
         hamburger:{
           margin: "15px 0 15px 0",
           color: "yellow"
-        }
+        },
       }
       
     return (
@@ -40,7 +40,8 @@ export default class DrawerSimpleExample extends React.Component {
             label={<FontAwesome style={styles.hamburger} name="bars" size="2x"/>}
             onClick={this.handleToggle}
         />
-        <Drawer open={this.state.open}>
+        <div>
+        <Drawer className="drawer" open={this.state.open}>
           <MenuItem disabled={true}></MenuItem>
           <Link to="/"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="home" size="2x"/>Home</MenuItem></Link>
           <Link to="/about"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="question" size="2x"/>About</MenuItem></Link>
@@ -55,6 +56,7 @@ export default class DrawerSimpleExample extends React.Component {
             <div className="text-align white copyright">© {d} jodalmasso.com</div>
           </div>
         </Drawer>
+        </div>
       </div>
     );
   }

@@ -9,7 +9,7 @@ class Contact extends Component {
         <div className="flex justify-center">
           <div className="contact flex align-items-center direction-column">
             <div className="earth text-align">
-              <div className="visibility2 flex align-items-center justify-center direction-column">
+              <div className="flex align-items-center justify-center direction-column">
               </div>
             </div>
           </div>
