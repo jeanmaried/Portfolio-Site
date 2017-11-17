@@ -16,13 +16,17 @@ main{
 }
 
 .copyright{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding-top: 1rem;
 }
 
 .fontAwesome{
-  width: 5rem;
+  width: 3rem;
   padding: 1.5rem 0 1.5rem 0;
   color: yellow;
+}
+
+.copyright_contact{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

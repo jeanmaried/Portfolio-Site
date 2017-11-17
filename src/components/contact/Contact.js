@@ -10,16 +10,6 @@ class Contact extends Component {
           <div className="contact flex align-items-center direction-column">
             <div className="earth text-align">
               <div className="visibility2 flex align-items-center justify-center direction-column">
-                <h1 className="yellow contact_title">CONTACT</h1>
-                <p className="white">
-                  +1(647)467-3977<br/>
-                  me@jodalmasso.com
-                </p>
-                <div className="flex justify-around white">
-                  <a href="https://www.linkedin.com/in/joseph-jean-dalmasso-1b5473141/" target="_blank" rel="noopener noreferrer"><FontAwesome name="linkedin" size="2x"/></a>
-                  <a href="https://github.com/jeanmaried" target="_blank" rel="noopener noreferrer"><FontAwesome name="github" size="2x"/></a>
-                  <a href="mailto:me@jodalmasso.com"><FontAwesome name="envelope" size="2x"/></a>
-                </div>
               </div>
             </div>
           </div>

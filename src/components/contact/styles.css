@@ -26,13 +26,6 @@
   margin: 1.5rem 0 0 0;
 }
 
-.visibility2{
-  background: -webkit-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45));
-  padding: 0 .5rem 1.3rem .5rem;
-  border-radius: 2rem;
-}
-
 .contact div span{
   margin: 0 .5rem 0 .5rem;
 }
