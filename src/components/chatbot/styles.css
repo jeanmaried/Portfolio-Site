@@ -14,7 +14,7 @@
 
 }
 
-.glfuN, .xyYJS, .fhAWVE, .jgMjlR {
+.glfuN, .xyYJS, .fhAWVE, .jgMjlR{
     background: rgb(66, 66, 66) !important;
 }
 
@@ -28,7 +28,11 @@
     position: absolute !important;
     bottom: 0;
 }
+
+.jwPUxT{
+    background: rgba(128, 128, 128, 0.4) !important;
+}
     
 .fXnVhZ:focus{
-    font-size: 17px;
+    font-size: 17px !important;
 }
