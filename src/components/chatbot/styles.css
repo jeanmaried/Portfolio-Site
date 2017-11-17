@@ -28,7 +28,7 @@
     position: absolute !important;
     bottom: 0;
 }
-
-.gbRSBZ, .fXnVhZ{
+    
+.fXnVhZ:focus{
     font-size: 17px;
 }
