@@ -14,9 +14,8 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 class App extends Component {
 
   componentWillMount(){
-    document.ontouchmove = function(e) {
-      e.stopPropagation();
-      e.stopImmediatePropagation();
+    document.ontouchmove = function(event){
+      event.preventDefault();
     }
   }
 

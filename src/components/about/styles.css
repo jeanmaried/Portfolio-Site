@@ -15,9 +15,9 @@ i{
   padding: 1rem;
   margin-top: 1rem;
   position: relative;
-
   top: 5%;
-  overflow: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 500px;
 }
 
