@@ -18,7 +18,6 @@ class App extends Component {
     <HashRouter>
       <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         <Layout>
-          <main>
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/about" component={About}/>  
@@ -27,7 +26,6 @@ class App extends Component {
               <Route exact path="/float" component={Float}/>
               <Route component={NotFound} />
             </Switch>
-          </main>
         </Layout>
         </MuiThemeProvider>
     </HashRouter>
