@@ -13,12 +13,6 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
 class App extends Component {
 
-  componentWillMount(){
-    document.ontouchmove = function(event){
-      event.preventDefault();
-    }
-  }
-
   render(){
     return(
     <HashRouter>

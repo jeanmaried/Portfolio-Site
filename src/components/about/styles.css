@@ -16,8 +16,7 @@ i{
   margin-top: 1rem;
   position: relative;
   top: 5%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  overflow: auto;
   width: 500px;
 }
 
