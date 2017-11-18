@@ -51,8 +51,7 @@ body{
   background-size: cover;
   -webkit-animation: animatedBackground 200s linear infinite;
           animation: animatedBackground 200s linear infinite;
-  position: fixed;
-  z-index: -9;
+  position: relative;
 }
 
 @-webkit-keyframes animatedBackground {
