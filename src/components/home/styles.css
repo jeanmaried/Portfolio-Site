@@ -1,12 +1,12 @@
 /*contact page===============================*/
 
 .gravity{
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-animation: floating 4s infinite ease-in-out;
           animation: floating 4s infinite ease-in-out;
-  z-index: 1;
+  z-index: 99999;
 }
 
 .mars{
@@ -57,8 +57,9 @@
 }
 
 .animate {
-  position: absolute;
+  position: fixed;
   top: 47%;
+  left: 47%;
   -webkit-animation: myOrbit 10s linear infinite;
           animation: myOrbit 10s linear infinite;
 }

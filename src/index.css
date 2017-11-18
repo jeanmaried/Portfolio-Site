@@ -20,6 +20,7 @@ body {
 
 main {
   height: 90vh;
+  position: fixed;
 }
 
 h1, h2 {
