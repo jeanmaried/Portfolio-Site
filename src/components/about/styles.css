@@ -15,6 +15,7 @@ i{
   padding: 1rem;
   margin-top: 1rem;
   position: fixed;
+  z-index: 999;
   top: 5%;
   height: 100vh;
   max-height: 500px;

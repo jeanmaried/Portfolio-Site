@@ -2,11 +2,12 @@
 
 .gravity{
   position: fixed;
+  z-index: 999;
   top: 50%;
   left: 50%;
   -webkit-animation: floating 4s infinite ease-in-out;
           animation: floating 4s infinite ease-in-out;
-  z-index: 99999999;
+  z-index: -10;
 }
 
 .mars{
@@ -20,8 +21,9 @@
   height: 10rem;
   width: 10rem;
   position: fixed;
+  z-index: 999;
   left: 50%;
-  z-index: 999999999;
+  z-index: -10;
 }
 
 .name{
@@ -61,6 +63,7 @@
 
 .animate {
   position: fixed;
+  z-index: 999;
   top: 47%;
   left: 47%;
   -webkit-animation: myOrbit 10s linear infinite;

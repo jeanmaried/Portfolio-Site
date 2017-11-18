@@ -1,19 +1,15 @@
 header{
   height: 5vh;
+  position: fixed !important;
+  z-index: 9999 !important;
 }
   
 footer{
   width: 100%;
-  position: absolute;;
+  position: fixed;
   bottom:0;
   height: 10vh;
-  z-index: 200;
-}
-
-main{
-  height: 90vh;
-  overflow: hidden;
-  position: fixed;
+  z-index: 9999;
 }
 
 .copyright{
@@ -27,7 +23,9 @@ main{
 }
 
 .copyright_contact{
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
   bottom: 0;
   width: 100%;
 }
+
