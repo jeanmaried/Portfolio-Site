@@ -10,7 +10,7 @@
 }
 
 .skills{
-  padding-bottom: 15rem;
+  padding-bottom: 25rem;
 }
 
 i{
@@ -20,24 +20,9 @@ i{
 .about_view_container{
   color: white;
   background: rgb(37, 36, 36);
-  /* border-radius: 1rem; */
-  padding: 1rem 2rem;
-  height: 70vh;
+  padding: 1rem 2rem 28rem;
   overflow: auto;
-  /* width: 600px; */
-}
-
-/* .about_box{
-  width: 100vw;
-  position: fixed;
-  z-index: 999;
-} */
-
-@media screen and (min-width: 600px){
-  /* .about_view_container{
-      width: 50%;
-      max-height: 500px;
-    } */
+  height: 40vh;
 }
 
 .red_button{
@@ -49,10 +34,8 @@ i{
 }
 
 .earth_box{
-  /* height: 25vh; */
-  /* padding-top: 5vh; */
   margin-top: 50px;
-  padding: 12.5vh 0 12.5vh 0;
+  padding: 9vh 0 9vh 0;
 }
 
 .earth{

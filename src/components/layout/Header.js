@@ -20,23 +20,21 @@ export default class DrawerSimpleExample extends React.Component {
 
       const styles = {
         button: {
-          width: "100%",
-          position: "fixed",
           zIndex: "3010",
-          height: "50px",
+          width: "256px",
         },
 
         hamburger:{
-          margin: "15px 0 15px 0",
           color: "yellow"
         },
       }
       
     return (
-      <div>
+      <div className="header_background">
+      <div className="header flex justify-start">
+
         <RaisedButton
             style={styles.button}
-            backgroundColor="#424242"
             label={<FontAwesome style={styles.hamburger} name="bars" size="2x"/>}
             onClick={this.handleToggle}
         />
@@ -46,6 +44,7 @@ export default class DrawerSimpleExample extends React.Component {
           <Link to="/"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="home" size="2x"/>Home</MenuItem></Link>
           <Link to="/about"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="question" size="2x"/>About</MenuItem></Link>
           <Link to="/projects"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="briefcase" size="2x"/>Projects</MenuItem></Link>
+          <Link to="/skills"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="magic" size="2x"/>Skills</MenuItem></Link>
           <div className="copyright_contact text-align flex direction-column align-items-center">
             <div>Get in touch!</div>
             <div className="flex justify-between">
@@ -57,6 +56,8 @@ export default class DrawerSimpleExample extends React.Component {
           </div>
         </Drawer>
         </div>
+      </div>
+      <div className="header_background"></div>
       </div>
     );
   }
