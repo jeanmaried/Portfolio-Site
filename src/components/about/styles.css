@@ -10,13 +10,13 @@ i{
 
 .about_view_container{
   color: white;
-  background: black;
+  background: rgb(37, 36, 36);
   border-radius: 1rem;
-  padding: 1rem;
-  margin-top: 1rem;
+  padding: 2rem;
   position: relative;
   top: 5%;
-  overflow: auto;
+  height: 85vh;
+  overflow: scroll;
   width: 500px;
 }
 
