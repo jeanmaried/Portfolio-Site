@@ -13,6 +13,7 @@ footer{
 main{
   height: 90vh;
   overflow: hidden;
+  position: fixed;
 }
 
 .copyright{

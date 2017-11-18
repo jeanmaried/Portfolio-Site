@@ -6,7 +6,7 @@ import './styles.css'
 class About extends Component {
   render() {
     return (
-      <div className="about_view_container">
+      <div className="about_view_container flex direction-column align-items-center">
         <h1 className="text-align yellow">ABOUT ME</h1>
 
         <div>
@@ -17,7 +17,7 @@ class About extends Component {
           <p>When I'm not coding, you can find me dancing like a fool, listening to music or 
           meditating. Know french? On est déjà amis!</p>
           <div className="flex justify-center">
-              <Link to="/projects"><div className="green_button text-align">SEE MY WORK!</div></Link>
+              <Link to="/projects"><div className="green_button text-align">See my work!</div></Link>
           </div>
         </div>
 
