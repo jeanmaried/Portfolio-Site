@@ -5,13 +5,13 @@ html, body {
   outline: 0;
   vertical-align: baseline;
   font-family: 'PT Sans', sans-serif;
-  position: fixed;
-  z-index: -999;
 }
 
 html {
   overflow: hidden;
   height: 100%;
+  position: fixed;
+  z-index: -99;
 }
 
 h1, h2 {
@@ -51,6 +51,8 @@ body{
   background-size: cover;
   -webkit-animation: animatedBackground 200s linear infinite;
           animation: animatedBackground 200s linear infinite;
+  position: fixed;
+  z-index: -9;
 }
 
 @-webkit-keyframes animatedBackground {
