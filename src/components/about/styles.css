@@ -4,6 +4,10 @@
   padding: .2rem;
 }
 
+.skills{
+  padding-bottom: 15rem;
+}
+
 i{
   font-size: 2rem;
 }
@@ -12,12 +16,13 @@ i{
   color: white;
   background: rgb(37, 36, 36);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 3rem 2rem;
   position: relative;
   top: 5%;
   height: 85vh;
+  max-height: 800px;
   overflow: scroll;
-  width: 500px;
+  width: 600px;
 }
 
 .about_box{
