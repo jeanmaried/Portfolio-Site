@@ -93,10 +93,6 @@ body{
         -ms-flex-align: center;
             align-items: center;
   }
-
-  .about_box {
-    max-width: 50%;
-  }
 }
 
 /* * {

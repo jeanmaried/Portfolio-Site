@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import Earth from '../contact/Contact'
 import '../../flex.css';
 import './styles.css'
 
 class About extends Component {
   render() {
     return (
-      <div className="about_box flex justify-center">
+      <div className="about">
+        <div className="earth_box">
+          <div className="earth text-align"></div>
+          <div className="animate2">
+              <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>
+          </div>
+        </div>
+
+      <div className="about_box flex justify-end">
       <div className="about_view_container flex direction-column align-items-center">
+
+  
+
         <h1 className="text-align yellow">ABOUT ME</h1>
 
         <div>
@@ -39,6 +51,7 @@ class About extends Component {
           <div><i className="devicon-postgresql-plain"></i></div>
           <div><i className="devicon-meteor-plain"></i></div>
         </div>
+      </div>
       </div>
       </div>
     );

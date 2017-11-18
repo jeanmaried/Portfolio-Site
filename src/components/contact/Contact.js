@@ -3,16 +3,11 @@ import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
 import './styles.css'
 
-class Contact extends Component {
+class Earth extends Component {
   render() {
     return (
-        <div className="flex justify-center">
-          <div className="contact flex align-items-center direction-column">
-            <div className="earth text-align">
-              <div className="flex align-items-center justify-center direction-column">
-              </div>
-            </div>
-          </div>
+        <div className="earth_box">
+          <div className="earth text-align"></div>
           <div className="animate2">
               <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>
           </div>
@@ -21,4 +16,4 @@ class Contact extends Component {
   }
 }
 
-export default Contact;
+export default Earth;

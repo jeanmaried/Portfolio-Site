@@ -1,4 +1,9 @@
 /*home====================================*/
+.about{
+  position: fixed;
+  z-index: 999 !;
+}
+
 .skills div{
   margin: .2rem;
   padding: .2rem;
@@ -15,20 +20,24 @@ i{
 .about_view_container{
   color: white;
   background: rgb(37, 36, 36);
-  border-radius: 1rem;
-  padding: 3rem 2rem;
-  position: relative;
-  top: 5%;
-  height: 85vh;
-  max-height: 800px;
-  overflow: scroll;
-  width: 600px;
+  /* border-radius: 1rem; */
+  padding: 1rem 2rem;
+  height: 70vh;
+  overflow: auto;
+  /* width: 600px; */
 }
 
-.about_box{
+/* .about_box{
   width: 100vw;
   position: fixed;
   z-index: 999;
+} */
+
+@media screen and (min-width: 600px){
+  /* .about_view_container{
+      width: 50%;
+      max-height: 500px;
+    } */
 }
 
 .red_button{
@@ -37,4 +46,98 @@ i{
   border-radius: .5rem;
   width: 8rem;
   margin-bottom: 1rem; 
+}
+
+.earth_box{
+  /* height: 25vh; */
+  /* padding-top: 5vh; */
+  margin-top: 50px;
+  padding: 12.5vh 0 12.5vh 0;
+}
+
+.earth{
+  background-color: black;
+  color: yellow;
+  background: url('../../assets/earth.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 100%;
+  margin-top: -1.5rem;
+  margin-left: -1.5rem;
+  height: 3rem;
+  width: 3rem;
+  /* -webkit-animation: floater 4s infinite ease-in-out;
+  animation: floater 4s infinite ease-in-out; */
+}
+
+@-webkit-keyframes floater{
+  0%{top: 19%;}
+  50%{top: 20%;}
+  100%{ top: 19%; }
+}
+
+@keyframes floater{
+  0%{top: 19%;}
+  50%{top: 20%;}
+  100%{ top: 19%; }
+}
+
+.moon{
+  background: -webkit-linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10));
+  background: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10));
+}
+
+.moon img{
+  /* position:relative; */
+  z-index: -1;
+  width: 1rem;
+  -webkit-transform: rotate(55deg);
+    transform: rotate(55deg);
+}
+
+.animate2 {
+  /* position: fixed; */
+  /* top: 19%;
+  left: 50%; */
+  margin: -.5rem;
+  -webkit-animation: myOrbit 17s linear infinite;
+          animation: myOrbit 17s linear infinite;
+}
+
+@-webkit-keyframes myOrbit{
+	from {
+		-webkit-transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+		        transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+		        transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+	}
+}
+
+@keyframes myOrbit{
+	from {
+		-webkit-transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+		        transform: rotate(0deg)
+		           translate(-300%)
+		           rotate(-360deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+		        transform: rotate(360deg)
+		           translate(-300%) 
+		           rotate(-360deg);
+	}
 }
