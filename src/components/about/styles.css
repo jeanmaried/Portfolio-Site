@@ -1,7 +1,8 @@
 /*home====================================*/
 .about{
   position: fixed;
-  z-index: 999 !;
+  z-index: 9999;
+  padding-top: 10rem;
 }
 
 .skills div{
@@ -22,7 +23,7 @@ i{
   background: rgb(37, 36, 36);
   padding: 1rem 2rem 28rem;
   overflow: auto;
-  height: 40vh;
+  height: 55vh;
 }
 
 .red_button{
@@ -34,8 +35,8 @@ i{
 }
 
 .earth_box{
-  margin-top: 50px;
-  padding: 9vh 0 9vh 0;
+  /* margin-top: 50px; */
+  /* padding: 9vh 0 9vh 0; */
 }
 
 .earth{
@@ -49,6 +50,10 @@ i{
   margin-left: -1.5rem;
   height: 3rem;
   width: 3rem;
+  position: fixed;
+  z-index: 9999;
+  top: 6.5rem;
+  left: 50%;
   /* -webkit-animation: floater 4s infinite ease-in-out;
   animation: floater 4s infinite ease-in-out; */
 }
@@ -79,9 +84,9 @@ i{
 }
 
 .animate2 {
-  /* position: fixed; */
-  /* top: 19%;
-  left: 50%; */
+  position: fixed;
+  top: 6.5rem;
+  left: 50%;
   margin: -.5rem;
   -webkit-animation: myOrbit 17s linear infinite;
           animation: myOrbit 17s linear infinite;

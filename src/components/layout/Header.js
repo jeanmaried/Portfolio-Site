@@ -21,7 +21,7 @@ export default class DrawerSimpleExample extends React.Component {
       const styles = {
         button: {
           zIndex: "3010",
-          width: "256px",
+          width: "56px",
         },
 
         hamburger:{
@@ -46,7 +46,6 @@ export default class DrawerSimpleExample extends React.Component {
           <Link to="/projects"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="briefcase" size="2x"/>Projects</MenuItem></Link>
           <Link to="/skills"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="magic" size="2x"/>Skills</MenuItem></Link>
           <div className="copyright_contact text-align flex direction-column align-items-center">
-            <div>Get in touch!</div>
             <div className="flex justify-between">
               <a className="fontAwesome" href="https://www.linkedin.com/in/joseph-jean-dalmasso-1b5473141/" target="_blank" rel="noopener noreferrer"><FontAwesome name="linkedin" size="2x"/></a>
               <a className="fontAwesome" href="https://github.com/jeanmaried" target="_blank" rel="noopener noreferrer"><FontAwesome name="github" size="2x"/></a>

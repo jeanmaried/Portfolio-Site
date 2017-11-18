@@ -8,17 +8,20 @@ class About extends Component {
   render() {
     return (
       <div className="about">
-        <div className="earth_box">
+        {/* <div className="earth_box">
           <div className="earth text-align"></div>
           <div className="animate2">
               <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>
           </div>
-        </div>
+        </div> */}
 
       <div className="about_box flex justify-end">
       <div className="about_view_container flex direction-column align-items-center">
 
-  
+      <div className="earth text-align"></div>
+          <div className="animate2">
+              <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>
+          </div>
 
         <h1 className="text-align yellow">ABOUT ME</h1>
 
