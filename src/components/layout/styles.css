@@ -1,13 +1,10 @@
-.header{
-  /* width: 100%; */
+.header_background div button div svg{
+  background: yellow;
 }
 
 .header_background{
   width: 100vw;
   background: rgb(48, 48, 48);
-  /* position: relative;
-  top: 0;
-  z-index: 9999; */
 }
   
 footer{

@@ -4,6 +4,7 @@ import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 import {Link} from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
+import AppBar from 'material-ui/AppBar';
 
 export default class DrawerSimpleExample extends React.Component {
 
@@ -20,8 +21,9 @@ export default class DrawerSimpleExample extends React.Component {
 
       const styles = {
         button: {
-          zIndex: "3010",
-          width: "56px",
+          zIndex: "9999",
+          background: "#424242",
+          color: "yellow"
         },
 
         hamburger:{
@@ -31,12 +33,12 @@ export default class DrawerSimpleExample extends React.Component {
       
     return (
       <div className="header_background">
-      <div className="header flex justify-start">
 
-        <RaisedButton
-            style={styles.button}
-            label={<FontAwesome style={styles.hamburger} name="bars" size="2x"/>}
-            onClick={this.handleToggle}
+        <AppBar
+          title="Web Developer"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+          onClick={this.handleToggle}
+          style={styles.button}
         />
         <div>
         <Drawer className="drawer" open={this.state.open}>
@@ -55,7 +57,7 @@ export default class DrawerSimpleExample extends React.Component {
           </div>
         </Drawer>
         </div>
-      </div>
+
       <div className="header_background"></div>
       </div>
     );

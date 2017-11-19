@@ -23,10 +23,9 @@ class About extends Component {
               <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>
           </div>
 
-        <h1 className="text-align yellow">ABOUT ME</h1>
+        <h1 className="text-align yellow">Who am I?</h1>
 
         <div>
-          <p>Hello,</p>
           <p>My name is Joseph but everyone calls me by my middle name Jean. I am a Web Developer based in Toronto, ON.</p>
           <p>After 3 years in sales I quit my job, moved to a new country, and did a lot of 
           soul searching before realizing my true calling was Web Development. Finally a career that allows me to apply my creativity and logic!</p>

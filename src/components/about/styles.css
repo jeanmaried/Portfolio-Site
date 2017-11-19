@@ -2,7 +2,7 @@
 .about{
   position: fixed;
   z-index: 999;
-  padding-top: 10rem;
+  padding-top: 150px;
 }
 
 .skills div{
@@ -20,7 +20,7 @@ i{
 
 .about_view_container{
   color: white;
-  background: rgb(37, 36, 36);
+  background: #616161;
   padding: 1rem 2rem 28rem;
   overflow: auto;
   height: 55vh;
@@ -47,7 +47,7 @@ i{
   width: 3rem;
   position: fixed;
   z-index: 999;
-  top: 6.5rem;
+  top: 135px;
   left: 50%;
   /* -webkit-animation: floater 4s infinite ease-in-out;
   animation: floater 4s infinite ease-in-out; */
@@ -80,7 +80,7 @@ i{
 
 .animate2 {
   position: fixed;
-  top: 6.5rem;
+  top: 135px;
   left: 50%;
   margin: -.5rem;
   -webkit-animation: myOrbit 17s linear infinite;

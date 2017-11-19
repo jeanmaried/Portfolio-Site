@@ -11,12 +11,12 @@ html {
   overflow: hidden;
   height: 100%;
   position: fixed;
-  /* z-index: -99; */
 }
 
 h1, h2 {
   font-family: 'Russo One', sans-serif;
   text-shadow: 4px 4px black;
+  color: yellow !important;
 }
 
 li{
@@ -49,8 +49,8 @@ body{
   background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat-x;
   background-size: cover;
-  /* -webkit-animation: animatedBackground 200s linear infinite;
-          animation: animatedBackground 200s linear infinite; */
+  -webkit-animation: animatedBackground 200s linear infinite;
+          animation: animatedBackground 200s linear infinite;
 }
 
 @-webkit-keyframes animatedBackground {
