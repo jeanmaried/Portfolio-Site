@@ -6,29 +6,24 @@ import './styles.css';
 import PropTypes from 'prop-types';
 
 
-const ProjectSlides= (props) => {
-  console.log(props);
-  const current = props.project_info[props.current];
+const ProjectSlides= ({project_info}) => {
+  console.log(project_info)
 
   const styles = {
     imageBackground: {
-      backgroundImage: `url(${current.picture})`,
+      backgroundImage: `url(${project_info.picture})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }
   };
 
   return (
-      <div className="slide text-align flex align-items-center direction-column" id={current.id}>
-          <h2 className="title yellow">{current.title}</h2>
-          <div className="flex align-items-center direction-column">
+      <div className="project_card" id={project_info.id}>
+          <h1 className="yellow">{project_info.title}</h1>
             <div className="background flex justify-end align-items-end" style={styles.imageBackground}>
-              <div className="project_links flex justify-around">
-                <a target="_blank" href={current.site_link}><FontAwesome name="mouse-pointer"/></a>
-                <a target="_blank" href={current.git_link}><FontAwesome name="github"/></a>
-              </div>
-            </div>
-            <p className="white description">{current.description}</p>
+                <a target="_blank" href={project_info.site_link}><FontAwesome name="mouse-pointer"/></a>
+                <a target="_blank" href={project_info.git_link}><FontAwesome name="github"/></a>
+            <p className="white description">{project_info.description}</p>
           </div>
       </div>
 
@@ -36,16 +31,16 @@ const ProjectSlides= (props) => {
   )
 }
 
-ProjectSlides.propTypes = {
-  current: PropTypes.number.isRequired,
-  project_info: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    site_link: PropTypes.string.isRequired,
-    git_link: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  })),
-  ready: PropTypes.bool.isRequired
-}
+// ProjectSlides.propTypes = {
+//   current: PropTypes.number.isRequired,
+//   project_info: PropTypes.arrayOf(PropTypes.shape({
+//     title: PropTypes.string.isRequired,
+//     site_link: PropTypes.string.isRequired,
+//     git_link: PropTypes.string.isRequired,
+//     picture: PropTypes.string.isRequired,
+//     description: PropTypes.string.isRequired,
+//   })),
+//   ready: PropTypes.bool.isRequired
+// }
 
 export default ProjectSlides;
