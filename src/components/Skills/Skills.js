@@ -7,8 +7,9 @@ class Skills extends Component {
   render() {
     return (
         <div>
-            <h1 className="yellow text-align">Skills</h1>
+
             <div className="skills white flex direction-column align-items-center flex-wrap">
+            <h1 className="skills_title yellow text-align">Skills</h1>
             <div className="flex direction-row text-align">
                 <div><i className="devicon-html5-plain"></i></div>
                 <div><i className="devicon-css3-plain"></i></div>
