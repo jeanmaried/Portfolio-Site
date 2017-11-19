@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
+import './styles.css'
 
 class Skills extends Component {
   render() {

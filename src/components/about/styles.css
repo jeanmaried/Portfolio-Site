@@ -1,25 +1,10 @@
 /*home====================================*/
 .about{
-  padding-top: 150px;
+  /* padding-top: 150px; */
 }
 
-.about_title{
-  position: absolute;
-  top: 105px;
-  left: 2rem;
-}
-
-.skills div{
-  margin: .2rem;
-  padding: .2rem;
-}
-
-.skills{
-  padding-bottom: 25rem;
-}
-
-i{
-  font-size: 2rem;
+.title_earth{
+  padding: 2rem 1rem 2rem .5rem;
 }
 
 .about_view_container{
@@ -30,7 +15,7 @@ i{
 
 .about_background{
   background: #424242;
-  padding: 0 10px 10px 10px;
+  padding: 0 .5rem .5rem .5rem;
   border-radius: 20px;
 }
 
@@ -49,28 +34,8 @@ i{
   background-position: center;
   background-size: cover;
   border-radius: 100%;
-  margin-top: -1.5rem;
-  margin-left: -1.5rem;
   height: 3rem;
   width: 3rem;
-  position: absolute;
-  z-index: 999;
-  top: 135px;
-  left: 75%;
-  /* -webkit-animation: floater 4s infinite ease-in-out;
-  animation: floater 4s infinite ease-in-out; */
-}
-
-@-webkit-keyframes floater{
-  0%{top: 19%;}
-  50%{top: 20%;}
-  100%{ top: 19%; }
-}
-
-@keyframes floater{
-  0%{top: 19%;}
-  50%{top: 20%;}
-  100%{ top: 19%; }
 }
 
 .moon{
@@ -79,20 +44,13 @@ i{
 }
 
 .moon img{
-  /* position:relative; */
-  z-index: -1;
   width: 1rem;
   -webkit-transform: rotate(55deg);
     transform: rotate(55deg);
-}
-
-.animate2 {
-  position: absolute;
-  top: 135px;
-  left: 75%;
-  margin: -.5rem;
+  position: relative;
+  top: 15px;
   -webkit-animation: myOrbit 17s linear infinite;
-          animation: myOrbit 17s linear infinite;
+  animation: myOrbit 17s linear infinite;
 }
 
 @-webkit-keyframes myOrbit{
