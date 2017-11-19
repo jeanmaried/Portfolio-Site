@@ -1,7 +1,7 @@
 .card_collection{
   overflow: scroll;
   height: 90vh;
-  position: fixed;
+  position: absolute;
 }
 
 .card{

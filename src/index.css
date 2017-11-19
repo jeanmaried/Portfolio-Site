@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+.fa{
+  padding-top: .25rem;
+}
+
 .text-end{
   text-align: end;
 }
