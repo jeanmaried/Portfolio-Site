@@ -1,9 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
-import '../../flex.css';
-import FontAwesome from 'react-fontawesome';
 import ChatBot from '../chatbot';
+
 import './styles.css';
+import '../../flex.css';
 
 const Footer = () => {
     return (

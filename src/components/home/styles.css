@@ -1,5 +1,6 @@
 .home_page{
 	height: 100vh;
+	width: 100vw;
 }
 
 .mars{
@@ -15,16 +16,11 @@
   position: absolute;
   z-index: 999;
   top: 40%;
-  left: 50%;
 }
 
 .name{
 	font-size: 1.4rem;
 	padding-top: 2.5rem;
-}
-
-.contact div span{
-  margin: 0 .5rem 0 .5rem;
 }
 
 /* ===ROCKET ANIMATION=== */
@@ -39,8 +35,7 @@
 .rocket {
   position: absolute;
   z-index: 999;
-  top: 37%;
-  left: 43%;
+  top: 38%;
   -webkit-animation: myOrbit 10s linear infinite;
           animation: myOrbit 10s linear infinite;
 }
@@ -82,27 +77,3 @@
 		           rotate(-360deg);
 	}
 }
-
-/* @media screen and (min-width: 420px){
-	.mars{
-		margin-top: -7.5rem;
-		margin-left: -7.5rem;
-		height: 15rem;
-		width: 15rem;
-	}
-
-	.rocket img{
-		width: 4rem;
-	}
-
-	.name{
-		font-size: 2rem;
-		margin-bottom: 0px;
-	}
-
-	.profession{
-		font-size: 1.2rem;
-		margin-top: 0px;
-		text-shadow: none;
-	}
-} */

@@ -6,7 +6,7 @@ import './styles.css'
 class Home extends Component {
   render() {
     return (
-        <div className="home_page">
+        <div className="home_page flex justify-center">
           <Link to="/about">
               <div className="mars text-align">
               <h1 className="yellow name">Joseph Jean Dalmasso</h1>

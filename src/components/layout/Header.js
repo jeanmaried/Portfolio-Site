@@ -20,16 +20,10 @@ export default class DrawerSimpleExample extends React.Component {
     d = d.getFullYear();
 
       const styles = {
-        button: {
           zIndex: "9999",
           background: "#424242",
           color: "yellow",
           position: "fixed"
-        },
-
-        hamburger:{
-          color: "yellow"
-        },
       }
       
     return (
@@ -39,9 +33,9 @@ export default class DrawerSimpleExample extends React.Component {
           title="Web Developer"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onClick={this.handleToggle}
-          style={styles.button}
+          style={styles}
         />
-        <div>
+
         <Drawer className="drawer" open={this.state.open}>
           <MenuItem disabled={true}></MenuItem>
           <Link to="/"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="home" size="2x"/>Home</MenuItem></Link>
@@ -57,7 +51,7 @@ export default class DrawerSimpleExample extends React.Component {
             <div className="text-align white copyright">© {d} jodalmasso.com</div>
           </div>
         </Drawer>
-        </div>
+
 
       <div className="header_background"></div>
       </div>

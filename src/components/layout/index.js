@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import '../../flex.css';
 import Footer from "./Footer";
 import Header from "./Header";
+
+import '../../flex.css';
 
 class Layout extends Component {
 

@@ -19,14 +19,6 @@
   border-radius: 20px;
 }
 
-.red_button{
-  background: red;
-  padding: .5rem;
-  border-radius: .5rem;
-  width: 8rem;
-  margin-bottom: 9rem; 
-}
-
 .earth{
   background-color: black;
   color: yellow;
@@ -46,7 +38,7 @@
 .moon img{
   width: 1rem;
   -webkit-transform: rotate(55deg);
-    transform: rotate(55deg);
+  transform: rotate(55deg);
   position: relative;
   top: 15px;
   -webkit-animation: myOrbit 17s linear infinite;

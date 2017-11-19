@@ -14,10 +14,11 @@ const ProjectSlides= ({project_info}) => {
     <div className="card">
       <Card id={project_info.id}>
         <CardMedia
-          overlay={<CardTitle title={project_info.title} subtitle={project_info.tools.join(', ')} />}
+
         >
           <img src={project_info.picture} alt="" />
         </CardMedia>
+        <CardTitle title={project_info.title} subtitle={project_info.tools.join(', ')} />
         <CardText>
           {project_info.description}
         </CardText>

@@ -22,7 +22,6 @@ export default class Slider extends Component {
         this.setState({
           project_info: res.data
         });
-        console.log(this.state.project_info)
     });
   }
 
@@ -31,6 +30,7 @@ export default class Slider extends Component {
     let projects = this.state.project_info;
     return (
       <div className="card_collection">
+        <h2 className="text-align">Projects</h2>
         {
           projects.map((project)=>{
             i += 1
