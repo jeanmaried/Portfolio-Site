@@ -9,6 +9,9 @@ html, body {
 
 html {
   position: fixed;
+}
+
+.body{
   overflow: auto;
 }
 
