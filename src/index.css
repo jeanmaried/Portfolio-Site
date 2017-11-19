@@ -8,7 +8,8 @@ html, body {
 }
 
 html {
-  position: fixed;
+  position: absolute;
+  z-index: 0;
 }
 
 .body{
@@ -51,19 +52,7 @@ body{
   background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat;
   background-size: cover;
-  /* -webkit-animation: animatedBackground 200s linear infinite;
-          animation: animatedBackground 200s linear infinite; */
 }
-
-/* @-webkit-keyframes animatedBackground {
-  from { background-position: 0 0; }
-  to { background-position: -5336px 0; }
-}
-
-@keyframes animatedBackground {
-  from { background-position: 0 0; }
-  to { background-position: -5336px 0; }
-} */
 
 /*typography*/
 
