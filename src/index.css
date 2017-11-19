@@ -48,7 +48,7 @@ a {
 body{
   background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat-x;
-  background-size: cover;
+  /* background-size: cover; */
   -webkit-animation: animatedBackground 200s linear infinite;
           animation: animatedBackground 200s linear infinite;
   /* position: relative; */
