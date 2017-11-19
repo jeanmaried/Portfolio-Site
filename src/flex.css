@@ -140,6 +140,14 @@
 	text-align: center;
 }
 
+.text-right{
+	text-align: right;
+}
+
+.text-left{
+	text-align: left;
+}
+
 .flex-basis{
 	-ms-flex-preferred-size: 25%;
 	    flex-basis: 25%;

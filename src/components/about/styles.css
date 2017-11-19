@@ -5,6 +5,12 @@
   padding-top: 150px;
 }
 
+.about_title{
+  position: fixed;
+  top: 105px;
+  left: 2rem;
+}
+
 .skills div{
   margin: .2rem;
   padding: .2rem;
@@ -48,7 +54,7 @@ i{
   position: fixed;
   z-index: 999;
   top: 135px;
-  left: 50%;
+  left: 75%;
   /* -webkit-animation: floater 4s infinite ease-in-out;
   animation: floater 4s infinite ease-in-out; */
 }
@@ -81,10 +87,14 @@ i{
 .animate2 {
   position: fixed;
   top: 135px;
-  left: 50%;
+  left: 75%;
   margin: -.5rem;
   -webkit-animation: myOrbit 17s linear infinite;
           animation: myOrbit 17s linear infinite;
+}
+
+.rocket{
+  padding-right: 1rem;
 }
 
 @-webkit-keyframes myOrbit{
