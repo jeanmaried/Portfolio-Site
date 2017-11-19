@@ -11,7 +11,7 @@ html {
   overflow: hidden;
   height: 100%;
   position: fixed;
-  z-index: -99;
+  /* z-index: -99; */
 }
 
 h1, h2 {
@@ -48,10 +48,9 @@ a {
 body{
   background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat-x;
-  /* background-size: cover; */
+  background-size: cover;
   -webkit-animation: animatedBackground 200s linear infinite;
           animation: animatedBackground 200s linear infinite;
-  /* position: relative; */
 }
 
 @-webkit-keyframes animatedBackground {
