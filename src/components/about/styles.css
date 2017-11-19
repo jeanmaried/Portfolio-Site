@@ -1,12 +1,10 @@
 /*home====================================*/
 .about{
-  position: fixed;
-  z-index: 999;
   padding-top: 150px;
 }
 
 .about_title{
-  position: fixed;
+  position: absolute;
   top: 105px;
   left: 2rem;
 }
@@ -55,7 +53,7 @@ i{
   margin-left: -1.5rem;
   height: 3rem;
   width: 3rem;
-  position: fixed;
+  position: absolute;
   z-index: 999;
   top: 135px;
   left: 75%;
@@ -89,7 +87,7 @@ i{
 }
 
 .animate2 {
-  position: fixed;
+  position: absolute;
   top: 135px;
   left: 75%;
   margin: -.5rem;
