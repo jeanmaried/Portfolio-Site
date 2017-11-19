@@ -14,8 +14,8 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
-  maxHeight: "85%",
-  maxWidth: "100%",
+  position: "fixed",
+  zIndex: "99999",
   textAlign: "left",
 };
 
