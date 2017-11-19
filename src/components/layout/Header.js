@@ -23,7 +23,8 @@ export default class DrawerSimpleExample extends React.Component {
         button: {
           zIndex: "9999",
           background: "#424242",
-          color: "yellow"
+          color: "yellow",
+          position: "fixed"
         },
 
         hamburger:{
