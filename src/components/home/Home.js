@@ -6,17 +6,13 @@ import './styles.css'
 class Home extends Component {
   render() {
     return (
-        <div className="flex justify-center">
+        <div className="home_page">
           <Link to="/about">
-            <div className="gravity flex align-items-center direction-column">
-              <div className="mars text-align flex direction-column align-items-center justify-center">
+              <div className="mars text-align">
               <h1 className="yellow name">Joseph Jean Dalmasso</h1>
               </div>
-            </div>
           </Link>
-          <div className="animate">
               <div className="rocket"><img src={require("../../assets/red-rocket.png")} alt=""/></div>
-          </div>
         </div>
     );
   }

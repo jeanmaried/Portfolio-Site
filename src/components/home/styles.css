@@ -1,13 +1,5 @@
-/*contact page===============================*/
-
-.gravity{
-  position: fixed;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  /* -webkit-animation: floating 4s infinite ease-in-out;
-          animation: floating 4s infinite ease-in-out; */
-  z-index: -10;
+.home_page{
+	height: 100vh;
 }
 
 .mars{
@@ -20,30 +12,19 @@
   margin-left: -5rem;
   height: 10rem;
   width: 10rem;
-  position: fixed;
+  position: absolute;
   z-index: 999;
+  top: 40%;
   left: 50%;
-  z-index: -10;
 }
 
 .name{
 	font-size: 1.4rem;
+	padding-top: 2.5rem;
 }
 
 .contact div span{
   margin: 0 .5rem 0 .5rem;
-}
-
-@-webkit-keyframes floating{
-  0%{top: 48.5%;}
-  50%{top: 51.5%;}
-  100%{ top: 48.5%; }
-}
-
-@keyframes floating{
-  0%{top: 48.5%;}
-  50%{top: 51.5%;}
-  100%{ top: 48.5%; }
 }
 
 /* ===ROCKET ANIMATION=== */
@@ -51,14 +32,14 @@
 .rocket img{
 	width: 3.2rem;
 	margin: -.2rem;
-  -webkit-transform: rotate(55deg);
+  	-webkit-transform: rotate(55deg);
           transform: rotate(55deg);
 }
 
-.animate {
-  position: fixed;
+.rocket {
+  position: absolute;
   z-index: 999;
-  top: 47%;
+  top: 37%;
   left: 43%;
   -webkit-animation: myOrbit 10s linear infinite;
           animation: myOrbit 10s linear infinite;
@@ -102,7 +83,7 @@
 	}
 }
 
-@media screen and (min-width: 420px){
+/* @media screen and (min-width: 420px){
 	.mars{
 		margin-top: -7.5rem;
 		margin-left: -7.5rem;
@@ -124,4 +105,4 @@
 		margin-top: 0px;
 		text-shadow: none;
 	}
-}
+} */
