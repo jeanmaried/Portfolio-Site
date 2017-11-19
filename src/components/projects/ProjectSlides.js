@@ -1,33 +1,32 @@
 import React from 'react';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
+import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import RaisedButton from 'material-ui/RaisedButton';
 import './styles.css';
 
 import PropTypes from 'prop-types';
 
 
 const ProjectSlides= ({project_info}) => {
-  console.log(project_info)
-
-  const styles = {
-    imageBackground: {
-      backgroundImage: `url(${project_info.picture})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }
-  };
 
   return (
-      <div className="project_card" id={project_info.id}>
-          <h1 className="yellow">{project_info.title}</h1>
-            <div className="background flex justify-end align-items-end" style={styles.imageBackground}>
-                <a target="_blank" href={project_info.site_link}><FontAwesome name="mouse-pointer"/></a>
-                <a target="_blank" href={project_info.git_link}><FontAwesome name="github"/></a>
-            <p className="white description">{project_info.description}</p>
-          </div>
-      </div>
-
-     
+    <div className="card">
+      <Card id={project_info.id}>
+        <CardMedia
+          overlay={<CardTitle title={project_info.title} subtitle={project_info.tools.join(', ')} />}
+        >
+          <img src={project_info.picture} alt="" />
+        </CardMedia>
+        <CardText>
+          {project_info.description}
+        </CardText>
+        <CardActions>
+        <a target="_blank" href={project_info.site_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="mouse-pointer" size="2x"/>} /></a>
+        <a target="_blank" href={project_info.git_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="github" size="2x"/>} /></a>
+        </CardActions>
+      </Card>     
+    </div>
   )
 }
 

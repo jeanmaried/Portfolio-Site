@@ -26,10 +26,14 @@ i{
 
 .about_view_container{
   color: white;
-  background: #616161;
-  padding: 1rem 2rem 28rem;
+  padding: 0 1rem 0 1rem;
   overflow: auto;
-  height: 55vh;
+}
+
+.about_background{
+  background: #424242;
+  padding: 0 10px 10px 10px;
+  border-radius: 20px;
 }
 
 .red_button{
@@ -91,10 +95,6 @@ i{
   margin: -.5rem;
   -webkit-animation: myOrbit 17s linear infinite;
           animation: myOrbit 17s linear infinite;
-}
-
-.rocket{
-  padding-right: 1rem;
 }
 
 @-webkit-keyframes myOrbit{

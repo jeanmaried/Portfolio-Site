@@ -4,6 +4,10 @@
   position: fixed;
 }
 
+.card{
+  margin: 2rem;
+}
+
 /* * {
   background: #000 !important;
   color: #0f0 !important;

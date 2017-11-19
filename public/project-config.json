@@ -1,46 +1,41 @@
 [
     {
         "id": 1,
-        "title": "Shopping Cart",
-        "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
+        "title": "RED Life",
+        "site_link": "#",
         "git_link":"https://github.com/jeanmaried/ES6-shopping-cart",
-        "picture": "./assets/shopping-cart.png",
-        "description":"Shopping cart built ground up in ES6 with API call to Best Buy"
+        "picture": "./assets/redlife.png",
+        "description":"Full-stack social media application built in house for RED Academy.",
+        "tools": ["React.js", "Meteor"]
     },
 
     {
         "id": 2,
-        "title": "News App",
-        "site_link": "https://jeanmaried.github.io/News-app/",
-        "git_link":"https://github.com/jeanmaried/News-app",
-        "picture":"./assets/NYT.png",
-        "description":"New York Times news app. Using jQuery and ajax call"
+        "title": "Shopping Cart",
+        "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
+        "git_link":"https://github.com/jeanmaried/ES6-shopping-cart",
+        "picture": "./assets/shopping-cart.png",
+        "description":"JavaScript Shopping Cart built from the ground up.",
+        "tools": ["ES6", "Gulp"]
     },
 
     {
         "id": 3,
-        "title": "GTA Tooth Fairy",
-        "site_link": "http://www.gtatoothfairy.com",
-        "git_link":"https://github.com/jeanmaried/tooth_fairy_wordpress_site",
-        "picture":"./assets/tooth-fairy.png",
-        "description":"Developed WordPress theme as part of a team for \"GTA Tooth Fairy\""
+        "title": "News App",
+        "site_link": "https://jeanmaried.github.io/News-app/",
+        "git_link":"https://github.com/jeanmaried/News-app",
+        "picture":"./assets/NYT.png",
+        "description":"News app fetching current news from the New York Times.",
+        "tools": ["jQuery", "Gulp"]
     },
 
     {
         "id": 4,
-        "title": "Aloha",
-        "site_link": "https://jeanmaried.github.io/Aloha-landing-page/",
-        "git_link":"https://github.com/jeanmaried/Aloha-landing-page",
-        "picture": "./assets/aloha.png",
-        "description":"Responsive shopping website landing page making use of Sass and Gulp"
-    },
-
-    {
-        "id": 5,
-        "title": "More Projects",
-        "site_link": "https://github.com/jeanmaried",
-        "git_link":"https://github.com/jeanmaried",
-        "picture": "./assets/git.png",
-        "description":"Check out some more of my work on GitHub"
+        "title": "GTA Tooth Fairy",
+        "site_link": "http://www.gtatoothfairy.com",
+        "git_link":"https://github.com/jeanmaried/tooth_fairy_wordpress_site",
+        "picture":"./assets/tooth-fairy.png",
+        "description":"WordPress site for \"GTA Tooth Fairy\"",
+        "tools": ["WordPress", "PHP"]
     }
 ]
