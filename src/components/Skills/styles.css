@@ -5,4 +5,8 @@ i{
 .skills div{
     margin: .2rem;
     padding: .2rem;
-  }
+}
+
+.skills_page{
+    padding-top: 64px;
+}
