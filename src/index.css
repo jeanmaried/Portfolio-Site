@@ -7,11 +7,10 @@ html, body {
   font-family: 'PT Sans', sans-serif;
 }
 
-html {
-  /* overflow: hidden; */
+/* html {
   height: 100%;
   position: fixed;
-}
+} */
 
 h1, h2 {
   font-family: 'Russo One', sans-serif;
@@ -47,13 +46,13 @@ a {
 
 body{
   background-image: url('./assets/dark_space.jpg');
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-size: cover;
-  -webkit-animation: animatedBackground 200s linear infinite;
-          animation: animatedBackground 200s linear infinite;
+  /* -webkit-animation: animatedBackground 200s linear infinite;
+          animation: animatedBackground 200s linear infinite; */
 }
 
-@-webkit-keyframes animatedBackground {
+/* @-webkit-keyframes animatedBackground {
   from { background-position: 0 0; }
   to { background-position: -5336px 0; }
 }
@@ -61,7 +60,7 @@ body{
 @keyframes animatedBackground {
   from { background-position: 0 0; }
   to { background-position: -5336px 0; }
-}
+} */
 
 /*typography*/
 
