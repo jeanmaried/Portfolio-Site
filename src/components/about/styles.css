@@ -10,6 +10,7 @@
 .about_view_container{
   color: white;
   padding: 0 1rem 0 1rem;
+  margin-bottom: 5rem;
   overflow: auto;
 }
 
