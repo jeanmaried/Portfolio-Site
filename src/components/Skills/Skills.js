@@ -12,7 +12,7 @@ class Skills extends Component {
     return (
       <div className="skills white flex direction-column align-items-center flex-wrap">
         <h2 className="skills_title text-align">Skills</h2>
-        <div className="flex flex-wrap text-align">
+        <div className="flex flex-wrap justify-center">
           <i className="devicon-html5-plain" />
           <i className="devicon-css3-plain" />
           <i className="devicon-sass-plain" />
@@ -24,14 +24,9 @@ class Skills extends Component {
           <i className="devicon-gulp-plain" />
           <i className="devicon-react-plain" />
           <i className="devicon-mongodb-plain" />
+          <i className="devicon-meteor-plain" />
         </div>
         {/* <div><i className="devicon-postgresql-plain"></i></div> */}
-
-        <div>
-          <div>
-            <i className="devicon-meteor-plain" />
-          </div>
-        </div>
         <h3 className="skills_title text-align">Learning</h3>
         <div className="flex flex-wrap text-align">
           <i className="devicon-nodejs-plain" />
