@@ -143,7 +143,7 @@ class MrChatBot extends Component {
 
                     {
                         id: '12',
-                        options: [{ value: 1, label: "Need more help?", trigger: '7'}],
+                        options: [{ value: 1, label: "Need more help!", trigger: '7'}],
                     },
             ]}
             />

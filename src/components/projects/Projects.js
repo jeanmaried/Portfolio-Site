@@ -31,14 +31,16 @@ export default class Slider extends Component {
     return (
       <div className="card_collection">
         <h2 className="text-align">Projects</h2>
-        {
-          projects.map((project)=>{
-            i += 1
-            return <ProjectSlides
-                      project_info={project} key={i}
-                    />
-          })
-        }
+        <div className=" flex flex-wrap justify-center align-items-center">
+          {
+            projects.map((project)=>{
+              i += 1
+              return <ProjectSlides
+                        project_info={project} key={i}
+                      />
+            })
+          }
+        </div>
       </div>
     );
   }

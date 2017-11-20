@@ -11,7 +11,7 @@ class About extends Component {
       <div className="about_view_container flex direction-column">
         <div className="title_earth flex justify-between align-items-center">
 
-          <h2 className="about_title">Who am I ?</h2>
+          <h2 className="about_title">About</h2>
 
           <div className="earth text-align">
             <div className="moon"><img src={require("../../assets/moon2.png")} alt=""/></div>

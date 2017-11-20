@@ -81,6 +81,12 @@ body{
 }
 
 /*queries==============================*/
+@media screen and (min-width: 400px) {
+  h2{
+    font-size: 2rem;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .icons{
     max-width: 60%;
@@ -90,6 +96,10 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  h2{
+    font-size: 2.5rem;
   }
 }
 

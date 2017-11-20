@@ -77,3 +77,28 @@
 		           rotate(-360deg);
 	}
 }
+
+@media screen and (min-width: 600px){
+	
+	.mars{
+	  margin-top: -7rem;
+	  margin-left: -7rem;
+	  height: 14rem;
+	  width: 14rem;
+	  top: 45%;
+	}
+	
+	.name{
+		font-size: 2.2rem;
+		padding-top: 3.7rem;
+	}
+	
+	.rocket img{
+		width: 3.9rem;
+		margin: .1rem;
+	}
+	
+	.rocket {
+	  top: 41%;
+	}
+}
