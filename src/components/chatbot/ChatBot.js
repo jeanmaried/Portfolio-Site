@@ -86,7 +86,7 @@ class MrChatBot extends Component {
                 steps={[
                     {
                         id: '1',
-                        delay: 4000,
+                        delay: 5000,
                         message: 'Hi I am Jack The Bot.',
                         trigger: '2',
                     },
