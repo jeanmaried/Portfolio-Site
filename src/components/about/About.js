@@ -7,10 +7,11 @@ import './styles.css'
 class About extends Component {
   render() {
     return (
-    <div className="about">
+    <div className="about flex justify-center">
       <div className="about_view_container flex direction-column">
-        <div className="title_earth flex justify-between align-items-center">
 
+        <div className="title_earth flex justify-between align-items-center">
+      
           <h2 className="about_title">About</h2>
 
           <div className="earth text-align">
