@@ -1,33 +1,53 @@
 import React from 'react';
 import '../../flex.css';
 import FontAwesome from 'react-fontawesome';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
+import {
+  Card,
+  CardActions,
+  CardHeader,
+  CardMedia,
+  CardTitle,
+  CardText
+} from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
 import './styles.css';
 
 import PropTypes from 'prop-types';
 
-
-const ProjectSlides= ({project_info}) => {
-
+const ProjectSlides = ({ project_info }) => {
   return (
     <div className="card">
       <Card id={project_info.id}>
         <CardMedia>
           <img src={project_info.picture} alt="" />
         </CardMedia>
-        <CardTitle title={project_info.title} subtitle={project_info.tools.join(', ')} />
-        <CardText>
+        <CardTitle
+          title={project_info.title}
+          subtitle={project_info.tools.join(', ')}
+        />
+        <CardText className="card_description">
           {project_info.description}
         </CardText>
         <CardActions>
-        {!project_info.site_link ? null : <a target="_blank" href={project_info.site_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="mouse-pointer" size="2x"/>} /></a>}
-        <a target="_blank" href={project_info.git_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="github" size="2x"/>} /></a>
+          {!project_info.site_link ? null : (
+            <a target="_blank" href={project_info.site_link}>
+              <RaisedButton
+                backgroundColor="#616161"
+                label={<FontAwesome name="mouse-pointer" size="2x" />}
+              />
+            </a>
+          )}
+          <a target="_blank" href={project_info.git_link}>
+            <RaisedButton
+              backgroundColor="#616161"
+              label={<FontAwesome name="github" size="2x" />}
+            />
+          </a>
         </CardActions>
-      </Card>     
+      </Card>
     </div>
-  )
-}
+  );
+};
 
 // ProjectSlides.propTypes = {
 //   current: PropTypes.number.isRequired,

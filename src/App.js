@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Route, Switch} from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
@@ -12,24 +12,23 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
 class App extends Component {
-
-  render(){
-    return(
-    <HashRouter>
-      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        <Layout>
+  render() {
+    return (
+      <HashRouter>
+        <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+          <Layout>
             <Switch>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/about" component={About}/>  
-              <Route exact path="/contact" component={Contact}/>
-              <Route exact path="/projects" component={Projects}/>
-              <Route exact path="/skills" component={Skills}/>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/skills" component={Skills} />
               <Route component={NotFound} />
             </Switch>
-        </Layout>
+          </Layout>
         </MuiThemeProvider>
-    </HashRouter>
-      )
+      </HashRouter>
+    );
   }
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import ChatBot from 'react-simple-chatbot';
 import './styles.css';
 
@@ -14,9 +14,9 @@ const theme = {
   botFontColor: '#fff',
   userBubbleColor: '#fff',
   userFontColor: '#4a4a4a',
-  position: "fixed",
-  zIndex: "99999",
-  textAlign: "left",
+  position: 'fixed',
+  zIndex: '99999',
+  textAlign: 'left'
 };
 
 class LinkHandler extends Component {
@@ -34,38 +34,37 @@ class MrChatBot extends Component {
     super(props);
 
     this.state = {
-      loading: false,
+      loading: false
     };
 
     this.handleEnd = this.handleEnd.bind(this);
   }
 
-    handleEnd() {
-        document.querySelector('.tutorial .rsc-header a').click();
-    }
+  handleEnd() {
+    document.querySelector('.tutorial .rsc-header a').click();
+  }
 
+  handleProjects = () => {
+    this.props.history.push('/projects');
+    return '11';
+  };
 
-    handleProjects= ()=>{
-        this.props.history.push('/projects');
-        return "11"
-    }
+  handleAbout = () => {
+    this.props.history.push('/about');
+    return '11';
+  };
 
-    handleAbout = ()=>{
-        this.props.history.push('/about');
-        return "11"
-    }
+  handleContact = () => {
+    this.props.history.push('/contact');
+    return '11';
+  };
 
-    handleContact = ()=>{
-        this.props.history.push('/contact');
-        return "11"
-    }
-
-    componentDidMount(){
-        setTimeout(() => {
-            document.querySelector('.rsc-float-button').click();
-          }, 1500)
-        // rsc-float-button sc-fjdhpX biAEAb
-    }
+  componentDidMount() {
+    setTimeout(() => {
+      document.querySelector('.rsc-float-button').click();
+    }, 1500);
+    // rsc-float-button sc-fjdhpX biAEAb
+  }
 
   render() {
     const { loading } = this.state;
@@ -76,87 +75,86 @@ class MrChatBot extends Component {
     }
 
     return (
-        <div className="bot">
-            <ChatBot
-                className="tutorial"
-                floating={true}
-                headerTitle="Chat"
-                style={theme}
-                botDelay= {1500}
-                steps={[
-                    {
-                        id: '1',
-                        delay: 5000,
-                        message: 'Hi I am Jack The Bot.',
-                        trigger: '2',
-                    },
-                    {
-                        id: '2',
-                        message: 'My brain is being built. I am not very smart yet.',
-                        trigger: '3',
-                    },
-                    {
-                        id: '3',
-                        message: 'May I have your name please?',
-                        trigger: '4',
-                    },
-                    {
-                        id: '4',
-                        user: true,
-                        trigger: '5',
-                    },
-                    {
-                        id: '5',
-                        message: 'Nice to meet you, {previousValue}!',
-                        trigger: '6',
-                    },
-                    {
-                        id: '6',
-                        message: 'What can I help you with?',
-                        trigger: '7',
-                    },
-                    {
-                    id: '7',
-                        options: [
-                            { value: 1, label: "Projects", trigger: this.handleProjects},
-                            { value: 2, label: "About", trigger: this.handleAbout, },
-                            // { value: 3, label: "Contact", trigger: this.handleContact, },
-                            { value: 4, label: 'Why should I hire Jean?', trigger: '8' },
-                        ],
-                    },
-                    {
-                        id: '8',
-                        message: "Jean has a passion for web development. All he ever does is code.",
-                        trigger: '9',
-                    },
-                    {
-                        id: '9',
-                        message: "I can safely tell you he will bring creativity and great problem solving skills to your team!",
-                        trigger: '10',
-                    },
-                    {
-                        id: '10',
-                        message: "He is also planning on learning to build me a brain using Node.js.",
-                        trigger: '7',
-                    },
-                    {
-                        id: '11',
-                        replace: true,
-                        component: (
-                            <LinkHandler
-                            handleLink={this.props.handleLink}
-                            />
-                        ),
-                        trigger: '12'
-                    },
+      <div className="bot">
+        <ChatBot
+          className="tutorial"
+          floating={true}
+          headerTitle="Chat"
+          style={theme}
+          botDelay={1500}
+          steps={[
+            {
+              id: '1',
+              delay: 5000,
+              message: 'Hi I am Jack The Bot.',
+              trigger: '2'
+            },
+            {
+              id: '2',
+              message: 'My brain is being built. I am not very smart yet.',
+              trigger: '3'
+            },
+            {
+              id: '3',
+              message: 'May I have your name please?',
+              trigger: '4'
+            },
+            {
+              id: '4',
+              user: true,
+              trigger: '5'
+            },
+            {
+              id: '5',
+              message: 'Nice to meet you, {previousValue}!',
+              trigger: '6'
+            },
+            {
+              id: '6',
+              message: 'What can I help you with?',
+              trigger: '7'
+            },
+            {
+              id: '7',
+              options: [
+                { value: 1, label: 'Projects', trigger: this.handleProjects },
+                { value: 2, label: 'About', trigger: this.handleAbout },
+                // { value: 3, label: "Contact", trigger: this.handleContact, },
+                { value: 4, label: 'Why should I hire Jean?', trigger: '8' }
+              ]
+            },
+            {
+              id: '8',
+              message:
+                'Jean has a passion for web development. All he ever does is code.',
+              trigger: '9'
+            },
+            {
+              id: '9',
+              message:
+                'I can safely tell you he will bring creativity and great problem solving skills to your team!',
+              trigger: '10'
+            },
+            {
+              id: '10',
+              message:
+                'He is also planning on learning to build me a brain using Node.js.',
+              trigger: '7'
+            },
+            {
+              id: '11',
+              replace: true,
+              component: <LinkHandler handleLink={this.props.handleLink} />,
+              trigger: '12'
+            },
 
-                    {
-                        id: '12',
-                        options: [{ value: 1, label: "Need more help!", trigger: '7'}],
-                    },
-            ]}
-            />
-        </div>
+            {
+              id: '12',
+              options: [{ value: 1, label: 'Need more help!', trigger: '7' }]
+            }
+          ]}
+        />
+      </div>
     );
   }
 }

@@ -1,41 +1,44 @@
 [
-    {
-        "id": 1,
-        "title": "RED Life",
-        "site_link": null,
-        "git_link":"https://github.com/jeanmaried/ES6-shopping-cart",
-        "picture": "./assets/redlife.png",
-        "description":"Full-stack social media application built in house for RED Academy.",
-        "tools": ["React.js", "Meteor"]
-    },
+  {
+    "id": 1,
+    "title": "RED Life",
+    "site_link": null,
+    "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
+    "picture": "./assets/redlife.png",
+    "description":
+      "Full-stack social media application built in house for RED Academy. Allowing students to get to know eachother, vote for upcoming event themes, staff announcements or random posts.",
+    "tools": ["JSX", "CSS", "React.js", "Meteor"]
+  },
 
-    {
-        "id": 2,
-        "title": "GTA Tooth Fairy",
-        "site_link": "http://www.gtatoothfairy.com",
-        "git_link":"https://github.com/jeanmaried/tooth_fairy_wordpress_site",
-        "picture":"./assets/tooth-fairy.png",
-        "description":"WordPress site for \"GTA Tooth Fairy\"",
-        "tools": ["WordPress", "PHP"]
-    },
+  {
+    "id": 2,
+    "title": "GTA Tooth Fairy",
+    "site_link": "http://www.gtatoothfairy.com",
+    "git_link": "https://github.com/jeanmaried/tooth_fairy_wordpress_site",
+    "picture": "./assets/tooth-fairy.png",
+    "description":
+      "Built a WordPress site as part of a team for \"GTA Tooth Fairy\" client.",
+    "tools": ["HTML", "CSS", "Gulp", "WordPress", "PHP"]
+  },
 
-    {
-        "id": 3,
-        "title": "Shopping Cart",
-        "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
-        "git_link":"https://github.com/jeanmaried/ES6-shopping-cart",
-        "picture": "./assets/shopping-cart.png",
-        "description":"JavaScript Shopping Cart built from the ground up.",
-        "tools": ["ES6", "Gulp"]
-    },
+  {
+    "id": 3,
+    "title": "Shopping Cart",
+    "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
+    "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
+    "picture": "./assets/shopping-cart.png",
+    "description":
+      "Built a Shopping Cart from the ground up using ES6 classes.",
+    "tools": ["Gulp", "ES6"]
+  },
 
-    {
-        "id": 4,
-        "title": "News App",
-        "site_link": "https://jeanmaried.github.io/News-app/",
-        "git_link":"https://github.com/jeanmaried/News-app",
-        "picture":"./assets/NYT.png",
-        "description":"News app fetching current news from the New York Times.",
-        "tools": ["jQuery", "Gulp"]
-    }
+  {
+    "id": 4,
+    "title": "News App",
+    "site_link": "https://jeanmaried.github.io/News-app/",
+    "git_link": "https://github.com/jeanmaried/News-app",
+    "picture": "./assets/NYT.png",
+    "description": "News app fetching current news from the New York Times.",
+    "tools": ["HTML", "CSS", "Gulp", "jQuery"]
+  }
 ]

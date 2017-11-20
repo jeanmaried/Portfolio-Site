@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,47 +17,49 @@ html {
   z-index: 0;
 }
 
-.body{
+.body {
   overflow: auto;
 }
 
-h1, h2 {
+h1,
+h2,
+h3 {
   font-family: 'Russo One', sans-serif;
   text-shadow: 4px 4px black;
   color: yellow !important;
 }
 
-li{
+li {
   list-style: none;
 }
 
-ul{
+ul {
   margin: 0px;
   padding: 0px;
 }
 
 a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
-.fa{
-  padding-top: .25rem;
+.fa {
+  padding-top: 0.25rem;
 }
 
-.text-end{
+.text-end {
   text-align: end;
 }
 
-.menu{
-  background-size: contain; 
+.menu {
+  background-size: contain;
   border-radius: 100%;
   margin: 1rem;
   min-width: 2rem;
   color: yellow;
 }
 
-body{
+body {
   background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat;
   background-size: cover;
@@ -64,41 +67,41 @@ body{
 
 /*typography*/
 
-.white{
-  color:white;
+.white {
+  color: white;
 }
 
-.black{
+.black {
   color: black;
 }
 
-.yellow{
+.yellow {
   color: yellow;
 }
 
-.line-height{
+.line-height {
   line-height: 200%;
 }
 
 /*queries==============================*/
 @media screen and (min-width: 400px) {
-  h2{
+  h2 {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .icons{
+  .icons {
     max-width: 60%;
   }
 
-  .icons div{
+  .icons div {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
-  h2{
+  h2 {
     font-size: 2.5rem;
   }
 }
@@ -108,12 +111,3 @@ body{
   color: #0f0 !important;
   outline: solid #f00 1px !important;
 } */
-
-
-
-
-
-
-
-
-
