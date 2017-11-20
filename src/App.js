@@ -12,9 +12,6 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
 class App extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
   render() {
     return (
       <HashRouter>

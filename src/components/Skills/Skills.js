@@ -4,6 +4,10 @@ import FontAwesome from 'react-fontawesome';
 import './styles.css';
 
 class Skills extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="skills white flex direction-column align-items-center flex-wrap">
