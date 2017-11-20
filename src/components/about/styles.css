@@ -1,5 +1,6 @@
 .about{
-  padding-top: 64px;
+	padding-top: 64px;
+	max-height: 100vh;
 }
 
 .title_earth{
