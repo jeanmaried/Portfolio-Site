@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "RED Life",
-        "site_link": "#",
+        "site_link": null,
         "git_link":"https://github.com/jeanmaried/ES6-shopping-cart",
         "picture": "./assets/redlife.png",
         "description":"Full-stack social media application built in house for RED Academy.",

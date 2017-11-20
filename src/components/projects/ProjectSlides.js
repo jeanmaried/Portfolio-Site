@@ -21,7 +21,7 @@ const ProjectSlides= ({project_info}) => {
           {project_info.description}
         </CardText>
         <CardActions>
-        <a target="_blank" href={project_info.site_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="mouse-pointer" size="2x"/>} /></a>
+        {!project_info.site_link ? null : <a target="_blank" href={project_info.site_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="mouse-pointer" size="2x"/>} /></a>}
         <a target="_blank" href={project_info.git_link}><RaisedButton backgroundColor="#616161" label={<FontAwesome name="github" size="2x"/>} /></a>
         </CardActions>
       </Card>     
