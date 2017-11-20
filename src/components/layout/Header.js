@@ -44,6 +44,7 @@ export default class DrawerSimpleExample extends React.Component {
           <Link to="/skills"><MenuItem onClick={this.handleToggle}><FontAwesome className="fontAwesome" name="magic" size="2x"/>Skills</MenuItem></Link>
           <div className="copyright_contact text-align flex direction-column align-items-center">
             <div className="flex justify-between">
+              <a className="fontAwesome" href="https://twitter.com/MeDalmasso" target="_blank" rel="noopener noreferrer"><FontAwesome name="twitter" size="2x"/></a>
               <a className="fontAwesome" href="https://www.linkedin.com/in/joseph-jean-dalmasso-1b5473141/" target="_blank" rel="noopener noreferrer"><FontAwesome name="linkedin" size="2x"/></a>
               <a className="fontAwesome" href="https://github.com/jeanmaried" target="_blank" rel="noopener noreferrer"><FontAwesome name="github" size="2x"/></a>
               <a className="fontAwesome" href="mailto:me@jodalmasso.com"><FontAwesome name="envelope" size="2x"/></a>
