@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "RED Life",
-    "site_link": null,
+    "site_link": "https://reddir.herokuapp.com/",
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
     "picture": "./assets/redlife.png",
     "description":
