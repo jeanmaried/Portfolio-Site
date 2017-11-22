@@ -62,7 +62,7 @@ class MrChatBot extends Component {
   componentDidMount() {
     setTimeout(() => {
       document.querySelector('.rsc-float-button').click();
-    }, 1500);
+    }, 8000);
     // rsc-float-button sc-fjdhpX biAEAb
   }
 
@@ -85,7 +85,7 @@ class MrChatBot extends Component {
           steps={[
             {
               id: '1',
-              delay: 5000,
+              delay: 8000,
               message: 'Hi I am Jack The Bot.',
               trigger: '2'
             },
