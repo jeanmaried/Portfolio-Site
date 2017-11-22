@@ -12,7 +12,7 @@ class About extends Component {
 
   render() {
     return (
-      <div className="about flex justify-center">
+      <div className="about flex justify-between">
         <div className="about_view_container flex direction-column">
           <div className="title_earth flex justify-between align-items-center">
             <h2 className="about_title">About</h2>

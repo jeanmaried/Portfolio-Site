@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  background-color: black;
+  background-color: rgb(66, 66, 66);
   background-image: url('./assets/dark_space.jpg');
   background-repeat: repeat;
   background-size: cover;

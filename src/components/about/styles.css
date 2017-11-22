@@ -3,6 +3,14 @@
   max-height: 100vh;
 }
 
+.yellow_paragraph {
+  border-radius: 5px;
+  background: yellow;
+  color: rgb(48, 48, 48);
+  padding: 1rem;
+  line-height: 150%;
+}
+
 .title_earth {
   padding: 2rem 1rem 2rem 0.5rem;
 }
