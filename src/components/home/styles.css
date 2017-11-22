@@ -1,11 +1,12 @@
-.home_page{
-	height: 100vh;
-	width: 100vw;
+.home_page {
+  height: 100vh;
+  width: 100vw;
 }
 
-.mars{
+.mars {
   background-color: black;
-  background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url('../../assets/mars.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url('../../assets/mars.png');
   background-position: center;
   background-size: cover;
   border-radius: 100%;
@@ -18,18 +19,18 @@
   top: 40%;
 }
 
-.name{
-	font-size: 1.4rem;
-	padding-top: 2.5rem;
+.name {
+  font-size: 1.4rem;
+  padding-top: 2.5rem;
 }
 
 /* ===ROCKET ANIMATION=== */
 
-.rocket img{
-	width: 3.2rem;
-	margin: -.2rem;
-  	-webkit-transform: rotate(55deg);
-          transform: rotate(55deg);
+.rocket img {
+  width: 3.2rem;
+  margin: -0.2rem;
+  -webkit-transform: rotate(55deg);
+  transform: rotate(55deg);
 }
 
 .rocket {
@@ -37,68 +38,51 @@
   z-index: 999;
   top: 38%;
   -webkit-animation: myOrbit 10s linear infinite;
-          animation: myOrbit 10s linear infinite;
+  animation: myOrbit 10s linear infinite;
 }
 
-@-webkit-keyframes myOrbit{
-	from {
-		-webkit-transform: rotate(0deg)
-		           translate(-300%)
-		           rotate(-360deg);
-		        transform: rotate(0deg)
-		           translate(-300%)
-		           rotate(-360deg);
-	}
-	to {
-		-webkit-transform: rotate(360deg)
-		           translate(-300%) 
-		           rotate(-360deg);
-		        transform: rotate(360deg)
-		           translate(-300%) 
-		           rotate(-360deg);
-	}
+@-webkit-keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translate(-300%) rotate(-360deg);
+    transform: rotate(0deg) translate(-300%) rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-300%) rotate(-360deg);
+    transform: rotate(360deg) translate(-300%) rotate(-360deg);
+  }
 }
 
-@keyframes myOrbit{
-	from {
-		-webkit-transform: rotate(0deg)
-		           translate(-300%)
-		           rotate(-360deg);
-		        transform: rotate(0deg)
-		           translate(-300%)
-		           rotate(-360deg);
-	}
-	to {
-		-webkit-transform: rotate(360deg)
-		           translate(-300%) 
-		           rotate(-360deg);
-		        transform: rotate(360deg)
-		           translate(-300%) 
-		           rotate(-360deg);
-	}
+@keyframes myOrbit {
+  from {
+    -webkit-transform: rotate(0deg) translate(-300%) rotate(-360deg);
+    transform: rotate(0deg) translate(-300%) rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate(-300%) rotate(-360deg);
+    transform: rotate(360deg) translate(-300%) rotate(-360deg);
+  }
 }
 
-@media screen and (min-width: 600px){
-	
-	.mars{
-	  margin-top: -7rem;
-	  margin-left: -7rem;
-	  height: 14rem;
-	  width: 14rem;
-	  top: 45%;
-	}
-	
-	.name{
-		font-size: 2.2rem;
-		padding-top: 3.5rem;
-	}
-	
-	.rocket img{
-		width: 3.9rem;
-		margin: .1rem;
-	}
-	
-	.rocket {
-	  top: 41%;
-	}
+@media screen and (min-width: 600px) {
+  .mars {
+    margin-top: -7rem;
+    margin-left: -7rem;
+    height: 14rem;
+    width: 14rem;
+    top: 50%;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    padding-top: 3.5rem;
+  }
+
+  .rocket img {
+    width: 3.9rem;
+    margin: 0.1rem;
+  }
+
+  .rocket {
+    top: 46%;
+  }
 }
