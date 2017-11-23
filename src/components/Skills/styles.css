@@ -1,12 +1,11 @@
-i{
-    font-size: 2rem;
+i {
+  font-size: 2rem;
 }
 
-.skills div{
-    margin: .2rem;
-    padding: .2rem;
+.skills div i {
+  padding: 1rem;
 }
 
-.skills_title{
-    padding-top: 64px;
+.skills_title {
+  padding-top: 64px;
 }

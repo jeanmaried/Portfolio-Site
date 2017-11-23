@@ -27,7 +27,7 @@ class Skills extends Component {
           <i className="devicon-meteor-plain" />
         </div>
         {/* <div><i className="devicon-postgresql-plain"></i></div> */}
-        <h3 className="skills_title text-align">Learning</h3>
+        <h3 className="text-align">Learning</h3>
         <div className="flex flex-wrap text-align">
           <i className="devicon-nodejs-plain" />
           <i className="devicon-express-original" />

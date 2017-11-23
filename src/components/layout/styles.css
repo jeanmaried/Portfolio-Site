@@ -6,8 +6,8 @@
   width: 100vw;
 }
 
-.drawer div {
-  padding-top: 0.5rem;
+.drawer:first-child {
+  padding-top: 1rem;
 }
 
 footer {
