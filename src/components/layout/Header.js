@@ -19,10 +19,16 @@ export default class DrawerSimpleExample extends React.Component {
     d = d.getFullYear();
 
     const styles = {
-      zIndex: '9999',
-      background: '#424242',
-      color: 'yellow',
-      position: 'fixed'
+      header: {
+        zIndex: '9999',
+        background: '#292F33',
+        color: 'yellow',
+        position: 'fixed'
+      },
+
+      drawer: {
+        background: '#292F33'
+      }
     };
 
     return (
@@ -31,10 +37,15 @@ export default class DrawerSimpleExample extends React.Component {
           title="Web Developer"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
           onClick={this.handleToggle}
-          style={styles}
+          style={styles.header}
         />
 
-        <Drawer className="drawer" open={this.state.open}>
+        <Drawer
+          backgroundColor="#292F33"
+          containerStyle={styles.drawer}
+          containerClassName="drawer"
+          open={this.state.open}
+        >
           <MenuItem disabled={true} />
           <Link to="/">
             <MenuItem onClick={this.handleToggle}>
@@ -43,29 +54,17 @@ export default class DrawerSimpleExample extends React.Component {
           </Link>
           <Link to="/about">
             <MenuItem onClick={this.handleToggle}>
-              <FontAwesome
-                className="fontAwesome"
-                name="question"
-                size="2x"
-              />About
+              <FontAwesome className="fontAwesome" name="question" size="2x" />About
             </MenuItem>
           </Link>
           <Link to="/projects">
             <MenuItem onClick={this.handleToggle}>
-              <FontAwesome
-                className="fontAwesome"
-                name="briefcase"
-                size="2x"
-              />Projects
+              <FontAwesome className="fontAwesome" name="briefcase" size="2x" />Projects
             </MenuItem>
           </Link>
           <Link to="/skills">
             <MenuItem onClick={this.handleToggle}>
-              <FontAwesome
-                className="fontAwesome"
-                name="magic"
-                size="2x"
-              />Skills
+              <FontAwesome className="fontAwesome" name="magic" size="2x" />Skills
             </MenuItem>
           </Link>
           <div className="copyright_contact text-align flex direction-column align-items-center">

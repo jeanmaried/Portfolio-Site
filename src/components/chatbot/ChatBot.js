@@ -59,12 +59,12 @@ class MrChatBot extends Component {
     return '11';
   };
 
-  componentDidMount() {
-    setTimeout(() => {
-      document.querySelector('.rsc-float-button').click();
-    }, 8000);
-    // rsc-float-button sc-fjdhpX biAEAb
-  }
+  // componentDidMount() {
+  //   setTimeout(() => {
+  //     document.querySelector('.rsc-float-button').click();
+  //   }, 8000);
+  //   // rsc-float-button sc-fjdhpX biAEAb
+  // }
 
   render() {
     const { loading } = this.state;
@@ -82,6 +82,7 @@ class MrChatBot extends Component {
           headerTitle="Chat"
           style={theme}
           botDelay={1500}
+          placeholder="Type your message..."
           steps={[
             {
               id: '1',

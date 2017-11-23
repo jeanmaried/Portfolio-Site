@@ -1,14 +1,6 @@
 .about {
-  padding-top: 64px;
+  padding-top: 60px;
   max-height: 100vh;
-}
-
-.yellow_paragraph {
-  border-radius: 5px;
-  background: yellow;
-  color: rgb(48, 48, 48);
-  padding: 1rem;
-  line-height: 150%;
 }
 
 .title_earth {
@@ -19,10 +11,11 @@
   color: white;
   padding: 0 5% 0 5%;
   overflow: auto;
+  opacity: 1;
 }
 
 .about_background {
-  background: #212121;
+  background: #292f33;
   padding: 0 0.5rem 0.5rem 0.5rem;
   border-radius: 20px;
   max-width: 400px;
@@ -36,11 +29,6 @@
   border-radius: 100%;
   height: 3rem;
   width: 3rem;
-}
-
-.moon {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
 }
 
 .moon img {

@@ -14,10 +14,14 @@ import './styles.css';
 
 import PropTypes from 'prop-types';
 
+const styles = {
+  background: '#292F33'
+};
+
 const ProjectSlides = ({ project_info }) => {
   return (
     <div className="card">
-      <Card id={project_info.id}>
+      <Card id={project_info.id} containerStyle={styles}>
         <CardMedia>
           <img src={project_info.picture} alt="" />
         </CardMedia>

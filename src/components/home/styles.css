@@ -15,9 +15,35 @@
   height: 10rem;
   width: 10rem;
   position: absolute;
-  z-index: 999;
   top: 40%;
+  z-index: 999;
+  /* -webkit-animation: floater 4s infinite ease-in-out;
+  animation: floater 4s infinite ease-in-out; */
 }
+/* 
+@-webkit-keyframes floater {
+  0% {
+    top: 40%;
+  }
+  50% {
+    top: 42%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+
+@keyframes floater {
+  0% {
+    top: 40%;
+  }
+  50% {
+    top: 42%;
+  }
+  100% {
+    top: 40%;
+  }
+} */
 
 .name {
   font-size: 1.4rem;

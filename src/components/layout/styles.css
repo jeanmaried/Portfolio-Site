@@ -4,11 +4,10 @@
 
 .header_background {
   width: 100vw;
-  background: rgb(48, 48, 48);
 }
 
 .drawer div {
-  /* position: relative; */
+  padding-top: 0.5rem;
 }
 
 footer {

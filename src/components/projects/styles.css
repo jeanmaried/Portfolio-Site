@@ -1,6 +1,7 @@
 .card_collection {
   overflow: scroll;
   position: absolute;
+  z-index: 999;
   padding-top: 64px;
 }
 
