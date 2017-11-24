@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 import Particles from '../Particles';
+import { withRouter } from 'react-router-dom';
 
 import '../../flex.css';
 
@@ -10,13 +11,13 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <Header />
+        {this.props.location.pathname == '/' ? null : <Header />}
         <Particles />
         {this.props.children}
-        <Footer />
+        {this.props.location.pathname == '/' ? null : <Footer />}
       </div>
     );
   }
 }
 
-export default Layout;
+export default withRouter(Layout);

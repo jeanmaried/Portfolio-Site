@@ -59,13 +59,6 @@ class MrChatBot extends Component {
     return '11';
   };
 
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     document.querySelector('.rsc-float-button').click();
-  //   }, 8000);
-  //   // rsc-float-button sc-fjdhpX biAEAb
-  // }
-
   render() {
     const { loading } = this.state;
     const mobile = window.innerWidth < 568;

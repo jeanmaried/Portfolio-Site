@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import AppBar from 'material-ui/AppBar';
 
-export default class DrawerSimpleExample extends React.Component {
+class DrawerSimpleExample extends React.Component {
   constructor(props) {
     super(props);
     this.state = { open: false };
@@ -28,6 +28,19 @@ export default class DrawerSimpleExample extends React.Component {
 
       drawer: {
         background: '#292F33'
+      },
+
+      flag: {
+        width: 30,
+        paddingTop: 2,
+        padding: 5
+      },
+
+      flagHolder: {
+        position: 'fixed',
+        zIndex: 9999,
+        top: 10,
+        right: 10
       }
     };
 
@@ -40,6 +53,15 @@ export default class DrawerSimpleExample extends React.Component {
           style={styles.header}
         />
 
+        <div style={styles.flagHolder} className="flex align-items-center">
+          <a href="#">
+            <img style={styles.flag} src={require('../../assets/france.png')} />
+          </a>
+          <a href="#">
+            <img style={styles.flag} src={require('../../assets/canada.png')} />
+          </a>
+        </div>
+
         <Drawer
           backgroundColor="#292F33"
           containerStyle={styles.drawer}
@@ -47,7 +69,7 @@ export default class DrawerSimpleExample extends React.Component {
           open={this.state.open}
         >
           <MenuItem disabled={true} />
-          <Link to="/">
+          <Link to="/home">
             <MenuItem onClick={this.handleToggle}>
               <FontAwesome className="fontAwesome" name="home" size="2x" />Home
             </MenuItem>
@@ -108,3 +130,5 @@ export default class DrawerSimpleExample extends React.Component {
     );
   }
 }
+
+export default DrawerSimpleExample;

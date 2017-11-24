@@ -11,6 +11,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 
+import PopUp from './components/PopUp';
+
 class App extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -21,7 +23,8 @@ class App extends Component {
         <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
           <Layout>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={PopUp} />
+              <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/contact" component={Contact} />
               <Route exact path="/projects" component={Projects} />
