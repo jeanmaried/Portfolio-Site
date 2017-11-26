@@ -9,6 +9,8 @@ import {
   CardText
 } from 'material-ui/Card';
 import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { getLanguage } from '../../redux/modules/language';
 
 const styles = {
   popupContainer: {
@@ -43,9 +45,7 @@ class PopUp extends Component {
   }
 
   handleClick = e => {
-    this.setState({
-      language: e.target.id
-    });
+    this.props.dispatch(getLanguage(e.target.id));
     this.props.history.push('/home');
   };
 
@@ -90,4 +90,8 @@ class PopUp extends Component {
   }
 }
 
-export default withRouter(PopUp);
+const mapStateToProps = ({ language }) => ({
+  language: language.languageChosen
+});
+
+export default connect(mapStateToProps)(withRouter(PopUp));

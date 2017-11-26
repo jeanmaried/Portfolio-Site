@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import ProjectSlides from './ProjectSlides';
+import { connect } from 'react-redux';
+import { getLanguage } from '../../redux/modules/language';
+
 import './styles.css';
 import '../../flex.css';
 
 import axios from 'axios';
 
-export default class Slider extends Component {
+class Slider extends Component {
   constructor() {
     super();
 
@@ -15,11 +18,19 @@ export default class Slider extends Component {
   }
 
   componentWillMount() {
-    axios.get('project-config.json').then(res => {
-      this.setState({
-        project_info: res.data
+    if (this.props.language == 'french') {
+      axios.get('project-config-french.json').then(res => {
+        this.setState({
+          project_info: res.data
+        });
       });
-    });
+    } else {
+      axios.get('project-config.json').then(res => {
+        this.setState({
+          project_info: res.data
+        });
+      });
+    }
   }
 
   componentDidMount() {
@@ -31,7 +42,9 @@ export default class Slider extends Component {
     let projects = this.state.project_info;
     return (
       <div className="card_collection">
-        <h2 className="text-align">Projects</h2>
+        <h2 className="text-align">
+          {this.props.language == 'french' ? 'Projets' : 'Projects'}
+        </h2>
         <div className=" flex flex-wrap justify-center align-items-center">
           {projects.map(project => {
             i += 1;
@@ -42,3 +55,9 @@ export default class Slider extends Component {
     );
   }
 }
+
+const mapStateToProps = ({ language }) => ({
+  language: language.languageChosen
+});
+
+export default connect(mapStateToProps)(Slider);
