@@ -48,17 +48,17 @@ class MrChatBot extends Component {
 
   handleProjects = () => {
     this.props.history.push('/projects');
-    return '11';
+    return '12';
   };
 
   handleAbout = () => {
     this.props.history.push('/about');
-    return '11';
+    return '12';
   };
 
   handleContact = () => {
     this.props.history.push('/contact');
-    return '11';
+    return '12';
   };
 
   render() {
@@ -71,171 +71,117 @@ class MrChatBot extends Component {
 
     return (
       <div className="bot">
-        {this.props.language == 'french' ? (
-          <ChatBot
-            className="tutorial"
-            floating={true}
-            headerTitle="Chat"
-            style={theme}
-            botDelay={1500}
-            placeholder="Tapez votre message..."
-            steps={[
-              {
-                id: '1',
-                delay: 8000,
-                message: 'Salut, je suis Jack Le Bot.',
-                trigger: '2'
-              },
-              {
-                id: '2',
-                message:
-                  "Mon cerveau est en train d'être construit. Je ne suis pas encore très intelligent.",
-                trigger: '3'
-              },
-              {
-                id: '3',
-                message: "Pourrais-je avoir votre nom s'il vous plaît?",
-                trigger: '4'
-              },
-              {
-                id: '4',
-                user: true,
-                trigger: '5'
-              },
-              {
-                id: '5',
-                message: 'Ravi de vous rencontrer, {previousValue}!',
-                trigger: '6'
-              },
-              {
-                id: '6',
-                message: 'Comment puis-je vous aider?',
-                trigger: '7'
-              },
-              {
-                id: '7',
-                options: [
-                  { value: 1, label: 'Projets', trigger: this.handleProjects },
-                  { value: 2, label: 'Info', trigger: this.handleAbout },
-                  // { value: 3, label: "Contact", trigger: this.handleContact, },
-                  {
-                    value: 4,
-                    label: 'Pourquoi devrais-je embaucher Jean-Marie?',
-                    trigger: '8'
-                  }
-                ]
-              },
-              {
-                id: '8',
-                message:
-                  "Jean-Marie a une passion pour le développement web. Tout ce qu'il fait, c'est du code.",
-                trigger: '9'
-              },
-              {
-                id: '9',
-                message:
-                  "Je peux vous dire qu'il apportera de la créativité et de la résolution de problèmes à votre équipe!",
-                trigger: '10'
-              },
-              {
-                id: '10',
-                message:
-                  "Il prévoit également d'apprendre à me construire un cerveau en utilisant Node.js.",
-                trigger: '7'
-              },
-              {
-                id: '11',
-                replace: true,
-                component: <LinkHandler handleLink={this.props.handleLink} />,
-                trigger: '12'
-              },
+        <ChatBot
+          className="tutorial"
+          floating={true}
+          headerTitle="Talk to Jack"
+          style={theme}
+          botDelay={1500}
+          placeholder="Type your message..."
+          steps={[
+            {
+              id: '1',
+              options: [
+                {
+                  value: 1,
+                  label: 'English',
+                  trigger: 2
+                },
+                {
+                  value: 2,
+                  label: 'Français',
+                  trigger: 14
+                }
+              ]
+            },
+            {
+              id: '2',
+              message: 'Hi, I am Jack!',
+              trigger: '3'
+            },
+            {
+              id: '3',
+              message: 'My brain is being built. I am not very smart yet.',
+              trigger: '4'
+            },
+            {
+              id: '4',
+              message: 'May I have your name please?',
+              trigger: '5'
+            },
+            {
+              id: '5',
+              user: true,
+              trigger: '6'
+            },
+            {
+              id: '6',
+              message: 'Nice to meet you, {previousValue}!',
+              trigger: '7'
+            },
+            {
+              id: '7',
+              message: 'How may I help you?',
+              trigger: '8'
+            },
+            {
+              id: '8',
+              options: [
+                {
+                  value: 1,
+                  label: 'Projects',
+                  trigger: this.handleProjects
+                },
+                {
+                  value: 2,
+                  label: 'About',
+                  trigger: this.handleAbout
+                },
+                // { value: 3, label: "Contact", trigger: this.handleContact, },
+                {
+                  value: 4,
+                  label: 'Why should I hire Jean?',
+                  trigger: '9'
+                }
+              ]
+            },
+            {
+              id: '9',
+              message:
+                'Jean has a passion for web development. All he ever does is code.',
+              trigger: '10'
+            },
+            {
+              id: '10',
+              message:
+                'I can safely tell you he will bring creativity and great problem solving skills to your team!',
+              trigger: '11'
+            },
+            {
+              id: '11',
+              message:
+                'He is also planning on learning to build me a brain using Node.js.',
+              trigger: '13'
+            },
+            {
+              id: '12',
+              replace: true,
+              component: <LinkHandler handleLink={this.props.handleLink} />,
+              trigger: '8'
+            },
 
-              {
-                id: '12',
-                options: [{ value: 1, label: "Besoin d'aide!", trigger: '7' }]
-              }
-            ]}
-          />
-        ) : (
-          <ChatBot
-            className="tutorial"
-            floating={true}
-            headerTitle="Chat"
-            style={theme}
-            botDelay={1500}
-            placeholder="Type your message..."
-            steps={[
-              {
-                id: '1',
-                delay: 8000,
-                message: 'Hi I am Jack The Bot.',
-                trigger: '2'
-              },
-              {
-                id: '2',
-                message: 'My brain is being built. I am not very smart yet.',
-                trigger: '3'
-              },
-              {
-                id: '3',
-                message: 'May I have your name please?',
-                trigger: '4'
-              },
-              {
-                id: '4',
-                user: true,
-                trigger: '5'
-              },
-              {
-                id: '5',
-                message: 'Nice to meet you, {previousValue}!',
-                trigger: '6'
-              },
-              {
-                id: '6',
-                message: 'What can I help you with?',
-                trigger: '7'
-              },
-              {
-                id: '7',
-                options: [
-                  { value: 1, label: 'Projects', trigger: this.handleProjects },
-                  { value: 2, label: 'About', trigger: this.handleAbout },
-                  // { value: 3, label: "Contact", trigger: this.handleContact, },
-                  { value: 4, label: 'Why should I hire Jean?', trigger: '8' }
-                ]
-              },
-              {
-                id: '8',
-                message:
-                  'Jean has a passion for web development. All he ever does is code.',
-                trigger: '9'
-              },
-              {
-                id: '9',
-                message:
-                  'I can safely tell you he will bring creativity and great problem solving skills to your team!',
-                trigger: '10'
-              },
-              {
-                id: '10',
-                message:
-                  'He is also planning on learning to build me a brain using Node.js.',
-                trigger: '7'
-              },
-              {
-                id: '11',
-                replace: true,
-                component: <LinkHandler handleLink={this.props.handleLink} />,
-                trigger: '12'
-              },
-
-              {
-                id: '12',
-                options: [{ value: 1, label: 'Need more help!', trigger: '7' }]
-              }
-            ]}
-          />
+            {
+              id: '13',
+              options: [{ value: 1, label: 'Need more help!', trigger: '8' }]
+            },
+            {
+              id: '14',
+              message:
+                "Désolé, je suis toujours en train d'apprendre le français",
+              trigger: '1'
+            }
+          ]}
+        />
         )}
       </div>
     );

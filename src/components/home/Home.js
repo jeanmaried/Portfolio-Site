@@ -15,15 +15,11 @@ class Home extends Component {
   render() {
     return (
       <div className="home_page flex justify-center">
-        <a href="#">
+        <div className="make_clickable">
           <div className="mars text-align" onClick={this.handleClick}>
-            {this.props.language == 'french' ? (
-              <h1 className="yellow name">Jean-Marie Dalmasso</h1>
-            ) : (
-              <h1 className="yellow name">Joseph Jean Dalmasso</h1>
-            )}
+            <h1 className="yellow name">Joseph Jean Dalmasso</h1>
           </div>
-        </a>
+        </div>
         <div className="rocket">
           <img src={require('../../assets/red-rocket.png')} alt="" />
         </div>

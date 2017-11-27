@@ -26,7 +26,11 @@ const styles = {
   },
 
   card: {
-    width: 200
+    width: 200,
+    height: 100,
+    marginTop: -50,
+    position: 'fixed',
+    top: '50%'
   },
 
   flag: {
