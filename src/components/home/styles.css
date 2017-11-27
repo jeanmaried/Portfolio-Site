@@ -17,6 +17,32 @@
   position: fixed;
   z-index: 999;
   top: 50%;
+  -webkit-animation: floater 4s infinite ease-in-out;
+  animation: floater 4s infinite ease-in-out;
+}
+
+@-webkit-keyframes floater {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 52%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes floater {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 52%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 .name {
