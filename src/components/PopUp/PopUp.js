@@ -11,6 +11,7 @@ import {
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getLanguage } from '../../redux/modules/language';
+// import FontAwesome from 'react-fontawesome';
 
 const styles = {
   popupContainer: {
@@ -20,34 +21,22 @@ const styles = {
     width: '100vw'
   },
 
-  cardHolder: {
-    paddingBottom: 20,
+  card: {
+    width: 200,
+    position: 'fixed',
+    height: 120,
+    borderRadius: 10,
+    marginTop: -60,
+    top: '50vh',
     background: '#292F33'
   },
 
-  card: {
-    width: 200,
-    height: 100,
-    marginTop: -50,
-    position: 'absolute',
-    top: '50%'
-  },
-
   flag: {
-    width: 30,
-    paddingTop: 2
+    width: 45
   }
 };
 
 class PopUp extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      language: ''
-    };
-  }
-
   handleClick = e => {
     this.props.dispatch(getLanguage(e.target.id));
     this.props.history.push('/home');
@@ -60,8 +49,11 @@ class PopUp extends Component {
         className="flex align-items-center justify-center"
       >
         <Card style={styles.card}>
-          <h3 className="text-align">Language</h3>
-          <div style={styles.cardHolder} className="flex justify-center">
+          <div className="text-align">
+            <h3>Language?</h3>
+            {/* <FontAwesome className="yellow" name="globe" size="2x" /> */}
+          </div>
+          <div className="flex justify-center">
             <div className="flex direction-column text-align align-items-center">
               <FlatButton
                 onClick={this.handleClick}

@@ -39,8 +39,8 @@ class SideDrawer extends Component {
 
       flag: {
         width: 30,
-        paddingTop: 2,
         padding: 5,
+        paddingBottom: 0,
         cursor: 'pointer'
       },
 
@@ -49,6 +49,13 @@ class SideDrawer extends Component {
         zIndex: 9999,
         top: 10,
         right: 10
+      },
+
+      selected: {
+        background: 'yellow',
+        borderRadius: 5,
+        padding: 0,
+        margin: 0
       }
     };
 
@@ -68,14 +75,20 @@ class SideDrawer extends Component {
         />
 
         <div style={styles.flagHolder} className="flex align-items-center">
-          <div onClick={this.handleClick}>
+          <div
+            onClick={this.handleClick}
+            style={this.props.language == 'french' ? styles.selected : null}
+          >
             <img
               id="french"
               style={styles.flag}
               src={require('../../assets/france.png')}
             />
           </div>
-          <div onClick={this.handleClick}>
+          <div
+            onClick={this.handleClick}
+            style={this.props.language == 'english' ? styles.selected : null}
+          >
             <img
               id="english"
               style={styles.flag}
