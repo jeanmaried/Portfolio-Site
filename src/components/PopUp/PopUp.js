@@ -29,7 +29,7 @@ const styles = {
     width: 200,
     height: 100,
     marginTop: -50,
-    position: 'fixed',
+    position: 'absolute',
     top: '50%'
   },
 
