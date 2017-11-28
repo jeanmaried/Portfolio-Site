@@ -24,7 +24,7 @@ const styles = {
   card: {
     width: 200,
     position: 'fixed',
-    height: 120,
+    padding: 20,
     borderRadius: 10,
     marginTop: -60,
     top: '50vh',
@@ -49,12 +49,8 @@ class PopUp extends Component {
         className="flex align-items-center justify-center"
       >
         <Card style={styles.card}>
-          <div className="text-align">
-            <h3>Language?</h3>
-            {/* <FontAwesome className="yellow" name="globe" size="2x" /> */}
-          </div>
-          <div className="flex justify-center">
-            <div className="flex direction-column text-align align-items-center">
+          <div className="flex justify-center align-content-center">
+            <div>
               <FlatButton
                 onClick={this.handleClick}
                 label={
@@ -66,7 +62,7 @@ class PopUp extends Component {
                 }
               />
             </div>
-            <div className="flex direction-column align-items-center">
+            <div>
               <FlatButton
                 onClick={this.handleClick}
                 style={styles.canadianFlag}

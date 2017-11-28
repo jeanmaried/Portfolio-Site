@@ -1,6 +1,7 @@
 .about {
   padding-top: 60px;
-  max-height: 100vh;
+  max-height: 120vh;
+  overflow: auto;
 }
 
 .title_earth {
@@ -45,6 +46,12 @@
   top: 15px;
   -webkit-animation: myOrbit 17s linear infinite;
   animation: myOrbit 17s linear infinite;
+}
+
+.skills i {
+  padding: 1rem;
+  z-index: 999;
+  font-size: 2rem;
 }
 
 @-webkit-keyframes myOrbit {

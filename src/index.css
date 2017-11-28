@@ -6,22 +6,16 @@ body {
   outline: 0;
   vertical-align: baseline;
   font-family: 'PT Sans', sans-serif;
+  background: black;
 }
 
 body {
   background-color: #000000;
   margin: 0px;
-  background: black;
-  /* overflow: hidden; */
 }
 canvas {
   position: fixed;
   top: 0;
-}
-body {
-  /* background: black;
-  background-repeat: repeat;
-  background-size: cover; */
 }
 
 .body {

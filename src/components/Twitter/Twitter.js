@@ -5,7 +5,9 @@ import { relative } from 'path';
 
 const styles = {
   position: 'relative',
-  zIndex: 999
+  zIndex: 999,
+  height: '125vh',
+  overflow: 'auto'
 };
 
 class Twitter extends Component {

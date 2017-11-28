@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Earth from '../contact/Contact';
 import Twitter from '../Twitter';
 import { connect } from 'react-redux';
 import { getLanguage } from '../../redux/modules/language';
@@ -16,7 +15,7 @@ class About extends Component {
     let translate = () => {
       if (this.props.language == 'french') {
         return (
-          <div className="about_background">
+          <div>
             <p>Je suis un Développeur Web freelance basé à Toronto, ON.</p>
 
             <p>
@@ -31,11 +30,12 @@ class About extends Component {
               Je suis actuellement disponible pour des opportunités de travail
               freelance et à contrat.
             </p>
+            <h3 className="text-align">Skills</h3>
           </div>
         );
       } else {
         return (
-          <div className="about_background">
+          <div>
             <p>I am a Freelance Web Developer based in Toronto, ON.</p>
             <p>
               With a background in sales and customer service, I switched over
@@ -43,8 +43,11 @@ class About extends Component {
               logic in a more meaningful way. I am currently learning Node.js
               and have a mad passion for coding in React.js.
             </p>
-            I am currently available for freelance and contract work
-            opportunities.
+            <p>
+              I am currently available for freelance and contract work
+              opportunities.
+            </p>
+            <h3 className="text-align">Compètences</h3>
           </div>
         );
       }
@@ -66,8 +69,25 @@ class About extends Component {
               </div>
             </div>
           </div>
-
-          {translate()}
+          <div className="about_background">
+            {translate()}
+            <div className="skills flex flex-wrap justify-center">
+              <i className="devicon-html5-plain" />
+              <i className="devicon-css3-plain" />
+              <i className="devicon-sass-plain" />
+              <i className="devicon-javascript-plain" />
+              <i className="devicon-jquery-plain" />
+              <i className="devicon-wordpress-plain" />
+              <i className="devicon-php-plain" />
+              <i className="devicon-github-plain" />
+              <i className="devicon-gulp-plain" />
+              <i className="devicon-react-plain" />
+              <i className="devicon-mongodb-plain" />
+              <i className="devicon-meteor-plain" />
+              <i className="devicon-nodejs-plain" />
+              <i className="devicon-express-original" />
+            </div>
+          </div>
         </div>
         {window.innerWidth > 600 ? <Twitter /> : null}
       </div>
