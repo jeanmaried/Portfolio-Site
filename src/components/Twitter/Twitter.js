@@ -4,7 +4,8 @@ import { Timeline } from 'react-twitter-widgets';
 import { relative } from 'path';
 
 const styles = {
-  position: 'relative'
+  position: 'relative',
+  zIndex: 999
 };
 
 class Twitter extends Component {

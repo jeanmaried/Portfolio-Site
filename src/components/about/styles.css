@@ -4,6 +4,7 @@
 }
 
 .title_earth {
+  z-index: 999;
   padding: 2rem 1rem 2rem 0.5rem;
 }
 
@@ -17,6 +18,8 @@
 .about_background {
   background: #292f33;
   position: relative;
+  /* position: absolute; */
+  z-index: 999;
   padding: 0 0.5rem 0.5rem 0.5rem;
   border-radius: 20px;
   max-width: 400px;
@@ -31,6 +34,7 @@
   height: 3rem;
   width: 3rem;
   position: relative;
+  z-index: 999;
 }
 
 .moon img {
@@ -38,6 +42,7 @@
   -webkit-transform: rotate(55deg);
   transform: rotate(55deg);
   position: relative;
+  z-index: 999;
   top: 15px;
   -webkit-animation: myOrbit 17s linear infinite;
   animation: myOrbit 17s linear infinite;

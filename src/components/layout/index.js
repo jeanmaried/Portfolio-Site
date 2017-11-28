@@ -12,7 +12,7 @@ class Layout extends Component {
     return (
       <div>
         {this.props.location.pathname == '/' ? null : <Header />}
-        <Particles />
+        {/* <Particles /> */}
         {this.props.children}
         {this.props.location.pathname == '/' ? null : <Footer />}
       </div>

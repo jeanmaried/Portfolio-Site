@@ -30,7 +30,7 @@ class Skills extends Component {
           <i className="devicon-mongodb-plain" />
           <i className="devicon-meteor-plain" />
         </div>
-        <h3 className="text-align">
+        <h3 className="learning_title text-align">
           {this.props.language == 'french'
             ? "En Cours D'Apprentissage"
             : 'Learning'}

@@ -1,11 +1,14 @@
-i {
-  font-size: 2rem;
-}
-
 .skills div i {
   padding: 1rem;
+  z-index: 999;
+  font-size: 2rem;
 }
 
 .skills_title {
   padding-top: 64px;
+  z-index: 999;
+}
+
+.learning_title {
+  z-index: 999;
 }

@@ -74,7 +74,7 @@ class MrChatBot extends Component {
         <ChatBot
           className="tutorial"
           floating={true}
-          headerTitle="Jack"
+          headerTitle="Message"
           style={theme}
           botDelay={1500}
           placeholder="Type your message..."

@@ -8,6 +8,22 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+body {
+  background-color: #000000;
+  margin: 0px;
+  background: black;
+  /* overflow: hidden; */
+}
+canvas {
+  position: fixed;
+  top: 0;
+}
+body {
+  /* background: black;
+  background-repeat: repeat;
+  background-size: cover; */
+}
+
 .body {
   overflow: auto;
 }
@@ -48,12 +64,6 @@ a {
   margin: 1rem;
   min-width: 2rem;
   color: yellow;
-}
-
-body {
-  background: black;
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 /*typography*/
