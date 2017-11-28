@@ -1,12 +1,12 @@
 .about {
-  padding-top: 60px;
+  padding-top: 64px;
   max-height: 120vh;
   overflow: auto;
 }
 
 .title_earth {
   z-index: 999;
-  padding: 2rem 1rem 2rem 0.5rem;
+  padding: 64px 1rem 64px 0.5rem;
 }
 
 .about_view_container {
