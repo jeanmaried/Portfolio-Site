@@ -128,12 +128,6 @@ class SideDrawer extends Component {
               {this.props.language == 'french' ? 'Projets' : 'Projects'}
             </MenuItem>
           </Link>
-          {/* <Link to="/skills">
-            <MenuItem onClick={this.handleToggle}>
-              <FontAwesome className="fontAwesome" name="magic" size="2x" />
-              {this.props.language == 'french' ? 'Compétences' : 'Skills'}
-            </MenuItem>
-          </Link> */}
           <div className="copyright_contact text-align flex direction-column align-items-center">
             <div className="flex justify-between">
               <a

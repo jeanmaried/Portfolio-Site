@@ -48,22 +48,22 @@ class MrChatBot extends Component {
 
   handleProjects = () => {
     this.props.history.push('/projects');
-    return '9';
+    return '8';
   };
 
   handleAbout = () => {
     this.props.history.push('/about');
-    return '9';
+    return '8';
   };
 
   handleProjets = () => {
     this.props.history.push('/projects');
-    return '17';
+    return '15';
   };
 
   handleInfo = () => {
     this.props.history.push('/about');
-    return '17';
+    return '15';
   };
 
   render() {
@@ -95,7 +95,7 @@ class MrChatBot extends Component {
                 {
                   value: 2,
                   label: 'Français',
-                  trigger: 10
+                  trigger: 9
                 }
               ]
             },
@@ -106,31 +106,26 @@ class MrChatBot extends Component {
             },
             {
               id: '3',
-              message: 'My brain is being built. I am not very smart yet.',
+              message: 'May I have your name please?',
               trigger: '4'
             },
             {
               id: '4',
-              message: 'May I have your name please?',
+              user: true,
               trigger: '5'
             },
             {
               id: '5',
-              user: true,
+              message: 'Nice to meet you, {previousValue}!',
               trigger: '6'
             },
             {
               id: '6',
-              message: 'Nice to meet you, {previousValue}!',
+              message: 'How may I help you?',
               trigger: '7'
             },
             {
               id: '7',
-              message: 'How may I help you?',
-              trigger: '8'
-            },
-            {
-              id: '8',
               options: [
                 {
                   value: 1,
@@ -145,44 +140,38 @@ class MrChatBot extends Component {
               ]
             },
             {
-              id: '9',
+              id: '8',
               replace: true,
               component: <LinkHandler handleLink={this.props.handleLink} />,
-              trigger: '8'
+              trigger: '7'
+            },
+            {
+              id: '9',
+              message: 'Salut, je suis Jack!',
+              trigger: '10'
             },
             {
               id: '10',
-              message: 'Salut, je suis Jack!',
+              message: "Pourrais-je avoir votre nom s'il vous plaît?",
               trigger: '11'
             },
             {
               id: '11',
-              message:
-                "Mon cerveau est en train d'être construit. Je ne suis pas encore très intelligent.",
+              user: true,
               trigger: '12'
             },
             {
               id: '12',
-              message: "Pourrais-je avoir votre nom s'il vous plaît?",
+              message: 'Ravi de vous rencontrer, {previousValue}!',
               trigger: '13'
             },
             {
               id: '13',
-              user: true,
+              message: 'Comment puis-je vous aider?',
               trigger: '14'
             },
             {
               id: '14',
-              message: 'Ravi de vous rencontrer, {previousValue}!',
-              trigger: '15'
-            },
-            {
-              id: '15',
-              message: 'Comment puis-je vous aider?',
-              trigger: '16'
-            },
-            {
-              id: '16',
               options: [
                 {
                   value: 1,
@@ -197,10 +186,10 @@ class MrChatBot extends Component {
               ]
             },
             {
-              id: '17',
+              id: '15',
               replace: true,
               component: <LinkHandler handleLink={this.props.handleLink} />,
-              trigger: '16'
+              trigger: '14'
             }
           ]}
         />
