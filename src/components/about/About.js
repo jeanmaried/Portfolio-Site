@@ -30,7 +30,7 @@ class About extends Component {
               Je suis actuellement disponible pour des opportunités de travail
               freelance et à contrat.
             </p>
-            <h3 className="text-align">Skills</h3>
+            <h3 className="text-align">Compètences</h3>
           </div>
         );
       } else {
@@ -47,7 +47,7 @@ class About extends Component {
               I am currently available for freelance and contract work
               opportunities.
             </p>
-            <h3 className="text-align">Compètences</h3>
+            <h3 className="text-align">Skills</h3>
           </div>
         );
       }
