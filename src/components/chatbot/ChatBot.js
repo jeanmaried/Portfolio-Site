@@ -48,17 +48,22 @@ class MrChatBot extends Component {
 
   handleProjects = () => {
     this.props.history.push('/projects');
-    return '12';
+    return '9';
   };
 
   handleAbout = () => {
     this.props.history.push('/about');
-    return '12';
+    return '9';
   };
 
-  handleContact = () => {
-    this.props.history.push('/contact');
-    return '12';
+  handleProjets = () => {
+    this.props.history.push('/projects');
+    return '17';
+  };
+
+  handleInfo = () => {
+    this.props.history.push('/about');
+    return '17';
   };
 
   render() {
@@ -90,7 +95,7 @@ class MrChatBot extends Component {
                 {
                   value: 2,
                   label: 'Français',
-                  trigger: 14
+                  trigger: 10
                 }
               ]
             },
@@ -136,49 +141,66 @@ class MrChatBot extends Component {
                   value: 2,
                   label: 'About',
                   trigger: this.handleAbout
-                },
-                // { value: 3, label: "Contact", trigger: this.handleContact, },
-                {
-                  value: 4,
-                  label: 'Why should I hire Jean?',
-                  trigger: '9'
                 }
               ]
             },
             {
               id: '9',
-              message:
-                'Jean has a passion for web development. All he ever does is code.',
-              trigger: '10'
+              replace: true,
+              component: <LinkHandler handleLink={this.props.handleLink} />,
+              trigger: '8'
             },
             {
               id: '10',
-              message:
-                'I can safely tell you he will bring creativity and great problem solving skills to your team!',
+              message: 'Salut, je suis Jack!',
               trigger: '11'
             },
             {
               id: '11',
               message:
-                'He is also planning on learning to build me a brain using Node.js.',
-              trigger: '13'
+                "Mon cerveau est en train d'être construit. Je ne suis pas encore très intelligent.",
+              trigger: '12'
             },
             {
               id: '12',
-              replace: true,
-              component: <LinkHandler handleLink={this.props.handleLink} />,
-              trigger: '8'
+              message: "Pourrais-je avoir votre nom s'il vous plaît?",
+              trigger: '13'
             },
-
             {
               id: '13',
-              options: [{ value: 1, label: 'Need more help!', trigger: '8' }]
+              user: true,
+              trigger: '14'
             },
             {
               id: '14',
-              message:
-                "Désolé, je suis toujours en train d'apprendre le français",
-              trigger: '1'
+              message: 'Ravi de vous rencontrer, {previousValue}!',
+              trigger: '15'
+            },
+            {
+              id: '15',
+              message: 'Comment puis-je vous aider?',
+              trigger: '16'
+            },
+            {
+              id: '16',
+              options: [
+                {
+                  value: 1,
+                  label: 'Projets',
+                  trigger: this.handleProjets
+                },
+                {
+                  value: 2,
+                  label: 'Info',
+                  trigger: this.handleInfo
+                }
+              ]
+            },
+            {
+              id: '17',
+              replace: true,
+              component: <LinkHandler handleLink={this.props.handleLink} />,
+              trigger: '16'
             }
           ]}
         />
