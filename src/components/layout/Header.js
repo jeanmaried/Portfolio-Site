@@ -6,7 +6,7 @@ import { Link, withRouter } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import AppBar from 'material-ui/AppBar';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/language';
+import { getLanguage } from '../../redux/modules/state';
 
 class SideDrawer extends Component {
   constructor(props) {
@@ -169,8 +169,8 @@ class SideDrawer extends Component {
     );
   }
 }
-const mapStateToProps = ({ language }) => ({
-  language: language.languageChosen
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
 });
 
 export default connect(mapStateToProps)(withRouter(SideDrawer));

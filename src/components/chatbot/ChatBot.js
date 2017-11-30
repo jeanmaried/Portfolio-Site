@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/language';
+import { getLanguage } from '../../redux/modules/state';
 import './styles.css';
 
 const theme = {
@@ -34,17 +34,11 @@ class LinkHandler extends Component {
 class MrChatBot extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      loading: false
-    };
-
-    this.handleEnd = this.handleEnd.bind(this);
   }
 
-  handleEnd() {
+  handleEnd = () => {
     document.querySelector('.tutorial .rsc-header a').click();
-  }
+  };
 
   handleProjects = () => {
     this.props.history.push('/projects');
@@ -67,12 +61,7 @@ class MrChatBot extends Component {
   };
 
   render() {
-    const { loading } = this.state;
     const mobile = window.innerWidth < 568;
-
-    if (loading) {
-      return <span />;
-    }
 
     return (
       <div className="bot">
@@ -203,8 +192,8 @@ class MrChatBot extends Component {
 //   handleLink: PropTypes.func.isRequired,
 // };
 
-const mapStateToProps = ({ language }) => ({
-  language: language.languageChosen
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
 });
 
 export default connect(mapStateToProps)(withRouter(MrChatBot));

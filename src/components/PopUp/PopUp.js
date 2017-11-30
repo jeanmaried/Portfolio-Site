@@ -10,8 +10,7 @@ import {
 } from 'material-ui/Card';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/language';
-// import FontAwesome from 'react-fontawesome';
+import { getLanguage } from '../../redux/modules/state';
 
 const styles = {
   popupContainer: {
@@ -82,8 +81,8 @@ class PopUp extends Component {
   }
 }
 
-const mapStateToProps = ({ language }) => ({
-  language: language.languageChosen
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
 });
 
 export default connect(mapStateToProps)(withRouter(PopUp));

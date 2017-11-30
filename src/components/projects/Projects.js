@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProjectSlides from './ProjectSlides';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/language';
+import { getLanguage, getProjects } from '../../redux/modules/state';
 
 import './styles.css';
 import '../../flex.css';
@@ -11,24 +11,16 @@ import axios from 'axios';
 class Slider extends Component {
   constructor() {
     super();
-
-    this.state = {
-      project_info: []
-    };
   }
 
   componentWillMount() {
     if (this.props.language == 'french') {
       axios.get('project-config-french.json').then(res => {
-        this.setState({
-          project_info: res.data
-        });
+        this.props.dispatch(getProjects(res.data));
       });
     } else {
       axios.get('project-config.json').then(res => {
-        this.setState({
-          project_info: res.data
-        });
+        this.props.dispatch(getProjects(res.data));
       });
     }
   }
@@ -39,7 +31,7 @@ class Slider extends Component {
 
   render() {
     let i = 0;
-    let projects = this.state.project_info;
+    let projects = this.props.project;
     return (
       <div className="card_collection">
         <h2 className="text-align">
@@ -56,8 +48,9 @@ class Slider extends Component {
   }
 }
 
-const mapStateToProps = ({ language }) => ({
-  language: language.languageChosen
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen,
+  project: state.projectData
 });
 
 export default connect(mapStateToProps)(Slider);

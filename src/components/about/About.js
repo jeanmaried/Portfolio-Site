@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Twitter from '../Twitter';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/language';
+import { getLanguage } from '../../redux/modules/state';
 import '../../flex.css';
 import './styles.css';
 
@@ -95,8 +95,8 @@ class About extends Component {
   }
 }
 
-const mapStateToProps = ({ language }) => ({
-  language: language.languageChosen
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
 });
 
 export default connect(mapStateToProps)(About);

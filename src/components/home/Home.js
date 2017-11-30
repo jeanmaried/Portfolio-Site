@@ -28,8 +28,8 @@ class Home extends Component {
   }
 }
 
-const mapStateToProps = ({ language }) => ({
-  language: language.languageChosen
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
 });
 
 export default connect(mapStateToProps)(Home);
