@@ -111,15 +111,8 @@
         }
         animate();
       }
-      else if (navigator.userAgent.indexOf("Safari") != -1) {
-        document.body.style.background = "./assets/dark_space.jpg"
-      }
-      else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) //IF IE > 10
-      {
-        console.log("IE");
-      }
       else {
-        console.log('unknown');
+        document.body.style.background = "./assets/dark_space.jpg"
       }
     }
 
