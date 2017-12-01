@@ -4,7 +4,6 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import NotFound from './components/notfound/NotFound';
-import Skills from './components/Skills';
 import Layout from './components/layout';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
@@ -29,7 +28,6 @@ class App extends Component {
                 <Route exact path="/home" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/projects" component={Projects} />
-                <Route exact path="/skills" component={Skills} />
                 <Route component={NotFound} />
               </Switch>
             </Layout>
