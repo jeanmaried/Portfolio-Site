@@ -31,7 +31,9 @@ const styles = {
   },
 
   flag: {
-    width: 45
+    width: 45,
+    height: 45,
+    marginTop: -4
   }
 };
 
