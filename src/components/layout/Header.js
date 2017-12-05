@@ -92,7 +92,7 @@ class SideDrawer extends Component {
             <img
               id="english"
               style={styles.flag}
-              src={require('../../assets/canada.png')}
+              src={require('../../assets/english.png')}
             />
           </div>
         </div>

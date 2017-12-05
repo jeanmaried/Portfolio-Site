@@ -71,7 +71,7 @@ class PopUp extends Component {
                   <img
                     id="english"
                     style={styles.flag}
-                    src={require('../../assets/canada.png')}
+                    src={require('../../assets/english.png')}
                   />
                 }
               />
