@@ -6,7 +6,7 @@
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
     "picture": "./assets/redlife.png",
     "description":
-      "Application de médias sociaux Full Stack construit pour RED Academy. Permettant aux étudiants de mieux se connaître, de voter pour les prochains thèmes d'événement, des annonces du personnel ou des messages aléatoires.",
+      "Application de médias sociaux Full Stack construite pour RED Academy. Permettant aux étudiants de mieux se connaître, de voter pour les prochains thèmes d'événements, de publier des annonces du personnel ou des messages aléatoires.",
     "tools": ["JSX", "CSS", "React.js", "Meteor"]
   },
 
@@ -17,7 +17,7 @@
     "git_link": "https://github.com/jeanmaried/tooth_fairy_wordpress_site",
     "picture": "./assets/tooth-fairy.png",
     "description":
-      "Développer un site WordPress en PHP pour une hygiéniste dentaire, \"GTA Tooth Fairy\".",
+      "Développement d'un site WordPress en PHP pour une hygiéniste dentaire, \"GTA Tooth Fairy\".",
     "tools": ["HTML", "CSS", "Gulp", "WordPress", "PHP"]
   },
 
@@ -27,7 +27,7 @@
     "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
     "picture": "./assets/shopping-cart.png",
-    "description": "Construit un panier en utilisant les classes ES6.",
+    "description": "Construction d'un panier en utilisant les classes ES6.",
     "tools": ["Gulp", "ES6"]
   },
 
@@ -38,7 +38,7 @@
     "git_link": "https://github.com/jeanmaried/News-app",
     "picture": "./assets/NYT.png",
     "description":
-      "Construit utilisant Sass et jQuery pour afficher les articles du New York Times.",
+      "Construction d'un site utilisant Sass et jQuery pour afficher les articles du New York Times.",
     "tools": ["HTML", "CSS", "Gulp", "jQuery"]
   }
 ]

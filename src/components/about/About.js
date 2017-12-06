@@ -16,21 +16,24 @@ class About extends Component {
       if (this.props.language == 'french') {
         return (
           <div>
-            <p>Je suis un Développeur Web freelance basé à Toronto, ON.</p>
-
             <p>
-              Avec de l'expérience dans la vente et le service à la clientèle,
-              je suis passé au développement web pour me permettre d'appliquer
-              ma créativité et ma logique d'une manière plus significative.
-              J'apprends actuellement Node.js et j'ai une passion folle pour le
-              codage en React.js.
+              Je suis un Développeur Web travaillant en free-lance et vivant à
+              Toronto, ON.
             </p>
 
             <p>
-              Je suis actuellement disponible pour des opportunités de travail
-              freelance et à contrat.
+              Après une expérience dans la vente et le service à la clientèle
+              aux USA, je suis passé au développement web qui me permet de
+              mettre en valeur ma créativité et mon sens logique. J'apprends
+              actuellement Node.js et je me passionne pour le codage en
+              React.js.
             </p>
-            <h3 className="text-align">Compètences</h3>
+
+            <p>
+              Je suis disponible pour tout travail en free-lance et sous
+              contrat.
+            </p>
+            <h3 className="text-align">Compétences</h3>
           </div>
         );
       } else {
