@@ -17,7 +17,11 @@ class Home extends Component {
       <div className="home_page flex justify-center">
         <div className="make_clickable">
           <div className="mars" onClick={this.handleClick}>
-            <h1 className="yellow name text-align">Joseph Jean Dalmasso</h1>
+            <h1 className="yellow name text-align">
+              {this.props.language == 'french'
+                ? 'Jean-Marie Dalmasso'
+                : 'Joseph Dalmasso'}
+            </h1>
           </div>
         </div>
         <div className="rocket">
