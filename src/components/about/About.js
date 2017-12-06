@@ -16,6 +16,7 @@ class About extends Component {
       if (this.props.language == 'french') {
         return (
           <div>
+            <h2 className="about_title text-align">Info</h2>
             <p>
               Je suis un Développeur Web travaillant en free-lance et vivant à
               Toronto, ON.
@@ -39,6 +40,7 @@ class About extends Component {
       } else {
         return (
           <div>
+            <h2 className="about_title text-align">About</h2>
             <p>I am a Freelance Web Developer based in Toronto, ON.</p>
             <p>
               With a background in sales and customer service, I switched over
@@ -59,12 +61,12 @@ class About extends Component {
     return (
       <div className="about flex justify-between">
         <div className="about_view_container flex direction-column">
-          <div className="title_earth flex justify-between align-items-center">
-            {this.props.language == 'french' ? (
+          <div className="title_earth flex justify-center align-items-center">
+            {/* {this.props.language == 'french' ? (
               <h2 className="about_title">Info</h2>
             ) : (
               <h2 className="about_title">About</h2>
-            )}
+            )} */}
 
             <div className="earth text-align">
               <div className="moon">
