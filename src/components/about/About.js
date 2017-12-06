@@ -62,12 +62,6 @@ class About extends Component {
       <div className="about flex justify-between">
         <div className="about_view_container flex direction-column">
           <div className="title_earth flex justify-center align-items-center">
-            {/* {this.props.language == 'french' ? (
-              <h2 className="about_title">Info</h2>
-            ) : (
-              <h2 className="about_title">About</h2>
-            )} */}
-
             <div className="earth text-align">
               <div className="moon">
                 <img src={require('../../assets/moon2.png')} alt="" />
