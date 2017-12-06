@@ -26,7 +26,7 @@ class About extends Component {
               Après une expérience dans la vente et le service à la clientèle
               aux USA, je suis passé au développement web qui me permet de
               mettre en valeur ma créativité et mon sens logique. J'apprends
-              actuellement Node.js et je me passionne pour le codage en
+              actuellement Angular et je me passionne pour le codage en
               React.js.
             </p>
 
@@ -45,7 +45,7 @@ class About extends Component {
             <p>
               With a background in sales and customer service, I switched over
               to web development to allow myself to apply my creativity and
-              logic in a more meaningful way. I am currently learning Node.js
+              logic in a more meaningful way. I am currently learning Angular
               and have a mad passion for coding in React.js.
             </p>
             <p>
