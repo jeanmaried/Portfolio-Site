@@ -1,6 +1,16 @@
 [
   {
     "id": 1,
+    "title": "Random Movie Picker",
+    "site_link": "https://github.com/jeanmaried/Movie-Picker",
+    "git_link": "https://github.com/jeanmaried/News-app",
+    "picture": "./assets/movie.png",
+    "description":
+      "This project was probably my favorite. I have been wanting to make a random movie picker app from the start. I know there are a lot out there but none ever allowed me to sort by genre, ratings, and year. I use it all the time already. I took this on with React and surprised myself when it only took less than a day to get the functionality together. I still need to clean up the code, style it and add some features.",
+    "tools": ["JSX", "React", "TRADUCTION A VENIR"]
+  },
+  {
+    "id": 2,
     "title": "RED Life",
     "site_link": "https://reddir.herokuapp.com/",
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
@@ -11,7 +21,7 @@
   },
 
   {
-    "id": 2,
+    "id": 3,
     "title": "GTA Tooth Fairy",
     "site_link": "http://www.gtatoothfairy.com",
     "git_link": "https://github.com/jeanmaried/tooth_fairy_wordpress_site",
@@ -22,7 +32,7 @@
   },
 
   {
-    "id": 3,
+    "id": 4,
     "title": "Panier JavaScript",
     "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
@@ -32,7 +42,7 @@
   },
 
   {
-    "id": 4,
+    "id": 5,
     "title": "Application d'Info",
     "site_link": "https://jeanmaried.github.io/News-app/",
     "git_link": "https://github.com/jeanmaried/News-app",

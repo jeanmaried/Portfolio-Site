@@ -23,7 +23,7 @@ const ProjectSlides = ({ project_info }) => {
     <div className="card">
       <Card id={project_info.id} containerStyle={styles}>
         <CardMedia>
-          <img src={project_info.picture} alt="" />
+          <img className="card_image" src={project_info.picture} alt="" />
         </CardMedia>
         <CardTitle
           title={project_info.title}
