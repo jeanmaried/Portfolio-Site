@@ -6,7 +6,7 @@
     "git_link": "https://blooming-anchorage-28139.herokuapp.com/",
     "picture": "./assets/movie.png",
     "description":
-      "This project was probably my favorite. I have been wanting to make a random movie picker app from the start. I know there are a lot out there but none ever allowed me to sort by genre, ratings, and year. I use it all the time already. I took this on with React and surprised myself when it only took less than a day to get the functionality together. I still need to clean up the code, style it and add some features.",
+      "Ce projet était probablement mon préféré. Pendant longtemps, j'ai voulu faire une application de recherche de films. Je sais qu'il y en a beaucoup mais aucune ne m'a jamais permis de trier par genre, critique et année. Je l'utilise tout le temps déjà. Construit avec React et Redux, je me suis surpris quand il m'a fallu moins d'une journée pour faire la rendre fonctionnelle. ",
     "tools": ["JSX", "React", "TRADUCTION A VENIR"]
   },
   {
@@ -16,7 +16,7 @@
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
     "picture": "./assets/redlife.png",
     "description":
-      "Application de médias sociaux Full Stack construite pour RED Academy. Permettant aux étudiants de mieux se connaître, de voter pour les prochains thèmes d'événements, de publier des annonces du personnel ou des messages aléatoires.",
+      "J'étais en charge de Git et chef d'équipe sur ce projet que nous avons réalisé pour RED Academy. Ceci est une application de médias sociaux full-stack. Permettant aux étudiants de se connaître, de voter pour les prochaines thèmes d'événements, les annonces du personnel ou les messages aléatoires. Nous avons utilisé React et Meteor.js pour construire ceci en 2 semaines. ",
     "tools": ["JSX", "CSS", "React.js", "Meteor"]
   },
 
@@ -27,7 +27,7 @@
     "git_link": "https://github.com/jeanmaried/tooth_fairy_wordpress_site",
     "picture": "./assets/tooth-fairy.png",
     "description":
-      "Développement d'un site WordPress en PHP pour une hygiéniste dentaire, \"GTA Tooth Fairy\".",
+      "J'étais en charge de Git pour ce projet et j'ai fait partie d'une équipe de 4 personnes. Nous avons construit un tout nouveau site pour la GTA Tooth Fairy. Elle est une hygiéniste dentaire qui vient à chez vous. Je suis parti dans les arts obscurs de PHP sur celui-ci pour construire un thème WordPress. ",
     "tools": ["HTML", "CSS", "Gulp", "WordPress", "PHP"]
   },
 
@@ -37,7 +37,8 @@
     "site_link": "https://jeanmaried.github.io/ES6-shopping-cart/",
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
     "picture": "./assets/shopping-cart.png",
-    "description": "Construction d'un panier en utilisant les classes ES6.",
+    "description":
+      "Construire ce panier est ce qui m'a fait réaliser à quel point j'aime le développement web. J'ai utilisé les classes ES6 pour le faire à partir de zéro. ",
     "tools": ["Gulp", "ES6"]
   },
 
@@ -48,7 +49,7 @@
     "git_link": "https://github.com/jeanmaried/News-app",
     "picture": "./assets/NYT.png",
     "description":
-      "Construction d'un site utilisant Sass et jQuery pour afficher les articles du New York Times.",
+      "J'ai construit cette application d'info pour me permettre de voir les infos qui m'intéressent. Elle récupère des données de l'API du New York Times. J'ai surtout utilisé jQuery sur celui-ci. ",
     "tools": ["HTML", "CSS", "Gulp", "jQuery"]
   }
 ]
