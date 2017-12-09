@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Random Movie Picker",
+    "title": "Movie Picker",
     "site_link": "https://blooming-anchorage-28139.herokuapp.com/",
     "git_link": "https://github.com/jeanmaried/Movie-Picker",
     "picture": "./assets/movie.png",
@@ -16,7 +16,7 @@
     "git_link": "https://github.com/jeanmaried/ES6-shopping-cart",
     "picture": "./assets/redlife.png",
     "description":
-      "I was Git Lead and team lead on this project we made for RED Academy. This is a full-stack social media application. Allowing students to get to know each other, vote for upcoming event themes, staff announcements or random posts. We used React and Meteor.js to build this in 2 weeks.",
+      "I was Git lead and team lead on this project we made for RED Academy. This is a full-stack social media application. Allowing students to get to know each other, vote for upcoming event themes, staff announcements or random posts. We used React and Meteor.js to build this in 2 weeks.",
     "tools": ["JSX", "CSS", "React.js", "Meteor"]
   },
 
@@ -27,7 +27,7 @@
     "git_link": "https://github.com/jeanmaried/tooth_fairy_wordpress_site",
     "picture": "./assets/tooth-fairy.png",
     "description":
-      "I was the Git Lead for this project and did my part in a team of 4. We built a brand new website for the GTA Tooth Fairy. She is a dental hygienist that comes to you. I dabled in the dark arts of PHP on this one to build a WordPress theme.",
+      "I was the Git lead for this project. We built a brand new website for the GTA Tooth Fairy. She is a dental hygienist that comes to you. I dabled in the dark arts of PHP on this one to build a WordPress theme.",
     "tools": ["HTML", "CSS", "Gulp", "WordPress", "PHP"]
   },
 
