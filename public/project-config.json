@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Random Movie Picker",
     "site_link": "https://github.com/jeanmaried/Movie-Picker",
-    "git_link": "https://github.com/jeanmaried/News-app",
+    "git_link": "https://blooming-anchorage-28139.herokuapp.com/",
     "picture": "./assets/movie.png",
     "description":
       "This project was probably my favorite. I have been wanting to make a random movie picker app from the start. I know there are a lot out there but none ever allowed me to sort by genre, ratings, and year. I use it all the time already. I took this on with React and surprised myself when it only took less than a day to get the functionality together. I still need to clean up the code, style it and add some features.",
