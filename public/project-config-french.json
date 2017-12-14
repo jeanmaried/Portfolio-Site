@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "title": "Random Movie Picker",
-    "site_link": "https://github.com/jeanmaried/Movie-Picker",
-    "git_link": "https://blooming-anchorage-28139.herokuapp.com/",
+    "title": "Movie Picker",
+    "site_link": "https://blooming-anchorage-28139.herokuapp.com/",
+    "git_link": "https://github.com/jeanmaried/Movie-Picker",
     "picture": "./assets/movie.png",
     "description":
       "Ce projet était probablement mon préféré. Pendant longtemps, j'ai voulu faire une application de recherche de films. Je sais qu'il y en a beaucoup mais aucune ne m'a jamais permis de trier par genre, critique et année. Je l'utilise tout le temps déjà. Construit avec React et Redux, je me suis surpris quand il m'a fallu moins d'une journée pour faire la rendre fonctionnelle. ",
@@ -27,7 +27,7 @@
     "git_link": "https://github.com/jeanmaried/tooth_fairy_wordpress_site",
     "picture": "./assets/tooth-fairy.png",
     "description":
-      "J'étais en charge de Git pour ce projet et j'ai fait partie d'une équipe de 4 personnes. Nous avons construit un tout nouveau site pour la GTA Tooth Fairy. Elle est une hygiéniste dentaire qui vient à chez vous. Je suis parti dans les arts obscurs de PHP sur celui-ci pour construire un thème WordPress. ",
+      "J'étais en charge de Git pour ce projet. Nous avons construit un tout nouveau site pour la GTA Tooth Fairy. Elle est une hygiéniste dentaire qui vient à chez vous. Je suis parti dans les arts obscurs de PHP sur celui-ci pour construire un thème WordPress. ",
     "tools": ["HTML", "CSS", "Gulp", "WordPress", "PHP"]
   },
 
