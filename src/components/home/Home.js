@@ -26,17 +26,18 @@ class Home extends Component {
       <div className="home_page flex justify-center">
         <div className="make_clickable">
           <div>
-            <img
-              onClick={this.handleClick}
-              onLoad={this.removeLoader}
-              className="mars_img"
-              src={require('../../assets/mars.png')}
-            />
-            <h1 className="yellow name text-align">
-              {this.props.language == 'french'
-                ? 'Jean-Marie Dalmasso'
-                : 'Joseph Dalmasso'}
-            </h1>
+            <div onClick={this.handleClick}>
+              <img
+                onLoad={this.removeLoader}
+                className="mars_img"
+                src={require('../../assets/mars.png')}
+              />
+              <h1 className="yellow name text-align">
+                {this.props.language == 'french'
+                  ? 'Jean-Marie Dalmasso'
+                  : 'Joseph Dalmasso'}
+              </h1>
+            </div>
           </div>
         </div>
         <div className="rocket">
