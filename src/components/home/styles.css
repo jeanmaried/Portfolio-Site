@@ -4,15 +4,13 @@
 }
 
 .mars_img {
-  background-color: black;
   border-radius: 100%;
-  margin-top: -5rem;
-  margin-left: -5rem;
-  height: 10rem;
-  width: 10rem;
+  margin-top: -5.5rem;
+  margin-left: -5.5rem;
+  height: 11rem;
+  width: 11rem;
   position: fixed;
   z-index: 999;
-  top: 45%;
   left: 50%;
   -webkit-animation: floater 4s infinite ease-in-out;
   animation: floater 4s infinite ease-in-out;
@@ -20,34 +18,34 @@
 
 .name {
   position: fixed;
-  bottom: 0;
+  top: 42%;
   z-index: 999;
   width: 14rem;
   margin-left: -7rem;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
 }
 
 @-webkit-keyframes floater {
   0% {
-    top: 45%;
+    top: 50%;
   }
   50% {
-    top: 47%;
+    top: 52%;
   }
   100% {
-    top: 45%;
+    top: 50%;
   }
 }
 
 @keyframes floater {
   0% {
-    top: 45%;
+    top: 50%;
   }
   50% {
-    top: 47%;
+    top: 52%;
   }
   100% {
-    top: 45%;
+    top: 50%;
   }
 }
 
@@ -64,7 +62,7 @@
 .rocket {
   position: fixed;
   z-index: 999;
-  top: 43%;
+  top: 50%;
   -webkit-animation: myOrbit 10s linear infinite;
   animation: myOrbit 10s linear infinite;
 }
@@ -109,6 +107,15 @@
   }
 
   .rocket {
-    top: 43%;
+    top: 50%;
+  }
+
+  .name {
+    position: fixed;
+    top: 42%;
+    z-index: 999;
+    width: 14rem;
+    margin-left: -7rem;
+    font-size: 2.2rem;
   }
 }
