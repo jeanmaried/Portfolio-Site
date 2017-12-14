@@ -97,10 +97,10 @@
 
 @media screen and (min-width: 600px) {
   .mars_img {
-    margin-top: -7rem;
-    margin-left: -7rem;
-    height: 14rem;
-    width: 14rem;
+    margin-top: -6.5rem;
+    margin-left: -6.5rem;
+    height: 13rem;
+    width: 13rem;
   }
 
   .rocket img {

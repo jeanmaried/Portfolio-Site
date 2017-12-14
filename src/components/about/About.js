@@ -71,7 +71,7 @@ class About extends Component {
     };
 
     return (
-      <div className="about flex justify-between">
+      <div className="about flex">
         <div className="about_view_container flex direction-column">
           <div className="title_earth flex justify-center align-items-center">
             <div className="earth text-align">
@@ -100,7 +100,7 @@ class About extends Component {
             </div>
           </div>
         </div>
-        {window.innerWidth > 600 ? <Twitter /> : null}
+        <Twitter />
       </div>
     );
   }

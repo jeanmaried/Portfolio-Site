@@ -4,13 +4,7 @@ import { Timeline } from 'react-twitter-widgets';
 import { relative } from 'path';
 import { connect } from 'react-redux';
 import { getNotLoading, getLoading } from '../../redux/modules/state';
-
-const styles = {
-  position: 'relative',
-  zIndex: 999,
-  height: '125vh',
-  overflow: 'auto'
-};
+import './styles.css';
 
 class Twitter extends Component {
   removeLoader = () => {
@@ -18,7 +12,7 @@ class Twitter extends Component {
   };
   render() {
     return (
-      <div style={styles}>
+      <div className="twitter_container">
         <Timeline
           dataSource={{
             sourceType: 'profile',
@@ -26,7 +20,7 @@ class Twitter extends Component {
           }}
           options={{
             username: 'MeDalmasso',
-            width: '256',
+            // width: '256',
             theme: 'dark'
           }}
           onLoad={this.removeLoader}

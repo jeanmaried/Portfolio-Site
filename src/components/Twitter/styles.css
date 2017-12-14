@@ -1,0 +1,14 @@
+.twitter_container {
+  position: relative;
+  z-index: 999;
+  height: 150vh;
+  padding-top: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+  .twitter_container {
+    width: 256px;
+    overflow: auto;
+    padding-top: 0;
+  }
+}

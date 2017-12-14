@@ -1,7 +1,8 @@
 .about {
   padding-top: 64px;
   max-height: 120vh;
-  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about_title {
@@ -17,7 +18,6 @@
 .about_view_container {
   color: white;
   padding: 0 5% 5% 5%;
-  overflow: auto;
   opacity: 1;
 }
 
@@ -105,8 +105,9 @@
 }
 
 @media screen and (min-width: 600px) {
-  .title_earth {
-    /* padding: 2rem 1rem 2rem 0.5rem; */
+  .about {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .about_view_container {
