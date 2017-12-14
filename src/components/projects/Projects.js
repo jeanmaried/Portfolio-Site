@@ -8,7 +8,6 @@ import {
 } from '../../redux/modules/state';
 
 import './styles.css';
-import '../../flex.css';
 
 import axios from 'axios';
 
@@ -33,6 +32,10 @@ class Slider extends Component {
     window.scrollTo(0, 0);
   }
 
+  removeLoader = () => {
+    this.props.dispatch(getNotLoading());
+  };
+
   render() {
     let i = 0;
     let projects = this.props.project;
@@ -44,7 +47,13 @@ class Slider extends Component {
         <div className=" flex flex-wrap justify-center align-items-center">
           {projects.map(project => {
             i += 1;
-            return <ProjectSlides project_info={project} key={i} />;
+            return (
+              <ProjectSlides
+                loader={this.removeLoader}
+                project_info={project}
+                key={i}
+              />
+            );
           })}
         </div>
       </div>

@@ -26,14 +26,14 @@ export const getNotLoading = () => ({
 });
 
 export default (
-  state = { isLoading: false, languageChosen: '', projectData: [] },
+  state = { isLoading: true, languageChosen: '', projectData: [] },
   action
 ) => {
   switch (action.type) {
     case GET_LANGUAGE:
       return { ...state, languageChosen: action.payload };
     case GET_PROJECTS:
-      return { ...state, isLoading: true, projectData: action.payload };
+      return { ...state, isLoading: false, projectData: action.payload };
     case GET_LOADING:
       return { ...state, isLoading: true };
     case GET_NOT_LOADING:

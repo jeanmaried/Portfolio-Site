@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Twitter from '../Twitter';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/state';
+import {
+  getLanguage,
+  getLoading,
+  getNotLoading
+} from '../../redux/modules/state';
 import '../../flex.css';
 import './styles.css';
 
@@ -10,6 +14,14 @@ class About extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
+
+  componentWillMount() {
+    this.props.dispatch(getLoading());
+  }
+
+  removeLoader = () => {
+    this.props.dispatch(getNotLoading());
+  };
 
   render() {
     let translate = () => {
@@ -95,7 +107,8 @@ class About extends Component {
 }
 
 const mapStateToProps = ({ state }) => ({
-  language: state.languageChosen
+  language: state.languageChosen,
+  isLoading: state.isLoading
 });
 
 export default connect(mapStateToProps)(About);

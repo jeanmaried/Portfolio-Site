@@ -18,12 +18,17 @@ const styles = {
   background: '#292F33'
 };
 
-const ProjectSlides = ({ project_info }) => {
+const ProjectSlides = ({ project_info }, { loader }) => {
   return (
     <div className="card">
       <Card id={project_info.id} containerStyle={styles}>
         <CardMedia>
-          <img className="card_image" src={project_info.picture} alt="" />
+          <img
+            onLoad={loader}
+            className="card_image"
+            src={project_info.picture}
+            alt=""
+          />
         </CardMedia>
         <CardTitle
           title={project_info.title}

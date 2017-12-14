@@ -25,12 +25,13 @@ class Home extends Component {
     return (
       <div className="home_page flex justify-center">
         <div className="make_clickable">
-          <div
-            className="mars"
-            onClick={this.handleClick}
-            onLoad={this.removeLoader}
-          >
-            <img className="mars_img" src={require('../../assets/mars.png')} />
+          <div>
+            <img
+              onClick={this.handleClick}
+              onLoad={this.removeLoader}
+              className="mars_img"
+              src={require('../../assets/mars.png')}
+            />
             <h1 className="yellow name text-align">
               {this.props.language == 'french'
                 ? 'Jean-Marie Dalmasso'

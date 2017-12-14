@@ -10,11 +10,10 @@ import '../../flex.css';
 
 class Layout extends Component {
   render() {
+    console.log('Hello', this.props);
     return (
       <div>
-        {this.props.isLoading && this.props.location.pathname == '/home' ? (
-          <Loader />
-        ) : null}
+        {this.props.isLoading ? <Loader /> : null}
         {this.props.location.pathname == '/' ? null : <Header />}
         {this.props.children}
         {this.props.location.pathname == '/' ? null : <Footer />}
@@ -26,5 +25,7 @@ class Layout extends Component {
 const mapStateToProps = ({ state }) => ({
   isLoading: state.isLoading
 });
-
-export default connect(mapStateToProps)(withRouter(Layout));
+//1st HOC
+// const thisLayout = withRouter(Layout);
+//2nd HOC with Redux
+export default withRouter(connect(mapStateToProps)(Layout));

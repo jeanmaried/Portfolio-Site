@@ -10,7 +10,7 @@ import {
 } from 'material-ui/Card';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/state';
+import { getLanguage, getNotLoading } from '../../redux/modules/state';
 
 const styles = {
   popupContainer: {
@@ -42,6 +42,10 @@ class PopUp extends Component {
     this.props.dispatch(getLanguage(e.target.id));
     this.props.history.push('/home');
   };
+
+  componentDidMount() {
+    this.props.dispatch(getNotLoading());
+  }
 
   render() {
     return (
@@ -84,7 +88,8 @@ class PopUp extends Component {
 }
 
 const mapStateToProps = ({ state }) => ({
-  language: state.languageChosen
+  language: state.languageChosen,
+  isLoading: state.isLoading
 });
 
 export default connect(mapStateToProps)(withRouter(PopUp));
