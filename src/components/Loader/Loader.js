@@ -2,10 +2,6 @@ import React from 'react';
 import CircularProgress from 'material-ui/CircularProgress';
 
 const styles = {
-  loader: {
-    top: '50%',
-    left: '50%'
-  },
   loader_holder: {
     width: '100%',
     height: '100%',
@@ -16,13 +12,11 @@ const styles = {
 };
 
 const Loader = () => (
-  <div style={styles.loader_holder}>
-    <CircularProgress
-      style={styles.loader}
-      size={60}
-      thickness={7}
-      color="yellow"
-    />
+  <div
+    className="flex justify-center align-items-center"
+    style={styles.loader_holder}
+  >
+    <CircularProgress size={60} thickness={7} color="yellow" />
   </div>
 );
 

@@ -2,7 +2,6 @@ import React from 'react';
 import ChatBot from '../chatbot';
 
 import './styles.css';
-import '../../flex.css';
 
 const Footer = () => {
   return (

@@ -61,8 +61,6 @@ class MrChatBot extends Component {
   };
 
   render() {
-    const mobile = window.innerWidth < 568;
-
     return (
       <div className="bot">
         <ChatBot

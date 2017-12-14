@@ -25,7 +25,5 @@ class Layout extends Component {
 const mapStateToProps = ({ state }) => ({
   isLoading: state.isLoading
 });
-//1st HOC
-// const thisLayout = withRouter(Layout);
-//2nd HOC with Redux
+
 export default withRouter(connect(mapStateToProps)(Layout));
