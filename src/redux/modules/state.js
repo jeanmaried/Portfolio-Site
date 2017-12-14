@@ -1,5 +1,7 @@
 const GET_LANGUAGE = 'GET_LANGUAGE';
 const GET_PROJECTS = 'GET_PROJECTS';
+const GET_LOADING = 'GET_LOADING';
+const GET_NOT_LOADING = 'GET_NOT_LOADING';
 
 export const getProjects = projects => ({
   type: GET_PROJECTS,
@@ -15,12 +17,27 @@ export const getLanguage = language => {
   };
 };
 
-export default (state = { languageChosen: '', projectData: [] }, action) => {
+export const getLoading = () => ({
+  type: GET_LOADING
+});
+
+export const getNotLoading = () => ({
+  type: GET_NOT_LOADING
+});
+
+export default (
+  state = { isLoading: false, languageChosen: '', projectData: [] },
+  action
+) => {
   switch (action.type) {
     case GET_LANGUAGE:
       return { ...state, languageChosen: action.payload };
     case GET_PROJECTS:
-      return { ...state, projectData: action.payload };
+      return { ...state, isLoading: true, projectData: action.payload };
+    case GET_LOADING:
+      return { ...state, isLoading: true };
+    case GET_NOT_LOADING:
+      return { ...state, isLoading: false };
     default:
       return state;
   }

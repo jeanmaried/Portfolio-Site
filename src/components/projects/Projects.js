@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import ProjectSlides from './ProjectSlides';
 import { connect } from 'react-redux';
-import { getLanguage, getProjects } from '../../redux/modules/state';
+import {
+  getLanguage,
+  getProjects,
+  getNotLoading
+} from '../../redux/modules/state';
 
 import './styles.css';
 import '../../flex.css';
@@ -50,7 +54,8 @@ class Slider extends Component {
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen,
-  project: state.projectData
+  project: state.projectData,
+  isLoading: state.isLoading
 });
 
 export default connect(mapStateToProps)(Slider);

@@ -2,21 +2,35 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../../flex.css';
 import './styles.css';
+import { getNotLoading, getLoading } from '../../redux/modules/state';
 
 class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
+  componentWillMount() {
+    this.props.dispatch(getLoading());
+  }
+
   handleClick = () => {
     document.querySelector('.rsc-float-button').click();
+  };
+
+  removeLoader = () => {
+    this.props.dispatch(getNotLoading());
   };
 
   render() {
     return (
       <div className="home_page flex justify-center">
         <div className="make_clickable">
-          <div className="mars" onClick={this.handleClick}>
+          <div
+            className="mars"
+            onClick={this.handleClick}
+            onLoad={this.removeLoader}
+          >
+            <img className="mars_img" src={require('../../assets/mars.png')} />
             <h1 className="yellow name text-align">
               {this.props.language == 'french'
                 ? 'Jean-Marie Dalmasso'
@@ -25,7 +39,11 @@ class Home extends Component {
           </div>
         </div>
         <div className="rocket">
-          <img src={require('../../assets/red-rocket.png')} alt="" />
+          <img
+            src={require('../../assets/red-rocket.png')}
+            alt=""
+            onLoad={this.removeLoader}
+          />
         </div>
       </div>
     );
@@ -33,7 +51,8 @@ class Home extends Component {
 }
 
 const mapStateToProps = ({ state }) => ({
-  language: state.languageChosen
+  language: state.languageChosen,
+  loader: state.isLoading
 });
 
 export default connect(mapStateToProps)(Home);

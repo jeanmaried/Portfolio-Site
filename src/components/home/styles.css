@@ -3,24 +3,8 @@
   width: 100vw;
 }
 
-.mars {
+.mars_img {
   background-color: black;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.15)),
-      to(rgba(0, 0, 0, 0.15))
-    ),
-    url('../../assets/mars.png');
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url('../../assets/mars.png');
-  background: -o-linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url('../../assets/mars.png');
-  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url('../../assets/mars.png');
-  background-position: center;
-  background-size: cover;
   border-radius: 100%;
   margin-top: -5rem;
   margin-left: -5rem;
@@ -28,38 +12,43 @@
   width: 10rem;
   position: fixed;
   z-index: 999;
-  top: 50%;
+  top: 45%;
+  left: 50%;
   -webkit-animation: floater 4s infinite ease-in-out;
   animation: floater 4s infinite ease-in-out;
 }
 
+.name {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 14rem;
+  margin-left: -7rem;
+  font-size: 2.2rem;
+}
+
 @-webkit-keyframes floater {
   0% {
-    top: 50%;
+    top: 45%;
   }
   50% {
-    top: 52%;
+    top: 47%;
   }
   100% {
-    top: 50%;
+    top: 45%;
   }
 }
 
 @keyframes floater {
   0% {
-    top: 50%;
+    top: 45%;
   }
   50% {
-    top: 52%;
+    top: 47%;
   }
   100% {
-    top: 50%;
+    top: 45%;
   }
-}
-
-.name {
-  font-size: 1.4rem;
-  padding-top: 2.5rem;
 }
 
 /* ===ROCKET ANIMATION=== */
@@ -75,7 +64,7 @@
 .rocket {
   position: fixed;
   z-index: 999;
-  top: 47%;
+  top: 43%;
   -webkit-animation: myOrbit 10s linear infinite;
   animation: myOrbit 10s linear infinite;
 }
@@ -107,17 +96,11 @@
 }
 
 @media screen and (min-width: 600px) {
-  .mars {
+  .mars_img {
     margin-top: -7rem;
     margin-left: -7rem;
     height: 14rem;
     width: 14rem;
-    top: 50%;
-  }
-
-  .name {
-    font-size: 2.2rem;
-    padding-top: 3.5rem;
   }
 
   .rocket img {
@@ -126,6 +109,6 @@
   }
 
   .rocket {
-    top: 46%;
+    top: 43%;
   }
 }
