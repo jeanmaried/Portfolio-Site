@@ -20,7 +20,6 @@ class Twitter extends Component {
           }}
           options={{
             username: 'MeDalmasso',
-            // width: '256',
             theme: 'dark'
           }}
           onLoad={this.removeLoader}
