@@ -7,7 +7,7 @@
     "picture": "./assets/movie.png",
     "description":
       "This project was probably my favorite. I have been wanting to make a random movie picker app from the start. I know there are a lot out there but none ever allowed me to sort by genre, ratings, and year. I use it all the time already. I put this together with React and Redux and surprised myself when it only took less than a day to get the functionality together.",
-    "tools": ["JSX", "React"]
+    "tools": ["React/Redux"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "picture": "./assets/redlife.png",
     "description":
       "I was Git lead and team lead on this project we made for RED Academy. This is a full-stack social media application. Allowing students to get to know each other, vote for upcoming event themes, staff announcements or random posts. We used React and Meteor.js to build this in 2 weeks.",
-    "tools": ["JSX", "CSS", "React.js", "Meteor"]
+    "tools": ["CSS", "React", "Meteor"]
   },
 
   {

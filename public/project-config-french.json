@@ -7,7 +7,7 @@
     "picture": "./assets/movie.png",
     "description":
       "Ce projet était probablement mon préféré. Pendant longtemps, j'ai voulu faire une application de recherche de films. Je sais qu'il y en a beaucoup mais aucune ne m'a jamais permis de trier par genre, critique et année. Je l'utilise tout le temps déjà. Construit avec React et Redux, je me suis surpris quand il m'a fallu moins d'une journée pour faire la rendre fonctionnelle. ",
-    "tools": ["JSX", "React", "TRADUCTION A VENIR"]
+    "tools": ["React/Redux", "TRADUCTION A VENIR"]
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "picture": "./assets/redlife.png",
     "description":
       "J'étais en charge de Git et chef d'équipe sur ce projet que nous avons réalisé pour RED Academy. Ceci est une application de médias sociaux full-stack. Permettant aux étudiants de se connaître, de voter pour les prochaines thèmes d'événements, les annonces du personnel ou les messages aléatoires. Nous avons utilisé React et Meteor.js pour construire ceci en 2 semaines. ",
-    "tools": ["JSX", "CSS", "React.js", "Meteor"]
+    "tools": ["CSS", "React", "Meteor"]
   },
 
   {
