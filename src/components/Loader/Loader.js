@@ -6,7 +6,7 @@ const styles = {
     width: '100%',
     height: '100%',
     backgroundColor: '#292F33',
-    zIndex: 999999,
+    zIndex: 9999,
     position: 'fixed'
   }
 };

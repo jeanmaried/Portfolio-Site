@@ -6,8 +6,6 @@ import { connect } from 'react-redux';
 
 import { withRouter } from 'react-router-dom';
 
-import '../../flex.css';
-
 class Layout extends Component {
   render() {
     console.log('Hello', this.props);
