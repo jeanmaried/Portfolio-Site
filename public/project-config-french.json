@@ -7,7 +7,7 @@
     "picture": "./assets/movie.png",
     "description":
       "Ce projet était probablement mon préféré. Pendant longtemps, j'ai voulu faire une application de recherche de films. Je sais qu'il y en a beaucoup mais aucune ne m'a jamais permis de trier par genre, critique et année. Je l'utilise tout le temps déjà. Construit avec React et Redux, je me suis surpris quand il m'a fallu moins d'une journée pour faire la rendre fonctionnelle. ",
-    "tools": ["React/Redux", "TRADUCTION A VENIR"]
+    "tools": ["React/Redux"]
   },
   {
     "id": 2,
