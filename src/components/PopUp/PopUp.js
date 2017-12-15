@@ -19,7 +19,7 @@ import {
 const styles = {
   popupContainer: {
     position: 'fixed',
-    zIndex: 99999,
+    zIndex: 99,
     height: '100vh',
     width: '100vw'
   },
