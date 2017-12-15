@@ -33,7 +33,7 @@ export default (
     case GET_LANGUAGE:
       return { ...state, languageChosen: action.payload };
     case GET_PROJECTS:
-      return { ...state, isLoading: false, projectData: action.payload };
+      return { ...state, projectData: action.payload };
     case GET_LOADING:
       return { ...state, isLoading: true };
     case GET_NOT_LOADING:

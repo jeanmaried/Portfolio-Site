@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import {
   getLanguage,
   getProjects,
-  getNotLoading
+  getNotLoading,
+  getLoading
 } from '../../redux/modules/state';
 
 import './styles.css';
@@ -17,6 +18,7 @@ class Slider extends Component {
   }
 
   componentWillMount() {
+    this.props.dispatch(getLoading());
     if (this.props.language == 'french') {
       axios.get('project-config-french.json').then(res => {
         this.props.dispatch(getProjects(res.data));
@@ -29,12 +31,11 @@ class Slider extends Component {
   }
 
   componentDidMount() {
+    setTimeout(() => {
+      this.props.dispatch(getNotLoading());
+    }, 1000);
     window.scrollTo(0, 0);
   }
-
-  removeLoader = () => {
-    this.props.dispatch(getNotLoading());
-  };
 
   render() {
     let i = 0;
@@ -47,13 +48,7 @@ class Slider extends Component {
         <div className=" flex flex-wrap justify-center align-items-center">
           {projects.map(project => {
             i += 1;
-            return (
-              <ProjectSlides
-                loader={this.removeLoader}
-                project_info={project}
-                key={i}
-              />
-            );
+            return <ProjectSlides project_info={project} key={i} />;
           })}
         </div>
       </div>

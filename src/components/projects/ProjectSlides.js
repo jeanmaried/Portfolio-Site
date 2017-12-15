@@ -18,17 +18,12 @@ const styles = {
   background: '#292F33'
 };
 
-const ProjectSlides = ({ project_info }, { loader }) => {
+const ProjectSlides = ({ project_info }) => {
   return (
     <div className="card">
       <Card id={project_info.id} containerStyle={styles}>
         <CardMedia>
-          <img
-            onLoad={loader}
-            className="card_image"
-            src={project_info.picture}
-            alt=""
-          />
+          <img className="card_image" src={project_info.picture} alt="" />
         </CardMedia>
         <CardTitle
           title={project_info.title}
@@ -57,17 +52,5 @@ const ProjectSlides = ({ project_info }, { loader }) => {
     </div>
   );
 };
-
-// ProjectSlides.propTypes = {
-//   current: PropTypes.number.isRequired,
-//   project_info: PropTypes.arrayOf(PropTypes.shape({
-//     title: PropTypes.string.isRequired,
-//     site_link: PropTypes.string.isRequired,
-//     git_link: PropTypes.string.isRequired,
-//     picture: PropTypes.string.isRequired,
-//     description: PropTypes.string.isRequired,
-//   })),
-//   ready: PropTypes.bool.isRequired
-// }
 
 export default ProjectSlides;

@@ -18,7 +18,9 @@ class Home extends Component {
   };
 
   removeLoader = () => {
-    this.props.dispatch(getNotLoading());
+    setTimeout(() => {
+      this.props.dispatch(getNotLoading());
+    }, 1000);
   };
 
   render() {
