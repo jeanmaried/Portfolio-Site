@@ -71,36 +71,36 @@ class PopUp extends Component {
         style={styles.popupContainer}
         className="flex align-items-center justify-center"
       >
-        <img style={styles.moon} src={require('../../assets/moon2.png')} />
-        {/* <Card style={styles.card}> */}
-        <div className="flex justify-center align-content-center">
-          <div>
-            <FlatButton
-              onClick={this.handleClick}
-              label={
-                <img
-                  id="french"
-                  style={styles.flag}
-                  src={require('../../assets/france.png')}
-                />
-              }
-            />
+        {/* <img style={styles.moon} src={require('../../assets/moon2.png')} /> */}
+        <Card style={styles.card}>
+          <div className="flex justify-center align-content-center">
+            <div>
+              <FlatButton
+                onClick={this.handleClick}
+                label={
+                  <img
+                    id="french"
+                    style={styles.flag}
+                    src={require('../../assets/france.png')}
+                  />
+                }
+              />
+            </div>
+            <div>
+              <FlatButton
+                onClick={this.handleClick}
+                style={styles.canadianFlag}
+                label={
+                  <img
+                    id="english"
+                    style={styles.flag}
+                    src={require('../../assets/english.png')}
+                  />
+                }
+              />
+            </div>
           </div>
-          <div>
-            <FlatButton
-              onClick={this.handleClick}
-              style={styles.canadianFlag}
-              label={
-                <img
-                  id="english"
-                  style={styles.flag}
-                  src={require('../../assets/english.png')}
-                />
-              }
-            />
-          </div>
-        </div>
-        {/* </Card> */}
+        </Card>
       </div>
     );
   }
