@@ -38,6 +38,14 @@ const styles = {
     width: 45,
     height: 45,
     marginTop: -4
+  },
+
+  moon: {
+    position: 'fixed',
+    top: '50vh',
+    marginTop: -125,
+    with: 200,
+    height: 200
   }
 };
 
@@ -63,35 +71,36 @@ class PopUp extends Component {
         style={styles.popupContainer}
         className="flex align-items-center justify-center"
       >
-        <Card style={styles.card}>
-          <div className="flex justify-center align-content-center">
-            <div>
-              <FlatButton
-                onClick={this.handleClick}
-                label={
-                  <img
-                    id="french"
-                    style={styles.flag}
-                    src={require('../../assets/france.png')}
-                  />
-                }
-              />
-            </div>
-            <div>
-              <FlatButton
-                onClick={this.handleClick}
-                style={styles.canadianFlag}
-                label={
-                  <img
-                    id="english"
-                    style={styles.flag}
-                    src={require('../../assets/english.png')}
-                  />
-                }
-              />
-            </div>
+        <img style={styles.moon} src={require('../../assets/moon2.png')} />
+        {/* <Card style={styles.card}> */}
+        <div className="flex justify-center align-content-center">
+          <div>
+            <FlatButton
+              onClick={this.handleClick}
+              label={
+                <img
+                  id="french"
+                  style={styles.flag}
+                  src={require('../../assets/france.png')}
+                />
+              }
+            />
           </div>
-        </Card>
+          <div>
+            <FlatButton
+              onClick={this.handleClick}
+              style={styles.canadianFlag}
+              label={
+                <img
+                  id="english"
+                  style={styles.flag}
+                  src={require('../../assets/english.png')}
+                />
+              }
+            />
+          </div>
+        </div>
+        {/* </Card> */}
       </div>
     );
   }
