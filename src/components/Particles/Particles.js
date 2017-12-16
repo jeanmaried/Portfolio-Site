@@ -51,7 +51,7 @@ class ParticlesContainer extends Component {
               }
             },
             size: {
-              value: 15,
+              value: 10,
               random: true,
               anim: {
                 enable: false,

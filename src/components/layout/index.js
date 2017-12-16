@@ -16,7 +16,7 @@ class Layout extends Component {
       navigator.userAgent.indexOf('Chrome') != -1 ||
       navigator.userAgent.indexOf('Firefox') != -1
     ) {
-      console.log('Not IE :)');
+      console.log('Not Safari or IE :)');
     } else {
       particles = <Particles />;
     }
