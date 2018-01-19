@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectSlides from './ProjectSlides';
+import firebase from '../../firebase';
 import { connect } from 'react-redux';
 import {
   getLanguage,
@@ -15,6 +16,10 @@ import axios from 'axios';
 class Slider extends Component {
   constructor() {
     super();
+
+    this.state = {
+      items: []
+    };
   }
 
   componentWillMount() {
@@ -24,8 +29,9 @@ class Slider extends Component {
         this.props.dispatch(getProjects(res.data));
       });
     } else {
-      axios.get('project-config.json').then(res => {
-        this.props.dispatch(getProjects(res.data));
+      axios.get('https://mi-mini-cms.firebaseio.com/.json').then(res => {
+        console.log(res.data);
+        this.props.dispatch(getProjects(res.data.projects));
       });
     }
   }
@@ -35,18 +41,51 @@ class Slider extends Component {
       this.props.dispatch(getNotLoading());
     }, 1000);
     window.scrollTo(0, 0);
+
+    const itemsRef = firebase.database().ref('projects');
+    itemsRef.on('value', snapshot => {
+      let items = snapshot.val();
+      console.log(items);
+      let newState = [];
+      for (let item in items) {
+        newState.push({
+          id: item,
+          title: items[item].title,
+          description: items[item].description,
+          image: items[item].image,
+          website: items[item].websiteURL,
+          github: items[item].githubURL,
+          tags: items[item].projectTags
+        });
+        this.setState({
+          items: newState
+        });
+      }
+    });
   }
 
   render() {
     let i = 0;
-    let projects = this.props.project;
+    // let projects = this.props.project;
+    // let projectArray = [];
+    // for (let key in projects) {
+    //   projectArray.push({
+    //     id: key,
+    //     title: projects[key].title,
+    //     description: projects[key].description,
+    //     picture: projects[key].image
+    //   });
+    // }
+    // console.log(projectArray);
+
+    let projectArray = this.state.items;
     return (
       <div className="card_collection">
         <h2 className="text-align">
           {this.props.language == 'french' ? 'Projets' : 'Projects'}
         </h2>
         <div className=" flex flex-wrap justify-center align-items-center">
-          {projects.map(project => {
+          {projectArray.map(project => {
             i += 1;
             return <ProjectSlides project_info={project} key={i} />;
           })}

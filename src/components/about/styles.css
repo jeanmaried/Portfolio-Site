@@ -59,6 +59,11 @@
   font-size: 2rem;
 }
 
+.paragraph {
+  white-space: pre;
+  white-space: pre-wrap;
+}
+
 @-webkit-keyframes myOrbit {
   from {
     -webkit-transform: rotate(0deg) translate(-300%) rotate(-360deg);

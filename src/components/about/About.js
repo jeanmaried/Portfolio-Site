@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Twitter from '../Twitter';
 import { connect } from 'react-redux';
+import firebase from '../../firebase';
 import {
   getLanguage,
   getLoading,
@@ -11,8 +12,38 @@ import '../../flex.css';
 import './styles.css';
 
 class About extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      about: {}
+    };
+  }
   componentDidMount() {
     window.scrollTo(0, 0);
+
+    setTimeout(() => {
+      this.props.dispatch(getNotLoading());
+    }, 1000);
+    window.scrollTo(0, 0);
+
+    const itemsRef = firebase.database().ref('about');
+    itemsRef.on('value', snapshot => {
+      let about = snapshot.val();
+      console.log(about);
+      // let newState = [];
+      // for (let item in items) {
+      //   newState.push({
+      //     id: item,
+      //     title: items[item].title,
+      //     description: items[item].description,
+      //     image: items[item].image
+      //   });
+      this.setState({
+        about
+      });
+      // }
+    });
   }
 
   componentWillMount() {
@@ -52,18 +83,8 @@ class About extends Component {
       } else {
         return (
           <div>
-            <h2 className="about_title text-align">About</h2>
-            <p>I am a Freelance Web Developer based in Toronto, ON.</p>
-            <p>
-              With a background in sales and customer service, I switched over
-              to web development to allow myself to apply my creativity and
-              logic in a more meaningful way. I am currently learning Node.js
-              and have a mad passion for coding in React.js.
-            </p>
-            <p>
-              I am currently available for freelance and contract work
-              opportunities.
-            </p>
+            <h2 className="about_title text-align">{this.state.about.title}</h2>
+            <p className="paragraph">{this.state.about.content}</p>
             <h3 className="text-align">Skills</h3>
           </div>
         );
