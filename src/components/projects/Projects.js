@@ -30,7 +30,6 @@ class Slider extends Component {
       });
     } else {
       axios.get('https://mi-mini-cms.firebaseio.com/.json').then(res => {
-        console.log(res.data);
         this.props.dispatch(getProjects(res.data.projects));
       });
     }
@@ -45,18 +44,21 @@ class Slider extends Component {
     const itemsRef = firebase.database().ref('projects');
     itemsRef.on('value', snapshot => {
       let items = snapshot.val();
-      console.log(items);
+
       let newState = [];
       for (let item in items) {
         newState.push({
           id: item,
           title: items[item].title,
           description: items[item].description,
+          titleFr: items[item].titleFr,
+          descriptionFr: items[item].descriptionFr,
           image: items[item].image,
           website: items[item].websiteURL,
           github: items[item].githubURL,
           tags: items[item].projectTags
         });
+
         this.setState({
           items: newState
         });
@@ -66,17 +68,6 @@ class Slider extends Component {
 
   render() {
     let i = 0;
-    // let projects = this.props.project;
-    // let projectArray = [];
-    // for (let key in projects) {
-    //   projectArray.push({
-    //     id: key,
-    //     title: projects[key].title,
-    //     description: projects[key].description,
-    //     picture: projects[key].image
-    //   });
-    // }
-    // console.log(projectArray);
 
     let projectArray = this.state.items;
     return (

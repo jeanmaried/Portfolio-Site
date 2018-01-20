@@ -17,9 +17,15 @@ class SideDrawer extends Component {
   handleToggle = () => this.setState({ open: !this.state.open });
 
   handleClick = e => {
-    this.props.dispatch(getLanguage(e.target.id));
-    this.props.history.push('/home');
+    sessionStorage.setItem('language', e.target.id);
+    let language = sessionStorage.getItem('language');
+    this.props.dispatch(getLanguage(language));
   };
+
+  componentDidMount() {
+    let language = sessionStorage.getItem('language');
+    this.props.dispatch(getLanguage(language));
+  }
 
   render() {
     let d = new Date();

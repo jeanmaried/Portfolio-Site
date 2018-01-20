@@ -10,6 +10,7 @@ import {
   CardText
 } from 'material-ui/Card';
 import RaisedButton from 'material-ui/RaisedButton';
+import { connect } from 'react-redux';
 import './styles.css';
 
 import PropTypes from 'prop-types';
@@ -18,17 +19,27 @@ const styles = {
   background: '#292F33'
 };
 
-const ProjectSlides = ({ project_info }) => {
-  console.log(project_info);
+const ProjectSlides = props => {
+  let project_info = props.project_info;
+
   return (
     <div className="card">
       <Card id={project_info.id} containerStyle={styles}>
         <CardMedia>
           <img className="card_image" src={project_info.image} alt="" />
         </CardMedia>
-        <CardTitle title={project_info.title} subtitle={project_info.tags} />
+        <CardTitle
+          title={
+            props.language == 'french'
+              ? project_info.titleFr
+              : project_info.title
+          }
+          subtitle={project_info.tags}
+        />
         <CardText className="card_description">
-          {project_info.description}
+          {props.language == 'french'
+            ? project_info.descriptionFr
+            : project_info.description}
         </CardText>
         <CardActions>
           {!project_info.websiteURL ? (
@@ -53,4 +64,8 @@ const ProjectSlides = ({ project_info }) => {
   );
 };
 
-export default ProjectSlides;
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
+});
+
+export default connect(mapStateToProps)(ProjectSlides);

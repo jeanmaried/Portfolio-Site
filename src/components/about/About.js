@@ -31,18 +31,9 @@ class About extends Component {
     itemsRef.on('value', snapshot => {
       let about = snapshot.val();
       console.log(about);
-      // let newState = [];
-      // for (let item in items) {
-      //   newState.push({
-      //     id: item,
-      //     title: items[item].title,
-      //     description: items[item].description,
-      //     image: items[item].image
-      //   });
       this.setState({
         about
       });
-      // }
     });
   }
 
@@ -55,42 +46,6 @@ class About extends Component {
   };
 
   render() {
-    let translate = () => {
-      if (this.props.language == 'french') {
-        return (
-          <div>
-            <h2 className="about_title text-align">Info</h2>
-            <p>
-              Je suis un Développeur Web travaillant en free-lance et vivant à
-              Toronto, ON.
-            </p>
-
-            <p>
-              Après une expérience dans la vente et le service à la clientèle
-              aux USA, je suis passé au développement web qui me permet de
-              mettre en valeur ma créativité et mon sens logique. J'apprends
-              actuellement Node.js et je me passionne pour le codage en
-              React.js.
-            </p>
-
-            <p>
-              Je suis disponible pour tout travail en free-lance et sous
-              contrat.
-            </p>
-            <h3 className="text-align">Compétences</h3>
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            <h2 className="about_title text-align">{this.state.about.title}</h2>
-            <p className="paragraph">{this.state.about.content}</p>
-            <h3 className="text-align">Skills</h3>
-          </div>
-        );
-      }
-    };
-
     return (
       <div className="about flex">
         <div className="about_view_container flex direction-column">
@@ -102,7 +57,21 @@ class About extends Component {
             </div>
           </div>
           <div className="about_background">
-            {translate()}
+            <div>
+              <h2 className="about_title text-align">
+                {this.props.language == 'french'
+                  ? this.state.about.titleFr
+                  : this.state.about.title}
+              </h2>
+              <p className="paragraph">
+                {this.props.language == 'french'
+                  ? this.state.about.contentFr
+                  : this.state.about.content}
+              </p>
+              <h3 className="text-align">
+                {this.props.language == 'french' ? 'Compétences' : 'Skills'}
+              </h3>
+            </div>
             <div className="skills flex flex-wrap justify-center">
               <i className="devicon-html5-plain" />
               <i className="devicon-css3-plain" />
