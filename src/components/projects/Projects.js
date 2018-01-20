@@ -22,19 +22,6 @@ class Slider extends Component {
     };
   }
 
-  componentWillMount() {
-    this.props.dispatch(getLoading());
-    if (this.props.language == 'french') {
-      axios.get('project-config-french.json').then(res => {
-        this.props.dispatch(getProjects(res.data));
-      });
-    } else {
-      axios.get('https://mi-mini-cms.firebaseio.com/.json').then(res => {
-        this.props.dispatch(getProjects(res.data.projects));
-      });
-    }
-  }
-
   componentDidMount() {
     setTimeout(() => {
       this.props.dispatch(getNotLoading());
@@ -47,7 +34,7 @@ class Slider extends Component {
 
       let newState = [];
       for (let item in items) {
-        newState.push({
+        newState.unshift({
           id: item,
           title: items[item].title,
           description: items[item].description,
@@ -67,9 +54,7 @@ class Slider extends Component {
   }
 
   render() {
-    let i = 0;
-
-    let projectArray = this.state.items;
+    let projectArray = this.state.items.sort();
     return (
       <div className="card_collection">
         <h2 className="text-align">
@@ -77,8 +62,7 @@ class Slider extends Component {
         </h2>
         <div className=" flex flex-wrap justify-center align-items-center">
           {projectArray.map(project => {
-            i += 1;
-            return <ProjectSlides project_info={project} key={i} />;
+            return <ProjectSlides project_info={project} key={project.id} />;
           })}
         </div>
       </div>

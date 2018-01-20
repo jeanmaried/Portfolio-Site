@@ -42,7 +42,7 @@ const ProjectSlides = props => {
             : project_info.description}
         </CardText>
         <CardActions>
-          {!project_info.websiteURL ? (
+          {project_info.website ? (
             <a target="_blank" href={project_info.websiteURL}>
               <RaisedButton
                 backgroundColor="#616161"
@@ -50,7 +50,7 @@ const ProjectSlides = props => {
               />
             </a>
           ) : null}
-          {!project_info.githubURL ? (
+          {project_info.github ? (
             <a target="_blank" href={project_info.githubURL}>
               <RaisedButton
                 backgroundColor="#616161"
