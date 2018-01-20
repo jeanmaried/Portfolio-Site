@@ -51,7 +51,9 @@ const styles = {
 
 class PopUp extends Component {
   handleClick = e => {
-    this.props.dispatch(getLanguage(e.target.id));
+    sessionStorage.setItem('language', e.target.id);
+    let language = sessionStorage.getItem('language');
+    this.props.dispatch(getLanguage(language));
     this.props.history.push('/home');
   };
 
