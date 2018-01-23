@@ -34,11 +34,7 @@ class Home extends Component {
                 className="mars_img"
                 src={require('../../assets/mars.png')}
               />
-              <h1 className="yellow name text-align">
-                {this.props.language == 'french'
-                  ? 'Jean-Marie Dalmasso'
-                  : 'Joseph Dalmasso'}
-              </h1>
+              <h1 className="yellow name text-align">Jean-Marie Dalmasso</h1>
             </div>
           </div>
         </div>
