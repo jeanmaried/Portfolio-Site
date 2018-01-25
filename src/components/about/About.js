@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Twitter from '../Twitter';
 import { connect } from 'react-redux';
 import firebase from '../../firebase';
-import {
-  getLanguage,
-  getLoading,
-  getNotLoading
-} from '../../redux/modules/state';
+import { getLoading, getNotLoading } from '../../redux/modules/state';
 import '../../flex.css';
 import './styles.css';
 
@@ -59,17 +54,17 @@ class About extends Component {
           <div className="about_background">
             <div>
               <h2 className="about_title text-align">
-                {this.props.language == 'french'
+                {this.props.language === 'french'
                   ? this.state.about.titleFr
                   : this.state.about.title}
               </h2>
               <p className="paragraph">
-                {this.props.language == 'french'
+                {this.props.language === 'french'
                   ? this.state.about.contentFr
                   : this.state.about.content}
               </p>
               <h3 className="text-align">
-                {this.props.language == 'french' ? 'Compétences' : 'Skills'}
+                {this.props.language === 'french' ? 'Compétences' : 'Skills'}
               </h3>
             </div>
             <div className="skills flex flex-wrap justify-center">

@@ -2,16 +2,9 @@ import React, { Component } from 'react';
 import ProjectSlides from './ProjectSlides';
 import firebase from '../../firebase';
 import { connect } from 'react-redux';
-import {
-  getLanguage,
-  getProjects,
-  getNotLoading,
-  getLoading
-} from '../../redux/modules/state';
+import { getNotLoading } from '../../redux/modules/state';
 
 import './styles.css';
-
-import axios from 'axios';
 
 class Slider extends Component {
   constructor() {
@@ -58,7 +51,7 @@ class Slider extends Component {
     return (
       <div className="card_collection">
         <h2 className="text-align">
-          {this.props.language == 'french' ? 'Projets' : 'Projects'}
+          {this.props.language === 'french' ? 'Projets' : 'Projects'}
         </h2>
         <div className=" flex flex-wrap justify-center align-items-center">
           {projectArray.map(project => {

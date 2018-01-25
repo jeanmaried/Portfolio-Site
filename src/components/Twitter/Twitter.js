@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import FontAwesome from 'react-fontawesome';
 import { Timeline } from 'react-twitter-widgets';
-import { relative } from 'path';
 import { connect } from 'react-redux';
-import { getNotLoading, getLoading } from '../../redux/modules/state';
+import { getNotLoading } from '../../redux/modules/state';
 import './styles.css';
 
 class Twitter extends Component {

@@ -4,7 +4,6 @@ import FontAwesome from 'react-fontawesome';
 import {
   Card,
   CardActions,
-  CardHeader,
   CardMedia,
   CardTitle,
   CardText
@@ -12,8 +11,6 @@ import {
 import RaisedButton from 'material-ui/RaisedButton';
 import { connect } from 'react-redux';
 import './styles.css';
-
-import PropTypes from 'prop-types';
 
 const styles = {
   background: '#292F33'
@@ -30,14 +27,14 @@ const ProjectSlides = props => {
         </CardMedia>
         <CardTitle
           title={
-            props.language == 'french'
+            props.language === 'french'
               ? project_info.titleFr
               : project_info.title
           }
           subtitle={project_info.tags}
         />
         <CardText className="card_description">
-          {props.language == 'french'
+          {props.language === 'french'
             ? project_info.descriptionFr
             : project_info.description}
         </CardText>

@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import FlatButton from 'material-ui/FlatButton';
-import {
-  Card,
-  CardActions,
-  CardHeader,
-  CardMedia,
-  CardTitle,
-  CardText
-} from 'material-ui/Card';
+import { Card } from 'material-ui/Card';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import {
@@ -74,7 +67,6 @@ class PopUp extends Component {
         style={styles.popupContainer}
         className="flex align-items-center justify-center"
       >
-        {/* <img style={styles.moon} src={require('../../assets/moon2.png')} /> */}
         <Card style={styles.card}>
           <div className="flex justify-center align-content-center">
             <div>
@@ -83,6 +75,7 @@ class PopUp extends Component {
                 label={
                   <img
                     id="french"
+                    alt="french flag"
                     style={styles.flag}
                     src={require('../../assets/france.png')}
                   />
@@ -96,6 +89,7 @@ class PopUp extends Component {
                 label={
                   <img
                     id="english"
+                    alt="english flag"
                     style={styles.flag}
                     src={require('../../assets/english.png')}
                   />

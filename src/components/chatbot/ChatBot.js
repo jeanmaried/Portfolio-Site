@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getLanguage } from '../../redux/modules/state';
 import './styles.css';
 
 const theme = {
@@ -32,10 +30,6 @@ class LinkHandler extends Component {
 }
 
 class MrChatBot extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   handleEnd = () => {
     document.querySelector('.tutorial .rsc-header a').click();
   };
@@ -185,10 +179,6 @@ class MrChatBot extends Component {
     );
   }
 }
-
-// MrChatBot.propTypes = {
-//   handleLink: PropTypes.func.isRequired,
-// };
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen

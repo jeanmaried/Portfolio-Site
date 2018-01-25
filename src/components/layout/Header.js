@@ -1,12 +1,44 @@
 import React, { Component } from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
-import RaisedButton from 'material-ui/RaisedButton';
 import { Link, withRouter } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import AppBar from 'material-ui/AppBar';
 import { connect } from 'react-redux';
 import { getLanguage } from '../../redux/modules/state';
+
+const styles = {
+  header: {
+    zIndex: '9999',
+    background: '#292F33',
+    color: 'yellow',
+    position: 'fixed'
+  },
+
+  drawer: {
+    background: '#292F33'
+  },
+
+  flag: {
+    width: 30,
+    padding: 0,
+    cursor: 'pointer'
+  },
+
+  flagHolder: {
+    position: 'fixed',
+    zIndex: 9999,
+    top: 10,
+    right: 10,
+    width: 65
+  },
+
+  selected: {
+    borderBottom: '5px solid yellow',
+    padding: 0,
+    margin: 0
+  }
+};
 
 class SideDrawer extends Component {
   constructor(props) {
@@ -31,46 +63,12 @@ class SideDrawer extends Component {
     let d = new Date();
     d = d.getFullYear();
 
-    const styles = {
-      header: {
-        zIndex: '9999',
-        background: '#292F33',
-        color: 'yellow',
-        position: 'fixed'
-      },
-
-      drawer: {
-        background: '#292F33'
-      },
-
-      flag: {
-        width: 30,
-        padding: 5,
-        paddingBottom: 0,
-        cursor: 'pointer'
-      },
-
-      flagHolder: {
-        position: 'fixed',
-        zIndex: 9999,
-        top: 10,
-        right: 10
-      },
-
-      selected: {
-        background: 'yellow',
-        borderRadius: 5,
-        padding: 0,
-        margin: 0
-      }
-    };
-
     return (
       <div className="header_background">
         <AppBar
           title={
             window.innerWidth > 600
-              ? this.props.language == 'french'
+              ? this.props.language === 'french'
                 ? 'Développeur Web'
                 : 'Web Developer'
               : null
@@ -80,23 +78,28 @@ class SideDrawer extends Component {
           style={styles.header}
         />
 
-        <div style={styles.flagHolder} className="flex align-items-center">
+        <div
+          style={styles.flagHolder}
+          className="flex align-items-center justify-between"
+        >
           <div
             onClick={this.handleClick}
-            style={this.props.language == 'french' ? styles.selected : null}
+            style={this.props.language === 'french' ? styles.selected : null}
           >
             <img
               id="french"
+              alt="french flag"
               style={styles.flag}
               src={require('../../assets/france.png')}
             />
           </div>
           <div
             onClick={this.handleClick}
-            style={this.props.language == 'english' ? styles.selected : null}
+            style={this.props.language === 'english' ? styles.selected : null}
           >
             <img
               id="english"
+              alt="english flag"
               style={styles.flag}
               src={require('../../assets/english.png')}
             />
@@ -116,7 +119,7 @@ class SideDrawer extends Component {
               className="flex align-items-center"
             >
               <FontAwesome className="fontAwesome" name="home" size="2x" />
-              {this.props.language == 'french' ? 'Accueil' : 'Home'}
+              {this.props.language === 'french' ? 'Accueil' : 'Home'}
             </MenuItem>
           </Link>
           <Link to="/about">
@@ -125,13 +128,13 @@ class SideDrawer extends Component {
               className="flex align-items-center"
             >
               <FontAwesome className="fontAwesome" name="question" size="2x" />
-              {this.props.language == 'french' ? 'Info' : 'About'}
+              {this.props.language === 'french' ? 'Info' : 'About'}
             </MenuItem>
           </Link>
           <Link to="/projects">
             <MenuItem onClick={this.handleToggle}>
               <FontAwesome className="fontAwesome" name="briefcase" size="2x" />
-              {this.props.language == 'french' ? 'Projets' : 'Projects'}
+              {this.props.language === 'french' ? 'Projets' : 'Projects'}
             </MenuItem>
           </Link>
           <div className="copyright_contact text-align flex direction-column align-items-center">

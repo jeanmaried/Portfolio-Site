@@ -32,6 +32,7 @@ class Home extends Component {
               <img
                 onLoad={this.removeLoader}
                 className="mars_img"
+                alt="mars planet"
                 src={require('../../assets/mars.png')}
               />
               <h1 className="yellow name text-align">Jean-Marie Dalmasso</h1>
@@ -41,7 +42,7 @@ class Home extends Component {
         <div className="rocket">
           <img
             src={require('../../assets/red-rocket.png')}
-            alt=""
+            alt="red rocket"
             onLoad={this.removeLoader}
           />
         </div>
