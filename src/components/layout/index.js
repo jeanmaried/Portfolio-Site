@@ -23,7 +23,7 @@ class Layout extends Component {
     return (
       <div>
         {this.props.isLoading ? <Loader /> : null}
-        {particles}
+        {/* {particles} */}
         {this.props.location.pathname == '/' ? null : <Header />}
         {this.props.children}
         {this.props.location.pathname == '/' ? null : <Footer />}

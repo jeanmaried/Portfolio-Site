@@ -58,6 +58,7 @@ class PopUp extends Component {
   };
 
   componentWillMount() {
+    sessionStorage.setItem('language', 'english');
     this.props.dispatch(getLoading());
   }
 
