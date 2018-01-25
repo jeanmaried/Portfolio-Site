@@ -28,7 +28,7 @@ class Home extends Component {
       <div className="home_page flex justify-center">
         <div className="make_clickable">
           <div>
-            <div onClick={this.handleClick}>
+            <div className="home-animation" onClick={this.handleClick}>
               <img
                 onLoad={this.removeLoader}
                 className="mars_img"
