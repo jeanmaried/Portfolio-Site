@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ProjectSlides from './ProjectSlides';
 import firebase from '../../firebase';
 import { connect } from 'react-redux';
-import { getNotLoading } from '../../redux/modules/state';
+import { getNotLoading, getLoading } from '../../redux/modules/state';
 
 import './styles.css';
 
@@ -13,6 +13,10 @@ class Slider extends Component {
     this.state = {
       items: []
     };
+  }
+
+  componentWillMount() {
+    this.props.dispatch(getLoading());
   }
 
   componentDidMount() {
