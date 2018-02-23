@@ -50,7 +50,7 @@ class Review extends Component {
       <div style={{ width: '100%' }}>
         <h3>Message</h3>
         <div>
-          <p style={styles.reviewTitles}>Name:</p>
+          <p style={styles.reviewTitles}>Nom:</p>
           <p>{name.value}</p>
         </div>
         <div>
@@ -96,12 +96,12 @@ class MrChatBot extends Component {
           steps={[
             {
               id: '1',
-              message: 'Hi, I can help you get in touch!',
+              message: 'Salut, je peux vous aider à entrer en contact!',
               trigger: '2'
             },
             {
               id: '2',
-              message: 'What is your name?',
+              message: 'Comment vous appelez-vous?',
               trigger: 'name'
             },
             {
@@ -111,12 +111,12 @@ class MrChatBot extends Component {
             },
             {
               id: '4',
-              message: 'Nice to meet you, {previousValue}!',
+              message: 'Enchanté, {previousValue}!',
               trigger: '5'
             },
             {
               id: '5',
-              message: 'What is your email?',
+              message: 'Quel est votre email?',
               trigger: 'email'
             },
             {
@@ -126,7 +126,8 @@ class MrChatBot extends Component {
             },
             {
               id: '7',
-              message: 'Thank you! What message would you like me to pass on?',
+              message:
+                'Je vous remercie! Quel message aimeriez-vous que je transmette?',
               trigger: 'message'
             },
             {
@@ -136,7 +137,7 @@ class MrChatBot extends Component {
             },
             {
               id: '9',
-              message: 'Great! Check out your summary',
+              message: 'Génial! Consultez votre résumé',
               trigger: 'review'
             },
             {
@@ -147,29 +148,29 @@ class MrChatBot extends Component {
             },
             {
               id: 'update',
-              message: 'Would you like to update some field?',
+              message: 'Voulez-vous mettre à jour un champ?',
               trigger: 'update-question'
             },
             {
               id: 'update-question',
               options: [
-                { value: 'yes', label: 'Edit', trigger: 'update-yes' },
+                { value: 'yes', label: 'Modifier', trigger: 'update-yes' },
                 {
                   value: 'no',
-                  label: 'Submit',
+                  label: 'Envoyer',
                   trigger: 'end-message'
                 }
               ]
             },
             {
               id: 'update-yes',
-              message: 'What field would you like to update?',
+              message: 'Quel champ souhaitez-vous modifier?',
               trigger: 'update-fields'
             },
             {
               id: 'update-fields',
               options: [
-                { value: 'name', label: 'Name', trigger: 'update-name' },
+                { value: 'name', label: 'Nom', trigger: 'update-name' },
                 { value: 'email', label: 'Email', trigger: 'update-email' },
                 {
                   value: 'message',
@@ -195,12 +196,12 @@ class MrChatBot extends Component {
             },
             {
               id: 'end-message',
-              message: 'Thanks! Your data was submitted successfully!',
+              message: 'Merci! Votre message a été envoyé avec succès!',
               trigger: this.sendMessage
             },
             {
               id: 'end',
-              message: 'Goodbye!',
+              message: 'Au revoir!',
               end: true
             }
           ]}

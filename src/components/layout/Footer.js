@@ -1,14 +1,22 @@
-import React from 'react';
-import ChatBot from '../chatbot';
+import React, { Component } from 'react';
+import ChatBot from '../chatbot/ChatBot';
+import ChatBotFrench from '../chatbot/ChatBotFrench';
+import { connect } from 'react-redux';
 
 import './styles.css';
 
-const Footer = () => {
-  return (
-    <footer className="flex direction-row justify-between text-align">
-      <ChatBot />
-    </footer>
-  );
-};
+class Footer extends Component {
+  render() {
+    return (
+      <footer className="flex direction-row justify-between text-align">
+        {this.props.language === 'french' ? <ChatBotFrench /> : <ChatBot />}
+      </footer>
+    );
+  }
+}
 
-export default Footer;
+const mapStateToProps = ({ state }) => ({
+  language: state.languageChosen
+});
+
+export default connect(mapStateToProps)(Footer);

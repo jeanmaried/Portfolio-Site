@@ -25,7 +25,6 @@ class About extends Component {
     const itemsRef = firebase.database().ref('about');
     itemsRef.on('value', snapshot => {
       let about = snapshot.val();
-      console.log(about);
       this.setState({
         about
       });
