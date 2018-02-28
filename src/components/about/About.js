@@ -46,7 +46,7 @@ class About extends Component {
           <div className="title_earth flex justify-center align-items-center">
             <div className="earth text-align">
               <div className="moon">
-                <img src={require('../../assets/moon2.png')} alt="" />
+                <img src={require('../../assets/moon.png')} alt="" />
               </div>
             </div>
           </div>
