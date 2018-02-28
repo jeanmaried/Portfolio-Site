@@ -17,17 +17,13 @@ class About extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
 
-    setTimeout(() => {
-      this.props.dispatch(getNotLoading());
-    }, 1000);
-    window.scrollTo(0, 0);
-
     const itemsRef = firebase.database().ref('about');
     itemsRef.on('value', snapshot => {
       let about = snapshot.val();
       this.setState({
         about
       });
+      this.props.dispatch(getNotLoading());
     });
   }
 

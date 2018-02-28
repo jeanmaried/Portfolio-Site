@@ -3,11 +3,7 @@ import FlatButton from 'material-ui/FlatButton';
 import { Card } from 'material-ui/Card';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import {
-  getLanguage,
-  getNotLoading,
-  getLoading
-} from '../../redux/modules/state';
+import { getLanguage } from '../../redux/modules/state';
 
 const styles = {
   popupContainer: {
@@ -52,13 +48,6 @@ class PopUp extends Component {
 
   componentWillMount() {
     sessionStorage.setItem('language', 'english');
-    this.props.dispatch(getLoading());
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      this.props.dispatch(getNotLoading());
-    }, 1000);
   }
 
   render() {

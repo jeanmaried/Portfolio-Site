@@ -26,7 +26,7 @@ export const getNotLoading = () => ({
 });
 
 export default (
-  state = { isLoading: true, languageChosen: 'english', projectData: [] },
+  state = { isLoading: false, languageChosen: 'english', projectData: [] },
   action
 ) => {
   switch (action.type) {

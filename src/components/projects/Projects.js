@@ -20,9 +20,6 @@ class Slider extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.props.dispatch(getNotLoading());
-    }, 1000);
     window.scrollTo(0, 0);
 
     const itemsRef = firebase.database().ref('projects');
@@ -47,6 +44,9 @@ class Slider extends Component {
           items: newState
         });
       }
+      setTimeout(() => {
+        this.props.dispatch(getNotLoading());
+      }, 500);
     });
   }
 
