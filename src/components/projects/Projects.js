@@ -57,7 +57,7 @@ class Slider extends Component {
         <h2 className="text-align">
           {this.props.language === 'french' ? 'Projets' : 'Projects'}
         </h2>
-        <div className=" flex flex-wrap justify-center align-items-center">
+        <div className="flex flex-wrap justify-center align-items-center">
           {projectArray.map(project => {
             return <ProjectSlides project_info={project} key={project.id} />;
           })}

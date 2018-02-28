@@ -24,6 +24,7 @@ class About extends Component {
       this.setState({
         about
       });
+      this.props.dispatch(getNotLoading());
     });
   }
 

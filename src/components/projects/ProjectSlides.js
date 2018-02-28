@@ -38,24 +38,26 @@ const ProjectSlides = props => {
             ? project_info.descriptionFr
             : project_info.description}
         </CardText>
-        <CardActions>
-          {project_info.website ? (
-            <a target="_blank" href={project_info.websiteURL}>
-              <RaisedButton
-                backgroundColor="#616161"
-                label={<FontAwesome name="mouse-pointer" size="2x" />}
-              />
-            </a>
-          ) : null}
-          {project_info.github ? (
-            <a target="_blank" href={project_info.githubURL}>
-              <RaisedButton
-                backgroundColor="#616161"
-                label={<FontAwesome name="github" size="2x" />}
-              />
-            </a>
-          ) : null}
-        </CardActions>
+        <div className="flex justify-center">
+          <CardActions>
+            {project_info.website ? (
+              <a target="_blank" href={project_info.websiteURL}>
+                <RaisedButton
+                  backgroundColor="#616161"
+                  label={<FontAwesome name="mouse-pointer" size="2x" />}
+                />
+              </a>
+            ) : null}
+            {project_info.github ? (
+              <a target="_blank" href={project_info.githubURL}>
+                <RaisedButton
+                  backgroundColor="#616161"
+                  label={<FontAwesome name="github" size="2x" />}
+                />
+              </a>
+            ) : null}
+          </CardActions>
+        </div>
       </Card>
     </div>
   );
