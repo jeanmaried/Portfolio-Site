@@ -38,7 +38,7 @@ const ProjectSlides = props => {
             ? project_info.descriptionFr
             : project_info.description}
         </CardText>
-        <div className="flex justify-center">
+        <div className="card_buttons_container">
           <CardActions>
             {project_info.website ? (
               <a target="_blank" href={project_info.websiteURL}>
