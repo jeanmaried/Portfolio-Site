@@ -14,6 +14,7 @@ class About extends Component {
       about: {}
     };
   }
+
   componentDidMount() {
     window.scrollTo(0, 0);
 
@@ -23,17 +24,12 @@ class About extends Component {
       this.setState({
         about
       });
-      this.props.dispatch(getNotLoading());
     });
   }
 
   componentWillMount() {
     this.props.dispatch(getLoading());
   }
-
-  removeLoader = () => {
-    this.props.dispatch(getNotLoading());
-  };
 
   render() {
     return (

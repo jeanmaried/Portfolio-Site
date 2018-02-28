@@ -8,6 +8,7 @@ class Twitter extends Component {
   removeLoader = () => {
     this.props.dispatch(getNotLoading());
   };
+
   render() {
     return (
       <div className="twitter_container">

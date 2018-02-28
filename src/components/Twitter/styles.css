@@ -1,5 +1,6 @@
 .twitter_container {
   position: relative;
+  border-radius: 5px;
   z-index: 999;
   height: 150vh;
   padding-top: 3rem;
