@@ -18,7 +18,6 @@ const styles = {
 
 const ProjectSlides = props => {
   let project_info = props.project_info;
-
   return (
     <div className="card">
       <Card id={project_info.id} containerStyle={styles}>
@@ -38,26 +37,24 @@ const ProjectSlides = props => {
             ? project_info.descriptionFr
             : project_info.description}
         </CardText>
-        <div className="card_buttons_container">
-          <CardActions>
-            {project_info.website ? (
-              <a target="_blank" href={project_info.websiteURL}>
-                <RaisedButton
-                  backgroundColor="#616161"
-                  label={<FontAwesome name="mouse-pointer" size="2x" />}
-                />
-              </a>
-            ) : null}
-            {project_info.github ? (
-              <a target="_blank" href={project_info.githubURL}>
-                <RaisedButton
-                  backgroundColor="#616161"
-                  label={<FontAwesome name="github" size="2x" />}
-                />
-              </a>
-            ) : null}
-          </CardActions>
-        </div>
+        <CardActions>
+          {project_info.website ? (
+            <a target="_blank" href={project_info.website}>
+              <RaisedButton
+                backgroundColor="#616161"
+                label={<FontAwesome name="mouse-pointer" size="2x" />}
+              />
+            </a>
+          ) : null}
+          {project_info.github ? (
+            <a target="_blank" href={project_info.github}>
+              <RaisedButton
+                backgroundColor="#616161"
+                label={<FontAwesome name="github" size="2x" />}
+              />
+            </a>
+          ) : null}
+        </CardActions>
       </Card>
     </div>
   );
