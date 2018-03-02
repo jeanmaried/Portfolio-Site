@@ -34,7 +34,7 @@ class Slider extends Component {
           description: items[item].description,
           titleFr: items[item].titleFr,
           descriptionFr: items[item].descriptionFr,
-          image: items[item].image,
+          imageURL: items[item].imageURL,
           website: items[item].websiteURL,
           github: items[item].githubURL,
           tags: items[item].projectTags

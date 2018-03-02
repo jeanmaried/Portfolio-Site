@@ -18,11 +18,12 @@ const styles = {
 
 const ProjectSlides = props => {
   let project_info = props.project_info;
+  console.log(project_info);
   return (
     <div className="card">
       <Card id={project_info.id} containerStyle={styles}>
         <CardMedia>
-          <img className="card_image" src={project_info.image} alt="" />
+          <img className="card_image" src={project_info.imageURL} alt="" />
         </CardMedia>
         <CardTitle
           title={
