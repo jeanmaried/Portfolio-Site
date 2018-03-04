@@ -3,12 +3,13 @@
   position: absolute;
   z-index: 999;
   padding-top: 64px;
-  width: 100vw;
+  max-width: 100vw;
 }
 
 .card {
   margin: 2rem;
   max-width: 400px;
+  height: 800px;
 }
 
 .card_image {
