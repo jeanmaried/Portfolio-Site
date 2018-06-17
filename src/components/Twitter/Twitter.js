@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import { Timeline } from 'react-twitter-widgets';
 import { connect } from 'react-redux';
-import { getNotLoading } from '../../redux/modules/state';
 import './styles.css';
 
 class Twitter extends Component {
-  removeLoader = () => {
-    this.props.dispatch(getNotLoading());
-  };
 
   render() {
     return (
@@ -30,7 +26,6 @@ class Twitter extends Component {
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen,
-  loader: state.isLoading
 });
 
 export default connect(mapStateToProps)(Twitter);

@@ -10,7 +10,6 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import store from './redux/store';
 import { Provider } from 'react-redux';
-
 import PopUp from './components/PopUp';
 
 class App extends Component {

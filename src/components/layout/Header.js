@@ -15,10 +15,6 @@ const styles = {
     position: 'fixed'
   },
 
-  drawer: {
-    background: '#292F33'
-  },
-
   flag: {
     width: 30,
     padding: 0,
@@ -41,21 +37,20 @@ const styles = {
 };
 
 class SideDrawer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { open: false };
-  }
+  state = { open: false }
 
   handleToggle = () => this.setState({ open: !this.state.open });
 
   handleClick = e => {
     sessionStorage.setItem('language', e.target.id);
-    let language = sessionStorage.getItem('language');
+    const language = sessionStorage.getItem('language');
+
     this.props.dispatch(getLanguage(language));
   };
 
   componentDidMount() {
-    let language = sessionStorage.getItem('language');
+    const language = sessionStorage.getItem('language');
+
     this.props.dispatch(getLanguage(language));
   }
 
@@ -107,8 +102,6 @@ class SideDrawer extends Component {
         </div>
 
         <Drawer
-          backgroundColor="#292F33"
-          containerStyle={styles.drawer}
           containerClassName="drawer"
           open={this.state.open}
         >

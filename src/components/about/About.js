@@ -2,34 +2,21 @@ import React, { Component } from 'react';
 import Twitter from '../Twitter';
 import { connect } from 'react-redux';
 import firebase from '../../firebase';
-import { getLoading, getNotLoading } from '../../redux/modules/state';
 import '../../flex.css';
 import './styles.css';
 
 class About extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      about: {}
-    };
+  state = {
+    about: {}
   }
 
   componentDidMount() {
     window.scrollTo(0, 0);
 
-    const itemsRef = firebase.database().ref('about');
-    itemsRef.on('value', snapshot => {
-      let about = snapshot.val();
-      this.setState({
-        about
-      });
-      this.props.dispatch(getNotLoading());
+    firebase.database().ref('about').on('value', snapshot => {
+      const about = snapshot.val()
+      this.setState({ about })
     });
-  }
-
-  componentWillMount() {
-    this.props.dispatch(getLoading());
   }
 
   render() {
@@ -85,7 +72,6 @@ class About extends Component {
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen,
-  isLoading: state.isLoading
 });
 
 export default connect(mapStateToProps)(About);

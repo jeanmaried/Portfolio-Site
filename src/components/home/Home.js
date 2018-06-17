@@ -2,25 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import '../../flex.css';
 import './styles.css';
-import { getNotLoading, getLoading } from '../../redux/modules/state';
 
 class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
 
-  componentWillMount() {
-    this.props.dispatch(getLoading());
-  }
-
   handleClick = () => {
     document.querySelector('.rsc-float-button').click();
-  };
-
-  removeLoader = () => {
-    setTimeout(() => {
-      this.props.dispatch(getNotLoading());
-    }, 500);
   };
 
   render() {
@@ -53,7 +42,6 @@ class Home extends Component {
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen,
-  loader: state.isLoading
 });
 
 export default connect(mapStateToProps)(Home);

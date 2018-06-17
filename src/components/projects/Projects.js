@@ -1,76 +1,67 @@
-import React, { Component } from 'react';
-import ProjectSlides from './ProjectSlides';
-import firebase from '../../firebase';
-import { connect } from 'react-redux';
-import { getNotLoading, getLoading } from '../../redux/modules/state';
+import React, { Component } from "react";
+import Card from "../Card/Card";
+import firebase from "../../firebase";
+import { connect } from "react-redux";
+import Masonry from 'react-masonry-component';
+import "./Projects.css";
 
-import './styles.css';
-
-class Slider extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      items: []
-    };
-  }
-
-  componentWillMount() {
-    this.props.dispatch(getLoading());
-  }
-
-  componentDidMount() {
-    window.scrollTo(0, 0);
-
-    const itemsRef = firebase.database().ref('projects');
-    itemsRef.on('value', snapshot => {
-      let items = snapshot.val();
-
-      let newState = [];
-      for (let item in items) {
-        newState.unshift({
-          id: item,
-          title: items[item].title,
-          description: items[item].description,
-          titleFr: items[item].titleFr,
-          descriptionFr: items[item].descriptionFr,
-          imageURL: items[item].imageURL,
-          website: items[item].websiteURL,
-          github: items[item].githubURL,
-          tags: items[item].projectTags
-        });
-
-        this.setState({
-          items: newState
-        });
-      }
-      setTimeout(() => {
-        this.props.dispatch(getNotLoading());
-      }, 500);
-    });
-  }
-
-  render() {
-    let projectArray = this.state.items.sort();
-    return (
-      <div className="card_collection">
-        <h2 className="text-align">
-          {this.props.language === 'french' ? 'Projets' : 'Projects'}
-        </h2>
-        <div className="flex flex-wrap justify-center align-items-center">
-          {projectArray.map(project => {
-            return <ProjectSlides project_info={project} key={project.id} />;
-          })}
-        </div>
-      </div>
-    );
-  }
-}
+const masonryOptions = {
+  transitionDuration: 800,
+  fitWidth: true
+};
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen,
   project: state.projectData,
-  isLoading: state.isLoading
 });
+
+class Slider extends Component {
+  state = {
+    items: []
+  };
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
+
+    firebase.database().ref("projects").on("value", snapshot => {
+      const items = snapshot.val();
+      let newState = [];
+
+      for (let item in items) {
+        const data = {
+          ...items[item], id: item
+        }
+        newState.unshift(data);
+
+        this.setState({ items: newState });
+      }
+    });
+  }
+
+  renderProjects = () => {
+    return this.state.items.sort().map(project => <Card project_info={project} language={this.props.language} key={project.id} />)
+  }
+
+  render() {
+
+    return (
+      <div className="card_collection">
+        <h2 className="text-align">
+          {this.props.language === "french" ? "Projets" : "Projects"}
+        </h2>
+        <Masonry
+          className={'masonry'} // default ''
+          // elementType={'ul'} // default 'div'
+          options={masonryOptions} // default {}
+        // disableImagesLoaded={false} // default false
+        // updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+        // imagesLoadedOptions={imagesLoadedOptions} // default {}
+        >
+          {this.renderProjects()}
+        </Masonry>
+      </div >
+    );
+  }
+}
 
 export default connect(mapStateToProps)(Slider);

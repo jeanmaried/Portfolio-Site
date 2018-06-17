@@ -94,7 +94,6 @@ class PopUp extends Component {
 
 const mapStateToProps = ({ state }) => ({
   language: state.languageChosen,
-  isLoading: state.isLoading
 });
 
 export default connect(mapStateToProps)(withRouter(PopUp));

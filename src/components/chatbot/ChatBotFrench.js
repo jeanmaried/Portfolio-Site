@@ -27,14 +27,10 @@ const styles = {
 };
 
 class Review extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      name: '',
-      email: '',
-      message: ''
-    };
+  state = {
+    name: '',
+    email: '',
+    message: ''
   }
 
   componentDidMount() {

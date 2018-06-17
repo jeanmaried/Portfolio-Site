@@ -1,21 +1,33 @@
-html,
-body {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  background: black;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+html,
+body {
   border: 0;
   outline: 0;
   vertical-align: baseline;
   font-family: 'PT Sans', sans-serif;
-  background: black;
 }
 
 canvas {
   position: fixed;
   top: 0;
-}
-
-.body {
-  overflow: auto;
+  z-index: -1;
 }
 
 h1,
@@ -75,6 +87,7 @@ a {
 }
 
 /*queries==============================*/
+
 @media screen and (min-width: 400px) {
   h2 {
     font-size: 2rem;
@@ -85,20 +98,12 @@ a {
   .icons {
     max-width: 60%;
   }
-
   .icons div {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-
   h2 {
     font-size: 2.5rem;
   }
 }
-
-/* * {
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
-} */
